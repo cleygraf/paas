@@ -28,3 +28,15 @@ generate-deck:
   artifacts:
     paths:
       - "build/"
+
+pages:
+  stage: deploy
+  script:
+    # Just move the pages to the public dir
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  dependencies:
+    - generate-deck
+
