@@ -23,6 +23,10 @@ style: |
   section footer {
     text-align: center;
   }
+  img[alt~="center"] {
+      display: block;
+      margin: 0 auto;
+  }
 paginate: falses
 ---
 ![bg right 100%](assets/image5.png)
@@ -53,10 +57,10 @@ paginate: falses
 
 # Continuous Methodologies
 
-![bg 80%](assets/image3.png)
+![center](assets/image3.png)
 
 ---
 
 # CI/CD: From an Issue to a Merge Request
 
-![bg 70%](assets/image2.png)
+![center](assets/image2.png)
