@@ -1,9 +1,12 @@
 tasks:
   - name: Add marp-cli container
     init: docker pull marpteam/marp-cli
+  - name: Add markdownlint container
+    init: docker pull ghcr.io/tmknom/dockerfiles/markdownlint
   - name: Configure aliases
     command: |
       alias marp='docker run --rm --init -v $PWD:/home/marp/app/ -e LANG=$LANG -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli'
+      alias mdl='docker run --rm -v $(pwd):/work tmknom/markdownlint -- .'
 vscode:
   extensions:
    # Fix version to be compatible with current Gitpod workspace
