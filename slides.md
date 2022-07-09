@@ -20,8 +20,14 @@ style: |
     color: black;
     margin: 30px 5px 0px 0px;
   }
-paginate: true
+  section footer {
+    text-align: center;
+  }
+paginate: falses
 ---
+![bg right 100%](assets/image5.png)
+
+<!-- _footer: 'All as of 2022-07-09 and based on https://about.gitlab.com/company/' -->
 
 # Introduction
 
@@ -45,6 +51,12 @@ paginate: true
 
 ---
 
-# Slide 2
+# Continuous Methodologies
 
-foobar
+![bg 80%](assets/image3.png)
+
+---
+
+# CI/CD: From an Issue to a Merge Request
+
+![bg 70%](assets/image2.png)
