@@ -39,36 +39,12 @@ paginate: true
 
 ## STRONG COMMUNITY
 
-* Open source model 
-* 2,000+ code contributors
-* 10,000+ total contributors
+- Open source model 
+- 2,000+ code contributors
+- 10,000+ total contributors
 
 ---
 
 # Slide 2
 
 foobar
-
-<style>
-.slide {
- background-color: black !important;
- font: 40px arial, sans-serif; 
- }
-
-.slide a {
- color: indigo;
- }
-
-.slide h1 {
- color: fuchsia !important;
- text-align: center;
- }
-
-.slide h2 {
- color: darkviolet;
- }
-
-.slide p {
- color: darkorchid;
- }
-</style>
