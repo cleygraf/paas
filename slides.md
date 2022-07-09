@@ -8,6 +8,9 @@ style: |
     color: black;
   }
   section h1 {
+    position: absolute;
+      letft: 20px;
+      top: 30px; 
     text-align: left;
     font: 40px Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -64,3 +67,10 @@ paginate: falses
 # CI/CD: From an Issue to a Merge Request
 
 ![center](assets/image2.png)
+
+---
+
+# References
+
+- [Creating professional slides from Markdown notes](https://davidgarcia.dev/posts/creating-professional-slides-from-markdown-notes/)
+- [Pipeline Components: Markdownlint](https://gitlab.com/pipeline-components/markdownlint)
