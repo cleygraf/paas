@@ -13,8 +13,15 @@
 # - template: Security/SAST.gitlab-ci.yml
 
 stages:
+  - linting
   - build
   - deploy
+
+markdownlint:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/markdownlint:latest
+  script:
+    - mdl --style all --warnings .
 
 generate-deck:
   stage: build
@@ -29,6 +36,8 @@ generate-deck:
   artifacts:
     paths:
       - "build/"
+  dependencies:
+    - markdownlint
 
 pages:
   stage: deploy
