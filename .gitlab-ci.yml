@@ -37,7 +37,7 @@ generate-deck:
     paths:
       - "build/"
   dependencies:
-    - linting
+    - markdownlint
 
 pages:
   stage: deploy
