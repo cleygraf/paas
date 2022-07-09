@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: gaia
+theme: default
 style: |
   section {
     background-color: white;
