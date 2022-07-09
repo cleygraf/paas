@@ -44,7 +44,7 @@ pages:
   script:
     # Just move the pages to the public dir
     - mv build public
-    - cp assets public/
+    - cp -r assets public/
   artifacts:
     paths:
       - public
