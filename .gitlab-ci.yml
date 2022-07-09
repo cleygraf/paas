@@ -21,7 +21,7 @@ markdownlint:
   stage: linting
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   script:
-    - mdl --style all -i --warnings .
+    - mdl --style all -i -r ~MD025 --warnings .
 
 generate-deck:
   stage: build
