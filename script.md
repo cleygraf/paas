@@ -6,7 +6,11 @@
 
 ## Introduce gitlab
 
+Left side of slide "Introduction"
+
 ## DevOps lifecycle with GitLab
+
+Right side of slide "Introduction"
 
 - Plan - Regardless of your process, GitLab provides powerful planning tools to keep everyone synchronized: GitLab helps teams organize, plan, align and track project work to ensure teams are working on the right things at the right time and maintain end to end visibility and traceability of issues throughout the delivery lifecycle from idea to production.\
 
@@ -41,3 +45,5 @@
 - Protect - Enforce policies to discover and protect your software from vulnerabilities - GitLab scans cloud native environments for vulnerabilities and also provides unified security policy management.\
 
 => Container scanning
+
+## 
