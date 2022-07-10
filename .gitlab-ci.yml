@@ -20,6 +20,10 @@ stages:
 markdownlint:
   stage: linting
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
+  only:
+    changes:
+      - "**/*.md"
+      - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD009,~MD013,~MD025,~MD041 --warnings .
 
