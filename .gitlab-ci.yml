@@ -53,8 +53,7 @@ staging:
       - public/staging
   dependencies:
     - generate-deck
-  environment:
-       name: Staging
+
 
 production:
   stage: deploy
@@ -66,6 +65,5 @@ production:
       - public
   dependencies:
     - staging
-  environment:
-       name: Production
+
 
