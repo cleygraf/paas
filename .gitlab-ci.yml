@@ -43,17 +43,29 @@ generate-deck:
   dependencies:
     - markdownlint
 
-pages:
+staging:
   stage: deploy
   script:
-    # Just move the pages to the public dir
-    - mv build public
+    - cp -r build public/
     - cp -r assets public/
   artifacts:
     paths:
       - public
   dependencies:
     - generate-deck
+  environment:
+       name: Staging
+
+production:
+  stage: deploy
+  script:
+    - mv build public
+    - cp -r assets public/
+  artifacts:
+    paths:
+      - public
+  dependencies:
+    - staging
   environment:
        name: Production
 
