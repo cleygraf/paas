@@ -58,12 +58,6 @@ paginate: falses
 
 ---
 
-# Continuous Methodologies
-
-![center](assets/image3.png)
-
----
-
 # CI/CD: From an Issue to a Merge Request
 
 ![center](assets/image2.png)
