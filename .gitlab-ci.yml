@@ -70,6 +70,7 @@ staging:
 production:
   stage: deploy
   script:
+    - mkdir -p public
     - cp -r -v build public
     - cp -r -v assets public/
   artifacts:
