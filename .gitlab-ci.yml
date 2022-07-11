@@ -46,8 +46,9 @@ generate-deck:
 staging:
   stage: deploy
   script:
-    - cp -r build public/staging
-    - cp -r assets public/staging/
+    - mkdir public/staging
+    - cp -rv build public/staging
+    - cp -rv assets public/staging/
   artifacts:
     paths:
       - "build/"
