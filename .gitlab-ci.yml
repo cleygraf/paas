@@ -18,6 +18,10 @@ stages:
   - review
   - deploy
 
+cache:
+  paths:
+    - public
+
 markdownlint:
   stage: linting
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
@@ -53,6 +57,7 @@ staging:
   artifacts:
     paths:
       - public
+      - public/staging
   dependencies:
     - generate-deck
 
