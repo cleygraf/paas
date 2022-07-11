@@ -15,6 +15,7 @@
 stages:
   - linting
   - build
+  - review
   - deploy
 
 markdownlint:
@@ -44,14 +45,14 @@ generate-deck:
     - markdownlint
 
 staging:
-  stage: deploy
+  stage: review
   script:
     - mkdir -p public
     - cp -rv build public/staging
     - cp -rv assets public/staging/
   artifacts:
     paths:
-      - "build/"
+      - public
   dependencies:
     - generate-deck
 
@@ -63,9 +64,8 @@ production:
     - cp -r assets public/
   artifacts:
     paths:
-      - "build/"
+      - public
   dependencies:
-    - markdownlint
-    - staging
+    - generate-deck
 
 
