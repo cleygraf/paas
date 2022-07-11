@@ -52,16 +52,17 @@ generate-deck:
 staging:
   stage: review
   script:
-    - mkdir -p public
-    - cp -rv build public/staging
-    - cp -rv assets public/staging/
+    # Just move the pages to the public dir
+    - mv build public
+    - cp -r assets public/
   artifacts:
     paths:
       - public
-      - public/staging
   dependencies:
     - generate-deck
-
+  environment:
+    name: Staging
+    url: "https://$CI_PROJECT_NAMESPACE.gitlab.io/-/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/public/slides.html"
 
 production:
   stage: deploy
