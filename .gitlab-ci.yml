@@ -65,6 +65,7 @@ production:
     paths:
       - "build/"
   dependencies:
+    - markdownlint
     - staging
 
 
