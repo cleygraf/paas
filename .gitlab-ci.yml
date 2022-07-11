@@ -21,6 +21,7 @@ stages:
 cache:
   paths:
     - public
+    - public/staging
 
 markdownlint:
   stage: linting
