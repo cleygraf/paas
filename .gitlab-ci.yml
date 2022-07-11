@@ -54,4 +54,6 @@ pages:
       - public
   dependencies:
     - generate-deck
+  environment:
+       name: Production
 
