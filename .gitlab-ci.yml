@@ -56,9 +56,8 @@ staging:
     #- mv build public
     #- cp -r assets public/
     - mkdir -p public
-    - mkdir -p public/$CI_PIPELINE_ID/
-    - cp -r -v build/* public/$CI_PIPELINE_ID/
-    - cp -r -v assets/* public/$CI_PIPELINE_ID/
+    - mv build public/$CI_PIPELINE_ID
+    - cp -r -v assets public/$CI_PIPELINE_ID/
   artifacts:
     paths:
       - public
