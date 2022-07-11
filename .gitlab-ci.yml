@@ -53,8 +53,11 @@ staging:
   stage: review
   script:
     # Just move the pages to the public dir
-    - mv build public
-    - cp -r assets public/
+    #- mv build public
+    #- cp -r assets public/
+    - mkdir -p public
+    - mkdir -p public/$CI_PIPELINE_ID/
+    - cp builc/* public/$CI_PIPELINE_ID/ -R
   artifacts:
     paths:
       - public
@@ -67,8 +70,8 @@ staging:
 production:
   stage: deploy
   script:
-    - cp -r build public
-    - cp -r assets public/
+    - cp -r -v build public
+    - cp -r -v assets public/
   artifacts:
     paths:
       - public
