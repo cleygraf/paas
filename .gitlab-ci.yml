@@ -50,6 +50,7 @@ staging:
     - cp -r assets public/staging/
   artifacts:
     paths:
+      - build
       - public/staging
   dependencies:
     - generate-deck
@@ -62,6 +63,7 @@ production:
     - cp -r assets public/
   artifacts:
     paths:
+      - build
       - public
   dependencies:
     - staging
