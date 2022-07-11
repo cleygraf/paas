@@ -67,5 +67,7 @@ production:
       - public
   dependencies:
     - generate-deck
+  when: manual
+  allow_failure: false
 
 
