@@ -46,11 +46,11 @@ generate-deck:
 staging:
   stage: deploy
   script:
-    - cp -r build public/
-    - cp -r assets public/
+    - cp -r build public/staging
+    - cp -r assets public/staging/
   artifacts:
     paths:
-      - public
+      - public/staging
   dependencies:
     - generate-deck
   environment:
@@ -59,7 +59,7 @@ staging:
 production:
   stage: deploy
   script:
-    - mv build public
+    - cp -r build public
     - cp -r assets public/
   artifacts:
     paths:
