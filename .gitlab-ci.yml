@@ -53,7 +53,7 @@ staging:
   stage: review
   script:
     # Just move the pages to the public dir
-    - mv build public/
+    - mv build public
     - cp -r -v assets public/
   artifacts:
     paths:
@@ -68,7 +68,7 @@ production:
   stage: deploy
   script:
     # Just move the pages to the public dir
-    - mv build public/
+    - mv build public
     - cp -r -v assets public/
   artifacts:
     paths:
