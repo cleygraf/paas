@@ -14,7 +14,7 @@ style: |
     text-align: left;
     font: 40px Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: darkblue;
+    color: blue;
   }
   section h2 {
     text-align: left;
