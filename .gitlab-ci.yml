@@ -11,11 +11,12 @@
 #   stage: test
 # include:
 # - template: Security/SAST.gitlab-ci.yml
+
 stages:
   - linting
   - build
-  - review
   - deploy
+
 markdownlint:
   stage: linting
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
@@ -25,6 +26,7 @@ markdownlint:
       - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041 --warnings .
+
 generate-deck:
   stage: build
   image:
@@ -40,28 +42,16 @@ generate-deck:
       - "build/"
   dependencies:
     - markdownlint
-staging:
-  stage: review
-  script:
-    # Just move the pages to the public dir
-    - mv build public
-    - cp -r -v assets public/
-  artifacts:
-    paths:
-      - public
-  dependencies:
-    - generate-deck
- 
-production:
+
+pages:
   stage: deploy
   script:
     # Just move the pages to the public dir
     - mv build public
-    - cp -r -v assets public/
+    - cp -r assets public/
   artifacts:
     paths:
       - public
   dependencies:
     - generate-deck
-  when: manual
-  allow_failure: false
+
