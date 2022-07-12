@@ -32,6 +32,22 @@ style: |
   }
 paginate: falses
 ---
+![bg right 100%](assets/image7.jpeg)
+
+# Demo of GitLab
+
+## Christoph Leygraf
+
+- 20+ years professional experience in professional services and technical sales.
+- Area of expertise: Automation, virtualization and infrastructure
+- Focusing on modern apps and related technolgies like K8s, CI/CD, Infrastructure as Code
+
+
+## Contact
+
+christoph@leygraf.de | +49 151 22683645
+
+---
 ![bg right 100%](assets/image5.png)
 
 <!-- _footer: 'All as of 2022-07-09 and based on https://about.gitlab.com/company/' -->
