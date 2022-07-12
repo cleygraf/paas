@@ -53,26 +53,6 @@ staging:
   stage: review
   script:
     # Just move the pages to the public dir
-    #- mv build public
-    #- cp -r assets public/
-    - mkdir -p public
-    - mv build public/$CI_PIPELINE_ID
-    - cp -r -v assets public/$CI_PIPELINE_ID/
-  artifacts:
-    paths:
-      - public
-  dependencies:
-    - generate-deck
-  environment:
-    name: Staging
-    url: "https://$CI_PROJECT_ROOT_NAMESPACE.gitlab.io/christoph-leygraf-demo-group/$CI_PROJECT_NAME/$CI_PIPELINE_ID/slides.html"
-
-production:
-  stage: deploy
-  script:
-    # Just move the pages to the public dir
-    #- mv build public
-    #- cp -r assets public/
     - mv build public/
     - cp -r -v assets public/
   artifacts:
@@ -80,6 +60,24 @@ production:
       - public
   dependencies:
     - generate-deck
+  environment:
+    name: Staging
+    url: "https://$CI_PROJECT_ROOT_NAMESPACE.gitlab.io/christoph-leygraf-demo-group/$CI_PROJECT_NAME/slides.html"
+
+production:
+  stage: deploy
+  script:
+    # Just move the pages to the public dir
+    - mv build public/
+    - cp -r -v assets public/
+  artifacts:
+    paths:
+      - public
+  dependencies:
+    - generate-deck
+    environment:
+  name: Staging
+    url: "https://$CI_PROJECT_ROOT_NAMESPACE.gitlab.io/christoph-leygraf-demo-group/$CI_PROJECT_NAME/slides.html"
   when: manual
   allow_failure: false
 
