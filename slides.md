@@ -42,7 +42,6 @@ paginate: falses
 - Area of expertise: Automation, virtualization and infrastructure
 - Focusing on modern apps and related technolgies like K8s, CI/CD, Infrastructure as Code
 
-
 ## Contact
 
 christoph@leygraf.de | +49 151 22683645
