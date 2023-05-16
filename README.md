@@ -1,3 +1,8 @@
-# Demo interview
+# PaaS
 
-A project to show a high-level end-to-end demo of the GitLab platform.
+## Tips
+
+```shell
+gcloud auth login
+gcloud config set project static-hosting-385113
+```
