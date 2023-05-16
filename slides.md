@@ -1,11 +1,11 @@
 ---
 marp: true
-theme: default
+theme: gaia
 style: |
   section {
-    background-color: white;
+    background-color: black;
     font: 20px Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
   }
   section h1 {
     position: absolute;
@@ -20,7 +20,7 @@ style: |
     text-align: left;
     font: 25px Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: black;
+    color: white;
     margin: 30px 5px 0px 0px;
   }
   section footer {
