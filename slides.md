@@ -3,9 +3,9 @@ marp: true
 theme: gaia
 style: |
   section {
-    background-color: black;
+    background-color: white;
     font: 20px Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
   }
   section h1 {
     position: absolute;
@@ -20,7 +20,7 @@ style: |
     text-align: left;
     font: 25px Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
+    color: block;
     margin: 30px 5px 0px 0px;
   }
   section footer {
@@ -44,7 +44,7 @@ paginate: falses
 
 ## Contact
 
-christoph@leygraf.de | +49 151 22683645
+cleygraf@gitlab.com | +49 151 22683645 | [LinkeIn](https://www.linkedin.com/in/cleygraf/)
 
 ---
 ![bg right 100%](assets/image5.png)
