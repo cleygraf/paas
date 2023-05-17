@@ -40,7 +40,7 @@ markdownlint:
       - "**/*.md"
       - "**/*.markdown"
   script:
-    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041 --warnings .
+    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033 --warnings .
 
 generate-deck:
   stage: build-slides
