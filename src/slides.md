@@ -41,6 +41,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+# GCP and GitLab integration
+
+<img src="./../assets/gcp-mapping.svg" style="width:100%; height: 100%">
+
+---
+
 # Demo of GitLab
 
 ## Christoph Leygraf
