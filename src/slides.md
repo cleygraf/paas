@@ -40,7 +40,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-# Software Factory Apporach
+# Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
 
