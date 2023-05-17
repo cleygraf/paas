@@ -11,7 +11,12 @@ section {
     background-color: #171321;
     font-family: "Inter";
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+footer {
+    left: 2em;
+    bottom: 2em
 }
 
 a {

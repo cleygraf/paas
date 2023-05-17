@@ -2,6 +2,7 @@
 marp: true
 theme: gitlab-theme
 paginate: false
+footer: ![w:60 h:60](./../assets/gitlab-logo.png)
 ---
 ![bg right 100%](./../assets/image7.jpeg)
 
