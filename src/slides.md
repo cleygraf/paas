@@ -40,6 +40,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+<h1 style="font-size:2.5em">Software Factory Apporach</h1>
+
+![bg](./../assets/software-factory.svg)
+
+---
+
 <h1 style="font-size:2.5em">GitLab 🧡 GCP</h1>
 
 <img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
