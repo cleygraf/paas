@@ -17,4 +17,10 @@ gcloud config set project static-hosting-385113
 
 ## Local dev
 
-Install the [recommended VS Code workspace extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions). Use the [Marp VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) for previewing your changes live.
+Install the [recommended VS Code workspace extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions). Use the [Marp VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to preview your changes live.
+
+### Building
+
+Install the [Marp CLI](https://www.npmjs.com/package/@marp-team/marp-cli) with: `brew install marp-cli`
+
+Then: **⇧⌘B** in VS Code. The output will be in the `build` folder.
