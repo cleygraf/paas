@@ -41,8 +41,3 @@ h6 {
     border: 4px solid var(--gitlab-purple);
     height: 150px;
 }
-
-.container {
-    display: flex;
-    flex-direction: row;
-}
