@@ -14,3 +14,7 @@
 gcloud auth login
 gcloud config set project static-hosting-385113
 ```
+
+## Local dev
+
+Install the [recommended VS Code workspace extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions). Use the [Marp VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) for previewing your changes live.
