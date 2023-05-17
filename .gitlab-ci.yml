@@ -48,8 +48,8 @@ generate-deck:
   script :
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
-    - /home/marp/.cli/docker-entrypoint -I src -o build
-    - /home/marp/.cli/docker-entrypoint -I src --pdf --allow-local-files -o build
+    - /home/marp/.cli/docker-entrypoint -I src --html -o build
+    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
   artifacts:
     paths:
       - "build/"

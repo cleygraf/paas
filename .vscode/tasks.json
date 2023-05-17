@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "marp -I src -o build",
+            "command": "marp -I src --html -o build",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

@@ -5,6 +5,18 @@ paginate: false
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
+# GitLab on GCP
+
+Christoph Leygraf
+Channel Solutions Architect
+<img class="avatar" src="./../assets/avatar-chris.jpeg">
+
+Péter Bozsó
+Channel Solutions Architect
+<img  class="avatar" src="./../assets/avatar-peter.jpeg">
+
+---
+
 # Demo of GitLab
 
 ## Christoph Leygraf
