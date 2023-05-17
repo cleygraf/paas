@@ -13,7 +13,7 @@
 }
 
 section {
-    background-color: var(--gitlab-dark);
+    background: var(--gitlab-dark);
     font-family: "Inter";
     color: white;
     font-size: 20px;
