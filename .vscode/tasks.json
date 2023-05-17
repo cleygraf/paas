@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "marp -I src -o build && cp src/GitLabSans.woff2 build",
+            "command": "marp -I src -o build",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

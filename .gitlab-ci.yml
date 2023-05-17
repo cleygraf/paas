@@ -50,7 +50,6 @@ generate-deck:
     - export MARP_USER="$(id -u):$(id -g)"
     - /home/marp/.cli/docker-entrypoint -I src -o build
     - /home/marp/.cli/docker-entrypoint -I src --pdf --allow-local-files -o build
-    - cp src/GitLabSans.woff2 build
   artifacts:
     paths:
       - "build/"
