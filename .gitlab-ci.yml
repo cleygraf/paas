@@ -27,6 +27,7 @@ deploy-prod:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
     - gcloud builds submit . --config=cloudbuild-deploy-prod.yaml
+  when: manual
 
 
 markdownlint:
