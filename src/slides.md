@@ -44,6 +44,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ![bg](./../assets/software-factory.svg)
 
+## - Ideas go in, applications come out
+## - Shift security left: checks at each stage
+## - Full visibility from planning to production
+
 ---
 
 # GitLab &#x1F9E1; GCP
