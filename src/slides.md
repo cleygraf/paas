@@ -2,9 +2,8 @@
 marp: true
 theme: gitlab-theme
 paginate: false
-footer: ![w:60 h:60](./../assets/gitlab-logo.png)
+footer: ![w:40 h:40](./../assets/gitlab-logo.svg)
 ---
-![bg right 100%](./../assets/image7.jpeg)
 
 # Demo of GitLab
 
