@@ -16,6 +16,8 @@ build-container:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - gcloud builds submit . --config=cloudbuild-build-container.yaml
+  dependencies:
+    - generate-deck
 
 deploy-prod:
   stage: deploy
