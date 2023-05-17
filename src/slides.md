@@ -49,3 +49,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 # GitLab &#x1F9E1; GCP
 
 <img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
+
+---
+
+Reminder: PaaS is Presentation as a Service from now on!
