@@ -40,9 +40,9 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-# GCP and GitLab integration
+<h1 style="font-size:2.5em">GitLab 🧡 GCP</h1>
 
-<img src="./../assets/gcp-mapping.svg" style="width:100%; height: 100%">
+<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
 
 ---
 
