@@ -1,38 +1,9 @@
 ---
 marp: true
-theme: gaia
-style: |
-  section {
-    background-color: white;
-    font: 20px Arial, Helvetica, sans-serif;
-    color: black;
-  }
-  section h1 {
-    position: absolute;
-      letft: 20px;
-      top: 30px; 
-    text-align: left;
-    font: 40px Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: orange;
-  }
-  section h2 {
-    text-align: left;
-    font: 25px Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: block;
-    margin: 30px 5px 0px 0px;
-  }
-  section footer {
-    text-align: center;
-  }
-  img[alt~="center"] {
-      display: block;
-      margin: 0 auto;
-  }
-paginate: falses
+theme: gitlab-theme
+paginate: false
 ---
-![bg right 100%](assets/image7.jpeg)
+![bg right 100%](./../assets/image7.jpeg)
 
 # Demo of GitLab
 
@@ -47,7 +18,7 @@ paginate: falses
 cleygraf@gitlab.com | +49 151 22683645 | [LinkeIn](https://www.linkedin.com/in/cleygraf/)
 
 ---
-![bg right 100%](assets/image5.png)
+![bg right 100%](./../assets/image5.png)
 
 <!-- _footer: 'All as of 2022-07-09 and based on https://about.gitlab.com/company/' -->
 
@@ -75,7 +46,7 @@ cleygraf@gitlab.com | +49 151 22683645 | [LinkeIn](https://www.linkedin.com/in/c
 
 # CI/CD: From an Issue to a Merge Request
 
-![center](assets/image2.png)
+![center](./../assets/image2.png)
 
 ---
 

@@ -1,0 +1,36 @@
+/* @theme gitlab-theme */
+
+@import 'gaia';
+
+section {
+    background-color: white;
+    font: 20px Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+section h1 {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    text-align: left;
+    font: 40px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+}
+
+section h2 {
+    text-align: left;
+    font: 25px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: block;
+    margin: 30px 5px 0px 0px;
+}
+
+section footer {
+    text-align: center;
+}
+
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
