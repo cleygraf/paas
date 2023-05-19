@@ -15,7 +15,10 @@ build-container:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
-    - gcloud builds submit . --config=cloudbuild-build-container.yaml
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml /tmp/source.tgz
+#    - gcloud builds submit . --config=cloudbuild-build-container.yaml
+  dependencies:
+    - generate-deck
 
 deploy-prod:
   stage: deploy
@@ -26,19 +29,20 @@ deploy-prod:
     - echo $GCP_SERVICE_KEY > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
-    - gcloud builds submit . --config=cloudbuild-deploy-prod.yaml
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml /tmp/source.tgz
+#    - gcloud builds submit . --config=cloudbuild-deploy-prod.yaml
   when: manual
 
 
 markdownlint:
   stage: linting-slides
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
-  only:
-    changes:
-      - "**/*.md"
-      - "**/*.markdown"
+#  only:
+#    changes:
+#      - "**/*.md"
+#      - "**/*.markdown"
   script:
-    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041 --warnings .
+    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022 --warnings .
 
 generate-deck:
   stage: build-slides
@@ -48,8 +52,8 @@ generate-deck:
   script :
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
-    - /home/marp/.cli/docker-entrypoint -I . -o build/
-    - /home/marp/.cli/docker-entrypoint -I . --pdf -o build/
+    - /home/marp/.cli/docker-entrypoint -I src --html -o build
+    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
   artifacts:
     paths:
       - "build/"

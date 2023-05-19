@@ -1,0 +1,7 @@
+{
+    "markdown.marp.themes": [
+        "./src/gitlab-theme.css"
+    ],
+    "editor.formatOnSave": true,
+    "markdown.marp.enableHtml": true
+}
