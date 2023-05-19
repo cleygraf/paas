@@ -72,12 +72,16 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-![bg right w:600](./../assets/logo-with-name.svg)
+![bg right w:700](./../assets/logo-with-name.svg)
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h2>Thank you!</h2>
+    <h2>
+        Thank you!
+    </h2>
     <br>
-    <h4>Friendly reminder: from now on, <ins>PaaS means Presentation as a Service</ins>!</h4>
+    <h4>
+        Friendly reminder: from now on, <b>PaaS means Presentation as a Service.</b>
+    </h4>
 </div>
 
 <!-- footer: "https://about.gitlab.com/" -->
