@@ -5,7 +5,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
-    <h1 style="font-size:5em; margin-bottom:0.5em; margin-top:1em">
+    <h1 style="margin-bottom:0.5em; margin-top:1em">
         GitLab on GCP
     </h1>
     <div style="display:flex; flex-direction:row;">
@@ -17,9 +17,9 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 <h2>
                     Christoph Leygraf
                 </h2>
-                <h3>
+                <h6>
                     Channel Solutions Architect
-                </h3>
+                </h6>
             </div>
         </div>
         <div style="display:flex; flex-direction:row; margin-left: 2em">
@@ -30,9 +30,9 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 <h2>
                     Péter Bozsó
                 </h2>
-                <h3>
+                <h6>
                     Channel Solutions Architect
-                </h3>
+                </h6>
             </div>
         </div>
     </div>
@@ -40,17 +40,17 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-# Software Factory Approach
+## Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
 
-## - Ideas go in, applications come out
-## - Shift security left: checks at each stage
-## - Full visibility from planning to production
+- Ideas go in, applications come out
+- Shift security left: checks at each stage
+- Full visibility from planning to production
 
 ---
 
-# GitLab &#x1F9E1; GCP
+## GitLab &#x1F9E1; GCP
 
 <img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
 
