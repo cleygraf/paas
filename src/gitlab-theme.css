@@ -45,6 +45,11 @@ blockquote {
     font-style: italic;
 }
 
+blockquote::before,
+blockquote::after {
+    color: var(--gitlab-purple);
+}
+
 /* Remove underline from class names in code blocks: */
 .hljs-title.class_ {
     text-decoration: none;
