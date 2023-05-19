@@ -13,7 +13,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
             <div>
                 <img class="avatar" src="./../assets/avatar-chris.jpeg">
             </div>
-            <div style="display:flex; flex-direction:column; justify-content:center; margin-left: 1em">
+            <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
                 <h2>
                     Christoph Leygraf
                 </h2>
@@ -22,11 +22,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 </h6>
             </div>
         </div>
-        <div style="display:flex; flex-direction:row; margin-left: 2em">
+        <div style="display:flex; flex-direction:row; margin-left:2em">
             <div>
                 <img class="avatar" src="./../assets/avatar-peter.jpeg">
             </div>
-            <div style="display:flex; flex-direction:column; justify-content:center; margin-left: 1em">
+            <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
                 <h2>
                     Péter Bozsó
                 </h2>
