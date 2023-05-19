@@ -13,6 +13,7 @@ build-container:
     - docker:dind
   script:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - ls -al
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - gcloud builds submit . --config=cloudbuild-build-container.yaml
