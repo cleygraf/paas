@@ -30,8 +30,8 @@ review:
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH" /tmp/source.tgz
   environment:
-    name: review/$GCP_PROJECT_ID__TEST--paas-app--$BRANCH_NAME
-    url: http://$APP_NAME-$BRANCH_NAME-$BASE_DOMAIN_REVIEW
+    name: review/$GCP_PROJECT_ID__TEST--paas-app--$CI_COMMIT_BRANCH
+    url: https://$APP_NAME-$CI_COMMIT_BRANCH-$BASE_DOMAIN_REVIEW
     # https://paas-app--10-create-running-demo-aw26i256sa-ez.a.run.app    
 #    on_stop: stop_review
   only:
