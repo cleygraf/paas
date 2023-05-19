@@ -4,6 +4,7 @@ stages:
   - linting-slides
   - build-slides
   - build-container
+  - review
   - deploy
 
 build-container:
@@ -19,6 +20,24 @@ build-container:
 #    - gcloud builds submit . --config=cloudbuild-build-container.yaml
   dependencies:
     - generate-deck
+
+review:
+  stage: review
+  script:
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - gcloud auth activate-service-account --key-file gcloud-service-key.json
+    - gcloud config set project $GCP_PROJECT_ID__TEST
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH" /tmp/source.tgz
+  environment:
+    name: review/$GCP_PROJECT_ID__TEST--paas-app--$BRANCH_NAME
+    url: http://$APP_NAME-$BRANCH_NAME-$BASE_DOMAIN_REVIEW
+    # https://paas-app--10-create-running-demo-aw26i256sa-ez.a.run.app    
+#    on_stop: stop_review
+  only:
+    - branches
+  except:
+    - master
+
 
 deploy-prod:
   stage: deploy
