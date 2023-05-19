@@ -56,7 +56,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-## Software Factory Approach
+## GitLab's Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
 
