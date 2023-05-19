@@ -28,7 +28,7 @@ review:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH" --substitutions=TRIGGER_NAME="review" /tmp/source.tgz
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH",TRIGGER_NAME="review" /tmp/source.tgz
   environment:
     name: review/$GCP_PROJECT_ID__TEST--paas-app--$CI_COMMIT_BRANCH
     url: https://$APP_NAME--$CI_COMMIT_BRANCH-$BASE_DOMAIN_REVIEW
@@ -45,7 +45,7 @@ stop_review:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH" --substitutions=TRIGGER_NAME="stop_review" /tmp/source.tgz
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_BRANCH",TRIGGER_NAME="stop_review" /tmp/source.tgz
   variables:
     GIT_STRATEGY: none
   when: manual
