@@ -80,4 +80,4 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
     <h4>Friendly reminder: from now on, <ins>PaaS means Presentation as a Service</ins>!</h4>
 </div>
 
-<!-- footer: "" -->
+<!-- footer: "https://about.gitlab.com/" -->
