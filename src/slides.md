@@ -72,7 +72,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-![bg right w:700](./../assets/logo-with-name.svg)
+![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
     <h2>
