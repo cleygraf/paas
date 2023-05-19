@@ -51,7 +51,7 @@ According to us:
 ```ts
 import { PaaS } from 'gitlab-gcp-presentation-sdk';
 
-console.log(PaaS); // Output: 'Presentation as a Service'
+console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 ```
 
 ---
