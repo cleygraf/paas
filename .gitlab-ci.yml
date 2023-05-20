@@ -13,7 +13,7 @@ build-container:
   services:
     - docker:dind
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-review" /tmp/source.tgz
@@ -24,16 +24,15 @@ review:
   stage: review
   image: google/cloud-sdk
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review" /tmp/source.tgz
   environment:
     name: review/$CI_COMMIT_REF_NAME
-#    name: review/$GCP_PROJECT_ID__TEST--paas-app--$CI_COMMIT_REF_NAME
     url: https://$APP_NAME--$CI_COMMIT_REF_NAME-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
-#    auto_stop_in: 1 hours
+    auto_stop_in: 1 weeks
   only:
     - branches
   except:
@@ -43,7 +42,7 @@ stop_review:
   stage: review
   image: google/cloud-sdk
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="stop_review" /tmp/source.tgz
@@ -58,20 +57,19 @@ deploy-prod:
   services:
     - docker:dind
   script:
-    - echo $GCP_SERVICE_KEY > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml /tmp/source.tgz
-#    - gcloud builds submit . --config=cloudbuild-deploy-prod.yaml
   when: manual
 
 markdownlint:
   stage: linting-slides
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
-#  only:
-#    changes:
-#      - "**/*.md"
-#      - "**/*.markdown"
+  only:
+    changes:
+    - "**/*.md"
+    - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022 --warnings .
 
