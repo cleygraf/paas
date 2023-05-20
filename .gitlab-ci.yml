@@ -47,8 +47,6 @@ stop_review:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="stop_review" /tmp/source.tgz
-  variables:
-    GIT_STRATEGY: none
   when: manual
   environment:
     name: review/$CI_COMMIT_REF_NAME
