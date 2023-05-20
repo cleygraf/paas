@@ -9,7 +9,7 @@ stages:
 
 build-container:
   stage: build-container
-  image: google/cloud-sdk
+  image: google/cloud-sdk:latest
   services:
     - docker:dind
   script:
