@@ -29,7 +29,7 @@ review:
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review" /tmp/source.tgz
   environment:
-    name: review/$CI_COMMIT_REF_NAME
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHA
     url: https://$APP_NAME--$CI_COMMIT_REF_NAME-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
     auto_stop_in: 1 weeks
@@ -48,7 +48,7 @@ stop_review:
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="stop_review" /tmp/source.tgz
   when: manual
   environment:
-    name: review/$CI_COMMIT_REF_NAME
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHA
     action: stop
 
 deploy-prod:
@@ -68,8 +68,8 @@ markdownlint:
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   only:
     changes:
-    - "**/*.md"
-    - "**/*.markdown"
+      - "**/*.md"
+      - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022 --warnings .
 
@@ -78,7 +78,7 @@ generate-deck:
   image:
     name: marpteam/marp-cli
     entrypoint: [""]
-  script :
+  script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
@@ -88,7 +88,6 @@ generate-deck:
       - "build/"
   dependencies:
     - markdownlint
-
 # pages:
 #   stage: deploy
 #   script:
