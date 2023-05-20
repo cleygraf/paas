@@ -10,11 +10,6 @@ stages:
 build-container:
   stage: build-container
   image: google/cloud-sdk
-  only:
-    changes:
-      - "**/*.md"
-      - "**/*.markdown"
-      - "assets/*"
   services:
     - docker:dind
   script:
