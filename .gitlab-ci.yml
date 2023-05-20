@@ -40,6 +40,7 @@ review:
 
 stop_review:
   stage: review
+  image: google/cloud-sdk
   script:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
