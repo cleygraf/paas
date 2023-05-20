@@ -32,8 +32,7 @@ review:
   environment:
     name: review/$GCP_PROJECT_ID__TEST--paas-app--$CI_COMMIT_BRANCH
     url: https://$APP_NAME--$CI_COMMIT_BRANCH-$BASE_DOMAIN_REVIEW
-    # https://paas-app--10-create-running-demo-aw26i256sa-ez.a.run.app    
-#    on_stop: stop_review
+    on_stop: stop_review
   only:
     - branches
   except:
