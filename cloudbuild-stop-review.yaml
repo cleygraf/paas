@@ -3,6 +3,6 @@ steps:
     args: ['echo', '$TRIGGER_NAME']
     # remove from Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ['run', 'delete', 'paas-app--$BRANCH_NAME']
+    args: ['delete', 'paas-app--$BRANCH_NAME']
 options:
   logging: CLOUD_LOGGING_ONLY
