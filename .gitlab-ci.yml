@@ -10,6 +10,11 @@ stages:
 build-container:
   stage: build-container
   image: google/cloud-sdk
+  only:
+    changes:
+      - "**/*.md"
+      - "**/*.markdown"
+      - "assets/*"
   services:
     - docker:dind
   script:
@@ -78,6 +83,11 @@ generate-deck:
   image:
     name: marpteam/marp-cli
     entrypoint: [""]
+  only:
+    changes:
+      - "**/*.md"
+      - "**/*.markdown"
+      - "assets/*"
   script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
