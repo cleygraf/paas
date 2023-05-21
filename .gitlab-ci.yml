@@ -1,8 +1,9 @@
 image: docker:latest
 
 stages:
-  - test
+  - prechecks
   - build
+  - test
   - review
   - deploy
 
@@ -14,7 +15,7 @@ container_scanning:
   variables:
     CS_REGISTRY_USER: _json_key
     CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
-    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:40880be8"
+    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
 
 variables:
   SECURE_LOG_LEVEL: "debug"
@@ -80,7 +81,7 @@ deploy-prod:
     - job: create-qr
 
 markdownlint:
-  stage: test
+  stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022,~MD047 --warnings .
