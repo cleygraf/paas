@@ -19,6 +19,7 @@ build-container:
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-review" /tmp/source.tgz
   dependencies:
     - generate-deck
+    - create-qr
 
 review:
   stage: review
@@ -64,6 +65,7 @@ deploy-prod:
   when: manual
   dependencies:
     - generate-deck
+    - create-qr
 
 markdownlint:
   stage: linting-slides
