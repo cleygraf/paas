@@ -72,10 +72,10 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-## Paas - Live
+## Paas - Prod
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <img src="./../assets/url.png" style="width:35%; margin-top:1em">
+    <img src="./../assets/url-prod.png" style="width:35%; margin-top:1em">
 </div>
 
 ---
