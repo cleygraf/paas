@@ -30,7 +30,7 @@ review:
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review",SHORT_SHA="$CI_COMMIT_SHORT_SHA" /tmp/source.tgz
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
-    url: https://$APP_NAME--$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
+    url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
     auto_stop_in: 1 weeks
   only:
