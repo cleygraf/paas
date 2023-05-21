@@ -16,6 +16,9 @@ container_scanning:
     CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
     CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:latest"
 
+variables:
+  SECURE_LOG_LEVEL: "debug"
+
 build-container:
   stage: build
   image: google/cloud-sdk
