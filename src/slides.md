@@ -72,6 +72,12 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
+## GitLab Review app
+
+![bg](./../assets/url-review.png)
+
+---
+
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
