@@ -96,7 +96,9 @@ create-qr:
     entrypoint: [""]
   script:
     - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
-    - qrencode -t ANSI -o - "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-review.png" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
+    - qrencode -t ANSI -o "./assets/url-review.txt" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
   artifacts:
     paths:
       - "assets/"
