@@ -2,7 +2,7 @@ steps:
   # Debug output
   - name: "bash"
     args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
-    # remove from Cloud Run
+  # remove from Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [

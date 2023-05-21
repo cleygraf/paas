@@ -1,11 +1,14 @@
 steps:
+  # Debug output
+  - name: "bash"
+    args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
   # build the container image
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/$PROJECT_ID/paas-app", "."]
-    # push the container image
+  # push the container image
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/paas-app"]
-    # deploy to Cloud Run
+  # deploy to Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [

@@ -2,7 +2,7 @@ steps:
   # Debug output
   - name: "bash"
     args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
-    # deploy to Cloud Run
+  # deploy to Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
