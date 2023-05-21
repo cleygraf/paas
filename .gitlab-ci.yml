@@ -19,6 +19,9 @@ build-container:
   dependencies:
     - generate-deck
     - create-qr
+  needs:
+    - job: generate-deck
+    - job: create-qr
 
 review:
   stage: review
