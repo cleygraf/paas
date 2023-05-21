@@ -77,9 +77,9 @@ deploy-prod:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   when: manual
-  needs:
-    - job: generate-deck
-    - job: create-qr
+  # needs:
+  #   - job: generate-deck
+  #   - job: create-qr
 
 markdownlint:
   stage: prechecks
