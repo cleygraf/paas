@@ -65,8 +65,10 @@ deploy-prod:
     - echo $GCP_SERVICE_KEY > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml /tmp/source.tgz
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="deploy_prod",SHORT_SHA="$CI_COMMIT_SHORT_SHA" /tmp/source.tgz
   when: manual
+  dependencies:
+    - generate-deck
 
 markdownlint:
   stage: linting-slides
