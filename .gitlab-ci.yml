@@ -10,11 +10,6 @@ stages:
 build-container:
   stage: build-container
   image: google/cloud-sdk
-  only:
-    changes:
-      - "**/*.md"
-      - "**/*.markdown"
-      - "assets/*"
   services:
     - docker:dind
   script:
@@ -73,10 +68,6 @@ deploy-prod:
 markdownlint:
   stage: linting-slides
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
-  only:
-    changes:
-      - "**/*.md"
-      - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022,~MD047 --warnings .
 
@@ -85,11 +76,6 @@ generate-deck:
   image:
     name: marpteam/marp-cli
     entrypoint: [""]
-  only:
-    changes:
-      - "**/*.md"
-      - "**/*.markdown"
-      - "assets/*"
   script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
@@ -107,7 +93,7 @@ create-qr:
     name: leplusorg/qrcode
     entrypoint: [""]
   script:
-    - qrencode -h
+    - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
   artifacts:
     paths:
       - "assets/"
