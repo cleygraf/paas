@@ -12,7 +12,6 @@ steps:
       ]
     # push the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME"]
-    # deploy to Cloud Run
+    args: ["push", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME--$SHORT_SHA"]
 options:
   logging: CLOUD_LOGGING_ONLY
