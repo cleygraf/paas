@@ -82,7 +82,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## GitLab Review app
 
-![35% center](./../assets/url-review.png)
+![bg 35%](./../assets/url-review.png)
 
 ---
 
