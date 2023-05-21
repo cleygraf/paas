@@ -3,7 +3,13 @@ steps:
     args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
     # build the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME", "."]
+    args:
+      [
+        "build",
+        "-t",
+        "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
+        ".",
+      ]
     # push the container image
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME"]
