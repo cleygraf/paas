@@ -47,8 +47,10 @@ review:
     url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
     auto_stop_in: 1 days
-  rules:
-    - if: $CI_PIPELINE_SOURCE != 'merge_request_event'
+  only:
+    - branches
+  except:
+    - master
 
 stop_review:
   stage: review
@@ -73,13 +75,10 @@ deploy-prod:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "master"
-      #    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-      when: manual
-  # needs:
-  #   - job: generate-deck
-  #   - job: create-qr
+  when: manual
+  needs:
+    - job: generate-deck
+    - job: create-qr
 
 markdownlint:
   stage: prechecks
