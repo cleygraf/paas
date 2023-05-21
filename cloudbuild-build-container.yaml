@@ -3,10 +3,10 @@ steps:
     args: ["echo", "$TRIGGER_NAME"]
     # build the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/paas-app--$BRANCH_NAME", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME", "."]
     # push the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/paas-app--$BRANCH_NAME"]
+    args: ["push", "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME"]
     # deploy to Cloud Run
 options:
   logging: CLOUD_LOGGING_ONLY
