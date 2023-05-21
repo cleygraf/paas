@@ -74,15 +74,14 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## Paas - Prod
 
-<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <img src="./../assets/url-prod.png" style="width:35%; margin-top:1em">
-</div>
+![bg 30%](./../assets/url-prod.png")
+https://www.gitlab.com
 
 ---
 
 ## GitLab Review app
 
-![bg 35%](./../assets/url-review.png)
+![bg 30%](./../assets/url-review.png)
 
 ---
 
