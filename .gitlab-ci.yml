@@ -100,3 +100,16 @@ generate-deck:
       - "build/"
   dependencies:
     - markdownlint
+
+create-qr:
+  stage: build-slides
+  image:
+    name: leplusorg/qrcode
+    entrypoint: [""]
+  script:
+    - qrencode -h
+  artifacts:
+    paths:
+      - "assets/"
+  dependencies:
+    - markdownlint
