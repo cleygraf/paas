@@ -6,6 +6,9 @@ stages:
   - review
   - deploy
 
+include:
+  - template: Jobs/SAST-IaC.gitlab-ci.yml
+
 build-container:
   stage: build
   image: google/cloud-sdk
