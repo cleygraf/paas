@@ -1,6 +1,7 @@
 steps:
+  # Debug output
   - name: "bash"
-    args: ["echo", "$TRIGGER_NAME"]
+    args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
     # remove from Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
     args:
@@ -8,7 +9,7 @@ steps:
         "run",
         "services",
         "delete",
-        "paas-app--$BRANCH_NAME--$SHORT_SHA",
+        "$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
         "--region",
         "europe-west4",
         "--quiet",

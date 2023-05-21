@@ -10,7 +10,7 @@ steps:
         "deploy",
         "$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
         "--image",
-        "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME",
+        "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
         "--region",
         "europe-west4",
         "--platform",
