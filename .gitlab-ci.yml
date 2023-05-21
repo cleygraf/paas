@@ -74,7 +74,8 @@ deploy-prod:
     - gcloud config set project $GCP_PROJECT_ID
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "master"
+      #    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
       when: manual
   # needs:
   #   - job: generate-deck
