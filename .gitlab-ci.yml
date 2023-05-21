@@ -1,24 +1,69 @@
 image: docker:latest
 
 stages:
-  - linting-slides
-  - build-slides
-  - build-container
+  - prechecks
+  - build
+  - test
+  - review
   - deploy
 
+include:
+  - template: Jobs/SAST-IaC.gitlab-ci.yml
+  - template: Security/Container-Scanning.gitlab-ci.yml
+
+container_scanning:
+  variables:
+    CS_REGISTRY_USER: _json_key
+    CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
+    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
+
+variables:
+  SECURE_LOG_LEVEL: "debug"
+
 build-container:
-  stage: build-container
+  stage: build
   image: google/cloud-sdk
   services:
     - docker:dind
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml /tmp/source.tgz
-#    - gcloud builds submit . --config=cloudbuild-build-container.yaml
-  dependencies:
-    - generate-deck
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+  needs:
+    - job: generate-deck
+    - job: create-qr
+
+review:
+  stage: review
+  image: google/cloud-sdk
+  script:
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
+    - gcloud auth activate-service-account --key-file gcloud-service-key.json
+    - gcloud config set project $GCP_PROJECT_ID__TEST
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+  environment:
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
+    on_stop: stop_review
+    auto_stop_in: 1 days
+  only:
+    - branches
+  except:
+    - master
+
+stop_review:
+  stage: review
+  image: google/cloud-sdk
+  script:
+    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
+    - gcloud auth activate-service-account --key-file gcloud-service-key.json
+    - gcloud config set project $GCP_PROJECT_ID__TEST
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+  when: manual
+  environment:
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    action: stop
 
 deploy-prod:
   stage: deploy
@@ -26,30 +71,27 @@ deploy-prod:
   services:
     - docker:dind
   script:
-    - echo $GCP_SERVICE_KEY > gcloud-service-key.json # Google Cloud service accounts
+    - echo $GCP_SERVICE_KEY > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml /tmp/source.tgz
-#    - gcloud builds submit . --config=cloudbuild-deploy-prod.yaml
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
   when: manual
-
+  needs:
+    - job: generate-deck
+    - job: create-qr
 
 markdownlint:
-  stage: linting-slides
+  stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
-#  only:
-#    changes:
-#      - "**/*.md"
-#      - "**/*.markdown"
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026 --warnings .
 
 generate-deck:
-  stage: build-slides
+  stage: build
   image:
     name: marpteam/marp-cli
     entrypoint: [""]
-  script :
+  script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
@@ -57,17 +99,17 @@ generate-deck:
   artifacts:
     paths:
       - "build/"
-  dependencies:
-    - markdownlint
 
-# pages:
-#   stage: deploy
-#   script:
-#     # Just move the pages to the public dir
-#     - mv build public
-#     - cp -r assets public/
-#   artifacts:
-#     paths:
-#       - public
-#   dependencies:
-#     - generate-deck
+create-qr:
+  stage: build
+  image:
+    name: leplusorg/qrcode
+    entrypoint: [""]
+  script:
+    - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-review.png" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
+    - qrencode -t ANSI -o "./assets/url-review.txt" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
+  artifacts:
+    paths:
+      - "assets/"
