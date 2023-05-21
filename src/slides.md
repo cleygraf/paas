@@ -75,7 +75,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 ## Paas - Prod
 
 ![bg 30%](./../assets/url-prod.png")
-https://www.gitlab.com
+[https://www.gitlab.com](https://www.gitlab.com)
 
 ---
 
