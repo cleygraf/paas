@@ -15,10 +15,7 @@ build-container:
     - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && tar -tzf /tmp/source.tgz && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-review",REF_NAME="$APP_NAME" /tmp/source.tgz
-  dependencies:
-    - generate-deck
-    - create-qr
+    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-review",REF_NAME="$APP_NAME" /tmp/source.tgz
   needs:
     - job: generate-deck
     - job: create-qr
