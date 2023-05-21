@@ -8,6 +8,13 @@ stages:
 
 include:
   - template: Jobs/SAST-IaC.gitlab-ci.yml
+  - template: Security/Container-Scanning.gitlab-ci.yml
+
+container_scanning:
+  variables:
+    CS_REGISTRY_USER: _json_key
+    CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
+    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:latest"
 
 build-container:
   stage: build
