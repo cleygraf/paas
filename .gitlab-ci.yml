@@ -49,7 +49,7 @@ review:
     auto_stop_in: 1 days
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-  when: manual
+  when: never
 
 stop_review:
   stage: review
