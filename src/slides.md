@@ -74,7 +74,9 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## GitLab Review app
 
-<img src="./../assets/url-review.png" style="width:50%; margin-top:1em">
+<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
+    <img src="./../assets/url-review.png" style="width:35%; margin-top:1em">
+</div>
 
 ---
 
