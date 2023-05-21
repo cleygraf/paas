@@ -1,14 +1,13 @@
 image: docker:latest
 
 stages:
-  - linting-slides
-  - build-slides
-  - build-container
+  - test
+  - build
   - review
   - deploy
 
 build-container:
-  stage: build-container
+  stage: build
   image: google/cloud-sdk
   services:
     - docker:dind
@@ -68,13 +67,13 @@ deploy-prod:
     - create-qr
 
 markdownlint:
-  stage: linting-slides
+  stage: test
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   script:
     - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD022,~MD047 --warnings .
 
 generate-deck:
-  stage: build-slides
+  stage: build
   image:
     name: marpteam/marp-cli
     entrypoint: [""]
@@ -90,7 +89,7 @@ generate-deck:
     - markdownlint
 
 create-qr:
-  stage: build-slides
+  stage: build
   image:
     name: leplusorg/qrcode
     entrypoint: [""]
