@@ -47,7 +47,7 @@ review:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
-    auto_stop_in: 1 days
+    auto_stop_in: 1 hours
   only:
     - branches
   except:
