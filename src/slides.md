@@ -92,7 +92,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
         <h2><span style="color:#fc6d26;font-size:130%"><b>P</b></span>resentation</h2>
         <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span>s</h2>
         <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span></h2>
-        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></span>ervice</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></div>ervice</h2>
     </div>
 </div>
 
@@ -100,15 +100,15 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## GitLab &#x1F9E1; Google Cloud
 
-<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
+`<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">`
 
 ---
 
 ## Production PaaS App
 
-![bg 30%](./../assets/url-prod.png")
+![bg 30%](./../assets/url-review.png)
 
-<!-- footer: $$URL-PROD$$ --->
+<!-- footer: ##URL-PROD## --->
 
 ---
 
@@ -116,7 +116,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ![bg 30%](./../assets/url-review.png)
 
-<!-- footer: $$URL-REVIEW$$ --->
+<!-- footer: ##URL-REVIEW## --->
 
 ---
 
@@ -128,7 +128,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
     </h2>
     <br>
     <h4>
-        Friendly reminder: from now on, <b>PaaS means Presentation as a Service.</b>
+        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
     </h4>
 </div>
 
