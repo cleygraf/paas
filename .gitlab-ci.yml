@@ -96,7 +96,7 @@ generate-deck:
     - export MARP_USER="$(id -u):$(id -g)"
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
     - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
-    - sed -i 's/\$\$URL-PROD\$\$/https://$APP_NAME-$BASE_DOMAIN_PROD' build/*.html
+    - sed -i 's/\$\$URL-PROD\$\$/https:\/\/$APP_NAME-$BASE_DOMAIN_PROD' build/*.html
   artifacts:
     paths:
       - "build/"
