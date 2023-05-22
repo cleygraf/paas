@@ -72,7 +72,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-## Paas - Prod
+## Production PaaS App
 
 ![bg 30%](./../assets/url-prod.png")
 
@@ -80,11 +80,11 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-## GitLab Review app
+## GitLab Review App
 
 ![bg 30%](./../assets/url-review.png)
 
-<!-- footer: "https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/" -->
+<!-- footer: $$URL-REVIEW$$ --->
 
 ---
 
