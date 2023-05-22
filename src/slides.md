@@ -54,9 +54,9 @@ import { PaaS } from 'gitlab-gcp-presentation-sdk';
 console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 ```
 
----
-
 <div class="quote-container"><p>hello-world</p></div>
+
+---
 
 <div class="masthead-container">
   <div class="text-to-center"><p>hello-world</p></div>
