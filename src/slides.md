@@ -76,7 +76,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ![bg 30%](./../assets/url-prod.png")
 
-<!-- footer: [https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/](https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/) -->
+<!-- footer: $$URL-PROD$$ --->
 
 ---
 
@@ -84,7 +84,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ![bg 30%](./../assets/url-review.png)
 
-[https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/](https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/)
+<!-- footer: "https://gcp-paas-app--17-improve-slides--7d935fc9-aw26i256sa-ez.a.run.app/" -->
 
 ---
 
