@@ -92,7 +92,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
         <h2><span style="color:#fc6d26;font-size:130%"><b>P</b></span>resentation</h2>
         <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span>s</h2>
         <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span></h2>
-        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></span>ervice</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></>ervice</h2>
     </div>
 </div>
 
@@ -100,7 +100,7 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## GitLab &#x1F9E1; Google Cloud
 
-`<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">`
+<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
 
 ---
 
