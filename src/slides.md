@@ -44,22 +44,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="content-container">
     <div class="content">
-        <h2 style="font-size:70px";><b style="color:#fc6d26;font-size:130%";>G</b>itLab</h2>
-        <h2 style="font-size:70px";><b style="color:#4285F4;font-size:130%";>G</b>oogle Cloud</h2>
+        <div style="font-size:70px"><h2><span style="color:#fc6d26;font-size:130%"><b>G</b></span>itLab</h2></div>
+        <div style="font-size:70px"><h2><span style="color:#4285F4;font-size:130%"><b>G</b></span>oogle Cloud</h2></div>
     </div>
 </div>
 
 ___
-
-## GitLab's Software Factory Approach
-
-![bg](./../assets/software-factory.svg)
-
-- Ideas go in, applications come out
-- Shift security left: checks at each stage
-- Full visibility from planning to production
-
----
 
 ## What is a PaaS?
 
@@ -99,10 +89,10 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 <div class="content-container">
     <div class="content">
-        <h2><b style="color:#fc6d26;font-size:130%";>P</b>resentation</h2>
-        <h2><b style="color:#fc6d26;font-size:130%";>A</b>s</h2>
-        <h2><b style="color:#fc6d26;font-size:130%";>A</b></h2>
-        <h2><b style="color:#fc6d26;font-size:130%";>S</b>ervice</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>P</b></span>resentation</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span>s</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>A</b></span></h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></span>ervice</h2>
     </div>
 </div>
 
