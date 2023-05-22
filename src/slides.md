@@ -106,17 +106,9 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ## Production PaaS App
 
-![bg 30%](./../assets/url-review.png)
+![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL-PROD## --->
-
----
-
-## GitLab Review App
-
-![bg 30%](./../assets/url-review.png)
-
-<!-- footer: ##URL-REVIEW## --->
 
 ---
 
