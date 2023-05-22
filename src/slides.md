@@ -98,17 +98,17 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-## GitLab &#x1F9E1; Google Cloud
-
-<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
-
----
-
 ## Production PaaS App
 
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL-PROD## --->
+
+---
+
+## GitLab &#x1F9E1; Google Cloud
+
+<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
 
 ---
 
