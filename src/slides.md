@@ -56,10 +56,6 @@ console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 
 ---
 
-<div style="vertical-align: middle;">
-## WRONG!!!
-</div>
-
 <div class=".quote-container"><p>hello-world</p></div>
 
 ___
