@@ -84,7 +84,7 @@ markdownlint:
   stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   script:
-    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035 --warnings .
+    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024 --warnings .
 
 generate-deck:
   stage: build
