@@ -111,6 +111,9 @@ deploy-prod:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+  environment:
+    name: production
+    url: https://$APP_NAME-$BASE_DOMAIN_PROD
   when: manual
   needs:
     - job: generate-deck
