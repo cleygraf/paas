@@ -40,6 +40,27 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+## Communaltities
+
+<div class="content-container">
+    <div class="content">
+        <h2 style="font-size:70px";><b style="color:#fc6d26;font-size:130%";>G</b>itLab</h2>
+        <h2 style="font-size:70px";><b style="color:#4285F4;font-size:130%";>G</b>oogle Cloud</h2>
+    </div>
+</div>
+
+___
+
+## GitLab's Software Factory Approach
+
+![bg](./../assets/software-factory.svg)
+
+- Ideas go in, applications come out
+- Shift security left: checks at each stage
+- Full visibility from planning to production
+
+---
+
 ## What is a PaaS?
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
@@ -54,37 +75,40 @@ import { PaaS } from 'gitlab-gcp-presentation-sdk';
 console.log(PaaS.expand()); // Output: 'Presentation as a Service'
 ```
 
-<div class="quote-container"><p>hello-world</p></div>
+---
+
+## What is a PaaS?
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
+
+> Platform as a service (...) is a category of cloud computing services that allows customers to provision, instantiate, run, and manage a modular bundle comprising a computing platform and one or more applications, without the complexity of building and maintaining the infrastructure typically associated with developing and launching the application(s), and to allow developers to create, develop, and package such software bundles.
+
+According to us:
+
+```ts
+import { PaaS } from 'gitlab-gcp-presentation-sdk';
+
+console.log(PaaS.expand()); // Output: 'Presentation as a Service'
+```
+
+<div class="red-stamp"><p>WRONG!!!</p></div> 
 
 ---
 
-<div class="masthead-container">
-  <div class="text-to-center"><p>hello-world</p></div>
+## For today it's ...
+
+<div class="content-container">
+    <div class="content">
+        <h2><b style="color:#fc6d26;font-size:130%";>P</b>resentation</h2>
+        <h2><b style="color:#fc6d26;font-size:130%";>A</b>s</h2>
+        <h2><b style="color:#fc6d26;font-size:130%";>A</b></h2>
+        <h2><b style="color:#fc6d26;font-size:130%";>S</b>ervice</h2>
+    </div>
 </div>
 
-___
-
-## Presentation
-
-## As
-
-## A
-
-## Service
-
 ---
 
-## GitLab's Software Factory Approach
-
-![bg](./../assets/software-factory.svg)
-
-- Ideas go in, applications come out
-- Shift security left: checks at each stage
-- Full visibility from planning to production
-
----
-
-## GitLab &#x1F9E1; GCP
+## GitLab &#x1F9E1; Google Cloud
 
 <img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
 
