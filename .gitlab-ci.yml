@@ -17,8 +17,42 @@ container_scanning:
     CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
     CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
 
-variables:
-  SECURE_LOG_LEVEL: "debug"
+# Stages
+markdownlint:
+  stage: prechecks
+  image: registry.gitlab.com/pipeline-components/markdownlint:latest
+  script:
+    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024,~MD034 --warnings .
+
+generate-deck:
+  stage: build
+  image:
+    name: marpteam/marp-cli
+    entrypoint: [""]
+  script:
+    - mkdir build/
+    - export MARP_USER="$(id -u):$(id -g)"
+    - /home/marp/.cli/docker-entrypoint -I src --html -o build
+    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
+    - sed -i "s,##URL-PROD##,https:\/\/$APP_NAME-$BASE_DOMAIN_PROD/,g" build/*.html
+    - sed -i "s,##URL-REVIEW##,https:\/\/$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW,g" build/*.html
+  artifacts:
+    paths:
+      - "build/"
+
+create-qr:
+  stage: build
+  image:
+    name: leplusorg/qrcode
+    entrypoint: [""]
+  script:
+    - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-review.png" "https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+    - qrencode -t ANSI -o "./assets/url-review.txt" "https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+  artifacts:
+    paths:
+      - "assets/"
 
 build-container:
   stage: build
@@ -42,11 +76,12 @@ review:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID__TEST
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+    - cat ./assets/url-review.txt
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
     on_stop: stop_review
-    auto_stop_in: 1 days
+    auto_stop_in: 1 hours
   only:
     - branches
   except:
@@ -79,37 +114,3 @@ deploy-prod:
   needs:
     - job: generate-deck
     - job: create-qr
-
-markdownlint:
-  stage: prechecks
-  image: registry.gitlab.com/pipeline-components/markdownlint:latest
-  script:
-    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026 --warnings .
-
-generate-deck:
-  stage: build
-  image:
-    name: marpteam/marp-cli
-    entrypoint: [""]
-  script:
-    - mkdir build/
-    - export MARP_USER="$(id -u):$(id -g)"
-    - /home/marp/.cli/docker-entrypoint -I src --html -o build
-    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
-  artifacts:
-    paths:
-      - "build/"
-
-create-qr:
-  stage: build
-  image:
-    name: leplusorg/qrcode
-    entrypoint: [""]
-  script:
-    - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
-    - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
-    - qrencode -s 6 -l H -o "./assets/url-review.png" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
-    - qrencode -t ANSI -o "./assets/url-review.txt" "https://$APP_NAME-$BASE_DOMAIN_REVIEW"
-  artifacts:
-    paths:
-      - "assets/"

@@ -60,3 +60,30 @@ blockquote::after {
     border: 4px solid var(--gitlab-purple);
     height: 150px;
 }
+
+.red-stamp {
+    top: 40%;
+    left:  50%;
+    color: rgb(255, 0, 0);
+    font-size: 200px;
+    font-family: "monospace";
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    display:inline-block;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+.content-container {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding-left: 10%;
+}
+
+.content {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
