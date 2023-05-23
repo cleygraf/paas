@@ -141,3 +141,9 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ![w:20 h:16](./../assets/googlecloud.png) [GitLab Case Study](https://cloud.google.com/customers/gitlab)
 
 <!-- footer: "![w:15 h:15](./../assets/gitlab-logo.svg) [These slides as PDF](slides.pdf)" -->
+
+---
+
+![bg](./../assets/16_0-cover-image.png)
+
+<!-- footer: " " ---> 
