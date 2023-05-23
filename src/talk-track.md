@@ -4,22 +4,24 @@ Let us introduce ourself first: Peter and I are both Channel Solutions Architect
 
 Why GitLab and Google Cloud?
 -> We share a bunch of commonalities: Both names start with a capital G and both share other letters of the _Alphabet_ too!
--> We both consider ourselves to offer a **platform** and I truly believe that these two platforms are complementary.
+-> We both consider ourselves to offer a **platform** and I truly believe that these two platforms are **complementary**.
 
 --------------------------------------------------------------------------
 
 - Before we get into the reasoning behind this believe, let us introduce *GitLab* - the *DevSecOps Platform* - to you first.
 
-- Here the short pitch: GitLab is a software factory with a long manufacturing line for software. And I use the word software in a very broad sense: everything that includes some kind of textual code to let computers dance for us: from program code in languages like C or Ruby to infrastructure described by code or metadata and parametrization used to develop AI models. 
+- Here the short pitch: GitLab is a software factory with a long manufacturing line. And I use the word software in a very broad sense: everything that includes some kind of textual code to let computers dance for us: from program code in languages like C or Ruby to infrastructure described by code or metadata and parametrization used to develop AI models. 
 
 - GitLab allows you to start with an idea, collaborate to improve the idea, plan your work together and start creating with your team. The creation gets's tested in an automated fashion, a review environment is deployed for verification, and you iterate on your creation until you get approval and deploy to production to show the world what you have created.
 
-- Key benefits of GitLab for your development workflow are
+- Key benefits for your development workflow are
     - More speed
     - Increased efficiency
     - Better and safer software
 
 - Sounds too easy, correct? But we are not the only ones who claim to be a platform, and everybody promises you that it is easy. 
+
+--------------------------------------------------------------------------
 
 - We know! Seeing is believing, so let me show how easy PaaS is. We all know PaaS: Platform as a Service! 
 
@@ -31,7 +33,7 @@ Wrong!
 
 During this session, PaaS stands for Presentation as a Service!!
 
-- Our idea is to build the slides from markdown files with the help of GitLab and Google Cloud. We will finally publish the slides to production using Cloud Run and you can access them right now.
+- Our idea is to build this slides from markdown files with the help of GitLab and Google Cloud. We will finally publish the slides to production using Cloud Run and you can access them right now.
 
 --------------------------------------------------------------------------
 
