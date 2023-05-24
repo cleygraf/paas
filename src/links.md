@@ -45,7 +45,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - [The DevSecOps Platform](https://about.gitlab.com/)
 - [GitLab developed on top of GitLab](https://gitlab.com/gitlab-org/gitlab)
 - [Why GitLab Ultimate?](https://about.gitlab.com/pricing/ultimate/)
-[GitOps with GitLab: What you need to know about the Flux CD integration | GitLab](https://about.gitlab.com/blog/2023/02/08/why-did-we-choose-to-integrate-fluxcd-with-gitlab/)
+  [GitOps with GitLab: What you need to know about the Flux CD integration | GitLab](https://about.gitlab.com/blog/2023/02/08/why-did-we-choose-to-integrate-fluxcd-with-gitlab/)
 
 ---
 
@@ -53,10 +53,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 - [AI-powered DevSecOps Platform](https://about.gitlab.com/solutions/ai/)
 - [GitLab Blog: AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
-    - [GitLab Blog: AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/) 
-    - [GitLab Blog: ML experiment - Explain this source code](https://about.gitlab.com/blog/2023/04/06/explain-this-code/)
-    - [GitLab Blog: ML experiment - Explain this vulnerability](https://about.gitlab.com/blog/2023/05/02/explain-this-vulnerability/)
+  - [GitLab Blog: AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
+  - [GitLab Blog: ML experiment - Explain this source code](https://about.gitlab.com/blog/2023/04/06/explain-this-code/)
+  - [GitLab Blog: ML experiment - Explain this vulnerability](https://about.gitlab.com/blog/2023/05/02/explain-this-vulnerability/)
 - [GitLab and Google Cloud Partner to Expand AI-Assisted Capabilities with Customizable Gen AI Foundation Models](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
+
 ---
 
 ## Architecture
