@@ -7,8 +7,13 @@ stages:
   - review
   - deploy
 
+# Which infra to use: "gitlab", "google"
+variables:
+  INFRA: "google"
+
 include:
   - template: Jobs/SAST-IaC.gitlab-ci.yml
+  - local: "infra/$INFRA/pipeline/$INFRA.gitlab-ci.yml"
 
 # Stages
 markdownlint:
