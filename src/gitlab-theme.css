@@ -3,28 +3,28 @@
 @import 'gaia';
 
 @font-face {
-    font-family: "Inter";
-    src: url('../assets/GitLabSans.woff2');
+  font-family: 'Inter';
+  src: url('../assets/GitLabSans.woff2');
 }
 
 :root {
-    --gitlab-purple: #a989f5;
-    --gitlab-dark: #171321;
+  --gitlab-purple: #a989f5;
+  --gitlab-dark: #171321;
 }
 
 section {
-    background: var(--gitlab-dark);
-    font-family: "Inter";
-    color: white;
-    font-size: 28px;
+  background: var(--gitlab-dark);
+  font-family: 'Inter';
+  color: white;
+  font-size: 28px;
 }
 
 footer {
-    padding: 70px
+  padding: 70px;
 }
 
 a {
-    color: var(--gitlab-purple);
+  color: var(--gitlab-purple);
 }
 
 h1,
@@ -33,57 +33,57 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 h1 {
-    font-size: 3.6em;
+  font-size: 3.6em;
 }
 
 blockquote {
-    font-size: 0.8em;
-    font-style: italic;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 blockquote::before,
 blockquote::after {
-    color: var(--gitlab-purple);
+  color: var(--gitlab-purple);
 }
 
 /* Remove underline from class names in code blocks: */
 .hljs-title.class_ {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .avatar {
-    border-radius: 50%;
-    border: 4px solid var(--gitlab-purple);
-    height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--gitlab-purple);
+  height: 150px;
 }
 
 .red-stamp {
-    top: 40%;
-    left:  50%;
-    color: rgb(255, 0, 0);
-    font-size: 200px;
-    font-family: "monospace";
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    display:inline-block;
-    transform:translateX(-50%) translateY(-50%);
+  top: 40%;
+  left: 50%;
+  color: rgb(255, 0, 0);
+  font-size: 200px;
+  font-family: 'monospace';
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .content-container {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 80%;
-    padding-left: 10%;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  padding-left: 10%;
 }
 
 .content {
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
 }

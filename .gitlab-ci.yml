@@ -10,12 +10,13 @@ stages:
 include:
   - template: Jobs/SAST-IaC.gitlab-ci.yml
   - template: Security/Container-Scanning.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
 
 container_scanning:
   variables:
     CS_REGISTRY_USER: _json_key
-    CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
-    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
+    CS_REGISTRY_PASSWORD: '$GCP_REGISTRY_KEY'
+    CS_IMAGE: 'gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA'
 
 # Stages
 markdownlint:
@@ -28,7 +29,7 @@ generate-deck:
   stage: build
   image:
     name: marpteam/marp-cli
-    entrypoint: [""]
+    entrypoint: ['']
   script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
@@ -39,13 +40,13 @@ generate-deck:
     - sed -i "s,##URL-REVIEW##,https:\/\/$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW,g" build/*.html
   artifacts:
     paths:
-      - "build/"
+      - 'build/'
 
 create-qr:
   stage: build
   image:
     name: leplusorg/qrcode
-    entrypoint: [""]
+    entrypoint: ['']
   script:
     - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
     - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
@@ -54,7 +55,7 @@ create-qr:
     - qrencode -s 6 -l H -o "./assets/project-path.png" "CI_PROJECT_PATH"
   artifacts:
     paths:
-      - "assets/"
+      - 'assets/'
 
 build-container:
   stage: build
