@@ -157,5 +157,3 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: Still the same URL: ##URL-PROD## --->
-
----
