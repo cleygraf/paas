@@ -9,13 +9,6 @@ stages:
 
 include:
   - template: Jobs/SAST-IaC.gitlab-ci.yml
-  - template: Security/Container-Scanning.gitlab-ci.yml
-
-container_scanning:
-  variables:
-    CS_REGISTRY_USER: _json_key
-    CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
-    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
 
 # Stages
 markdownlint:
@@ -55,67 +48,3 @@ create-qr:
   artifacts:
     paths:
       - "assets/"
-
-build-container:
-  stage: build
-  image: google/cloud-sdk
-  services:
-    - docker:dind
-  script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-  needs:
-    - job: generate-deck
-    - job: create-qr
-
-review:
-  stage: review
-  image: google/cloud-sdk
-  script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-    - cat ./assets/url-review.txt
-  environment:
-    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
-    url: https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW
-    on_stop: stop_review
-    auto_stop_in: 1 hours
-  only:
-    - branches
-  except:
-    - master
-
-stop_review:
-  stage: review
-  image: google/cloud-sdk
-  script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-  when: manual
-  environment:
-    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
-    action: stop
-
-deploy-prod:
-  stage: deploy
-  image: google/cloud-sdk
-  services:
-    - docker:dind
-  script:
-    - echo $GCP_SERVICE_KEY > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-  environment:
-    name: production
-    url: https://$APP_NAME-$BASE_DOMAIN_PROD
-  when: manual
-  needs:
-    - job: generate-deck
-    - job: create-qr
