@@ -18,8 +18,8 @@ include:
 #      - if: $INFRA == "google"
 
 # Always include
-include:
-  - template: Jobs/SAST-IaC.gitlab-ci.yml
+#include:
+#  - template: Jobs/SAST-IaC.gitlab-ci.yml
 
 # Stages
 markdownlint:
