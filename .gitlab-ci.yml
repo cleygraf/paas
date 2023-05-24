@@ -19,7 +19,7 @@ include:
 
 # Always include
 include:
-  - template: Jobs/SAST-IaXC.gitlab-ci.yml
+  - template: Jobs/SAST-IaC.gitlab-ci.yml
 
 # Stages
 markdownlint:
