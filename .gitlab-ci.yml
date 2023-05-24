@@ -14,8 +14,8 @@ variables:
 # Conditional includes
 include:
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
-    rules:
-      - if: $INFRA == "google"
+#    rules:
+#      - if: $INFRA == "google"
 
 # Always include
 include:
