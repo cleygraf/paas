@@ -1,3 +1,8 @@
 {
-  "recommendations": ["marp-team.marp-vscode", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "marp-team.marp-vscode",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }
