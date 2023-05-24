@@ -7,6 +7,9 @@ container_scanning:
     CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
     CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
 
+variables: URL-PROD="https://$APP_NAME-$BASE_DOMAIN_PROD"
+  URL-REVIEW="https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+
 build-container:
   stage: build
   image: google/cloud-sdk
