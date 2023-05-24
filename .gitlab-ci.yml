@@ -11,9 +11,15 @@ stages:
 variables:
   INFRA: "google"
 
+# Conditional includes
+include:
+  - local: "infra/google/pipeline/google.gitlab-ci.yml"
+    rules:
+      - if: $INFRA == "google"
+
+# Always include
 include:
   - template: Jobs/SAST-IaC.gitlab-ci.yml
-  - local: "infra/$INFRA/pipeline/$INFRA.gitlab-ci.yml"
 
 # Stages
 markdownlint:
