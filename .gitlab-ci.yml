@@ -54,7 +54,7 @@ create-qr:
     - qrencode -t ANSI -o "./assets/url-prod.txt" "$URL_PROD"
     - qrencode -s 6 -l H -o "./assets/url-review.png" "$URL_REVIEW"
     - qrencode -t ANSI -o "./assets/url-review.txt" "$URL_REVIEW"
-    - qrencode -s 6 -l H -o "./assets/project-path.png" "CI_PROJECT_PATH"
+    - qrencode -s 6 -l H -o "./assets/project-path.png" "$CI_PROJECT_PATH"
   artifacts:
     paths:
       - "assets/"
