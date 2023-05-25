@@ -1,18 +1,18 @@
 steps:
   # Debug output
-  - name: "bash"
-    args: ["echo", "$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA"]
+  - name: 'bash'
+    args: ['echo', '$REF_NAME-$TRIGGER_NAME:$BRANCH_NAME-$SHORT_SHA']
   # remove from Cloud Run
-  - name: "gcr.io/cloud-builders/gcloud"
+  - name: 'gcr.io/cloud-builders/gcloud'
     args:
       [
-        "run",
-        "services",
-        "delete",
-        "$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
-        "--region",
-        "europe-west4",
-        "--quiet",
+        'run',
+        'services',
+        'delete',
+        '$REF_NAME--$BRANCH_NAME--$SHORT_SHA',
+        '--region',
+        'europe-west4',
+        '--quiet',
       ]
 options:
   logging: CLOUD_LOGGING_ONLY

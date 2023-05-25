@@ -4,7 +4,9 @@ A project to show a high-level end-to-end demo of the GitLab platform.
 
 ## Local dev
 
-Install the [recommended VS Code workspace extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions). Use the [Marp VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to preview your changes live.
+1. Install the [recommended VS Code workspace extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions).
+1. Run `npm install`.
+1. Use the [Marp VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to preview your changes live.
 
 ### Building
 

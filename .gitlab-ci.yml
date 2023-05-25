@@ -30,7 +30,7 @@ generate-deck:
   stage: build
   image:
     name: marpteam/marp-cli
-    entrypoint: [""]
+    entrypoint: ['']
   script:
     - mkdir build/
     - export MARP_USER="$(id -u):$(id -g)"
@@ -41,13 +41,13 @@ generate-deck:
     - sed -i "s,##URL-REVIEW##,https:\/\/$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW,g" build/*.html
   artifacts:
     paths:
-      - "build/"
+      - 'build/'
 
 create-qr:
   stage: build
   image:
     name: leplusorg/qrcode
-    entrypoint: [""]
+    entrypoint: ['']
   script:
     - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
     - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
