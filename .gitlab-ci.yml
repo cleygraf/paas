@@ -7,18 +7,18 @@ stages:
   - review
   - deploy
 
-# Which infra to use: "gitlab", "google", default is "gitlab"
+# Please set the $INFRA to specify which deployment target use: "gitlab", "google",
+# The default is "gitlab"
 variables:
-  INFRA: "google"
   URL_PROD: "$CI_PAGES_URL"
   URL_REVIEW: "$CI_PAGES_URL/review/"
 
-# workflow:
-#   rules:
-#     - if: $INFRA == "google"
-#       variables:
-#         URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
-#         URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+workflow:
+  rules:
+    - if: $INFRA == "google"
+      variables:
+        URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
+        URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
 
 
 include:
