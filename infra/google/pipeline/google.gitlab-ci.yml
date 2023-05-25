@@ -54,7 +54,7 @@ stop_review:
     - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=cloudbuild-stop-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
   when: manual
   environment:
-    name: review/$URL_REVIEW
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     action: stop
 
 deploy-prod:
