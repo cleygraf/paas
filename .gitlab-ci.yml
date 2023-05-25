@@ -13,13 +13,11 @@ variables:
   URL_PROD: "$CI_PAGES_URL"
   URL_REVIEW: "$CI_PAGES_URL/review/"
 
-workflow:
-  rules:
-    - if: $INFRA == "google"
-      variables:
-        URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
-        URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
-
+rules:
+  - if: $INFRA == "google"
+    variables:
+      URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
+      URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
 
 include:
   # Always include
@@ -28,7 +26,6 @@ include:
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
     rules:
       - if: $INFRA == "google"
-
 
 # Stages
 markdownlint:
