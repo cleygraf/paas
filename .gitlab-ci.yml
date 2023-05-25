@@ -7,7 +7,7 @@ stages:
   - review
   - deploy
 
-# Which infra to use: "gitlab", "google"
+# Which infra to use: "gitlab", "google", default is "gitlab"
 variables:
   INFRA: "google"
 
@@ -37,8 +37,9 @@ generate-deck:
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
     - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
     - cp ./assets/favicon.ico ./build/
-    - sed -i "s,##URL-PROD##,https:\/\/$APP_NAME-$BASE_DOMAIN_PROD/,g" build/*.html
-    - sed -i "s,##URL-REVIEW##,https:\/\/$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW,g" build/*.html
+    - sed -i "s,##URL_PROD##,$URL_PROD,g" build/*.html
+    - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" build/*.html
+    - sed -i "s,##CI_PROJECT_PATH##,$CI_PROJECT_PATH,g" build/*.html
   artifacts:
     paths:
       - 'build/'
@@ -49,10 +50,10 @@ create-qr:
     name: leplusorg/qrcode
     entrypoint: ['']
   script:
-    - qrencode -s 6 -l H -o "./assets/url-prod.png" "https://$APP_NAME-$BASE_DOMAIN_PROD"
-    - qrencode -t ANSI -o "./assets/url-prod.txt" "https://$APP_NAME-$BASE_DOMAIN_PROD"
-    - qrencode -s 6 -l H -o "./assets/url-review.png" "https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
-    - qrencode -t ANSI -o "./assets/url-review.txt" "https://$APP_NAME--$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+    - qrencode -s 6 -l H -o "./assets/url-prod.png" "$URL_PROD"
+    - qrencode -t ANSI -o "./assets/url-prod.txt" "$URL_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-review.png" "$URL_REVIEW"
+    - qrencode -t ANSI -o "./assets/url-review.txt" "$URL_REVIEW"
     - qrencode -s 6 -l H -o "./assets/project-path.png" "CI_PROJECT_PATH"
   artifacts:
     paths:
