@@ -8,7 +8,7 @@ steps:
       [
         "run",
         "deploy",
-        "$REF_NAME--$BRANCH_NAME--$SHORT_SHA",
+        "$REF_NAME--$SHORT_SHA",
         "--image",
         "gcr.io/$PROJECT_ID/$REF_NAME--$BRANCH_NAME:$SHORT_SHA",
         "--region",
