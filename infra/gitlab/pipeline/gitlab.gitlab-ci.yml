@@ -1,0 +1,3 @@
+variables:
+  URL_PROD: "$CI_PAGES_URL"
+  URL_REVIEW: "$CI_PAGES_URL/review/"

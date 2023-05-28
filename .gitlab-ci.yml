@@ -8,15 +8,17 @@ stages:
   - deploy
 
 # Please set the $INFRA to specify which deployment target use: "gitlab", "google",
-# The default is "gitlab"
+# The default is "gitlab" (set through GitLab's ui)
 # variables:
-#   URL_PROD: "$CI_PAGES_URL"
-#   URL_REVIEW: "$CI_PAGES_URL/review/"
+#   INFRA: "google"
 
 include:
   # Always include
   - template: Jobs/SAST-IaC.gitlab-ci.yml
   # Conditional includes
+  - local: "/infra/gitlab/pipeline/google.gitlab-ci.yml"
+    rules:
+      - if: $INFRA == "gitlab"
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
     rules:
       - if: $INFRA == "google"
