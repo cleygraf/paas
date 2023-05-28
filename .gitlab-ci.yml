@@ -16,7 +16,7 @@ include:
   # Always include
   - template: Jobs/SAST-IaC.gitlab-ci.yml
   # Conditional includes
-  - local: "/infra/gitlab/pipeline/google.gitlab-ci.yml"
+  - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
     rules:
       - if: $INFRA == "gitlab"
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
