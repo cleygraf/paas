@@ -9,8 +9,8 @@ stages:
 
 # Please set the $INFRA to specify which deployment target use: "gitlab", "google",
 # The default is "gitlab" (set through GitLab's ui)
-# variables:
-#   INFRA: "google"
+variables:
+  INFRA: "google"
 
 include:
   # Always include
@@ -59,6 +59,7 @@ create-qr:
     - qrencode -s 6 -l H -o "./assets/url-review.png" "$URL_REVIEW"
     - qrencode -t ANSI -o "./assets/url-review.txt" "$URL_REVIEW"
     - qrencode -s 6 -l H -o "./assets/project-path.png" "$CI_PROJECT_PATH"
+    - qrencode -t ANSI -o "./assets/project-path.txt" "$CI_PROJECT_PATH"
   artifacts:
     paths:
       - "assets/"
