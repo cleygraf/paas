@@ -15,9 +15,9 @@ review:
     url: $URL_REVIEW
     on_stop: stop_review
     auto_stop_in: 1 hours
-  needs:
-    - job: generate-deck
-    - job: create-qr
+  dependencies:
+    - generate-deck
+    - create-qr
   only:
     - branches
   except:
