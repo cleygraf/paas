@@ -9,8 +9,8 @@ stages:
 
 # Please set the $INFRA to specify which deployment target use: "gitlab", "google",
 # The default is "gitlab" (set through GitLab's ui)
-variables:
-  INFRA: "google"
+before_script:
+  - INFRA="google"
 
 include:
   # Always include
