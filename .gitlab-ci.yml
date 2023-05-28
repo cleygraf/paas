@@ -7,11 +7,6 @@ stages:
   - review
   - deploy
 
-# Please set the $INFRA to specify which deployment target use: "gitlab", "google",
-# The default is "gitlab" (set through GitLab's ui)
-before_script:
-  - INFRA="google"
-
 include:
   # Always include
   - template: Jobs/SAST-IaC.gitlab-ci.yml
