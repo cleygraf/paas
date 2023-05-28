@@ -10,6 +10,8 @@ stages:
 include:
   # Always include
   - template: Jobs/SAST-IaC.gitlab-ci.yml
+    rules:
+      - if: $GITLAB_CI != 'false'
   # Conditional includes
   - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
     rules:
