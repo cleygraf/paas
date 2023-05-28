@@ -9,15 +9,9 @@ stages:
 
 # Please set the $INFRA to specify which deployment target use: "gitlab", "google",
 # The default is "gitlab"
-variables:
-  URL_PROD: "$CI_PAGES_URL"
-  URL_REVIEW: "$CI_PAGES_URL/review/"
-
-rules:
-  - if: $INFRA == "google"
-    variables:
-      URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
-      URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+# variables:
+#   URL_PROD: "$CI_PAGES_URL"
+#   URL_REVIEW: "$CI_PAGES_URL/review/"
 
 include:
   # Always include

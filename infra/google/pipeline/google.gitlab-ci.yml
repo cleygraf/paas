@@ -1,6 +1,10 @@
 include:
   - template: Security/Container-Scanning.gitlab-ci.yml
 
+variables:
+  URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
+  URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+
 container_scanning:
   variables:
     CS_REGISTRY_USER: _json_key
