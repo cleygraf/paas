@@ -31,6 +31,7 @@ review:
 pages:
   stage: review
   script:
+    - echo "CI_PIPELINE_SOURCE"
     - ls -al public/
   artifacts:
     paths:
