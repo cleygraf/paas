@@ -39,8 +39,8 @@ pages:
   rules:
     - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "merge_request_event"
     - when: always
-  needs:
-    - review
+  # needs:
+    # - review
 
 stop_review:
   stage: review
