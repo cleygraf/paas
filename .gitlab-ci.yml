@@ -73,4 +73,6 @@ pages:
     - if: $INFRA == "gitlab"
   dependencies:
     - review
+  needs:
+    - review
 
