@@ -28,6 +28,21 @@ review:
   except:
     - master
 
+pages:
+  stage: review
+  script:
+    - ls -al public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $INFRA == "gitlab"
+    - if: $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - when: always
+  needs:
+    - review
+
 stop_review:
   stage: review
   script:

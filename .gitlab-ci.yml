@@ -61,19 +61,5 @@ create-qr:
     paths:
       - "assets/"
 
-pages:
-  stage: review
-  script:
-    - ls -al public/
-  artifacts:
-    paths:
-      - public
-  rules:
-    - if: $INFRA == "gitlab"
-    - if: $CI_PIPELINE_SOURCE == "push"
-      when: never
-    - when: always
-  dependencies:
-    - review
 
 
