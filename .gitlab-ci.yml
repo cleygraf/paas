@@ -75,6 +75,5 @@ pages:
     - when: always
   dependencies:
     - review
-  needs:
-    - review
+
 
