@@ -2,7 +2,7 @@ variables:
   URL_PROD: "$CI_PAGES_URL"
   URL_REVIEW: "$CI_PAGES_URL/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build/slides.html"
 
-review:
+pages:
   stage: review
   script:
     - export
@@ -28,20 +28,20 @@ review:
   except:
     - master
 
-pages:
-  stage: review
-  script:
-    - echo "$CI_PIPELINE_SOURCE"
-    - ls -al public/
-  artifacts:
-    paths:
-      - public
-  rules:
-    - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "push"
-    - when: always
-    - when: never
-  # needs:
-    # - review
+# pages:
+#   stage: review
+#   script:
+#     - echo "$CI_PIPELINE_SOURCE"
+#     - ls -al public/
+#   artifacts:
+#     paths:
+#       - public
+#   rules:
+#     - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "push"
+#     - when: always
+#     - when: never
+#   needs:
+#     - review
 
 stop_review:
   stage: review
