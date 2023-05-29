@@ -7,8 +7,8 @@ review:
   script:
     - export
     - ls -al
-    - mkdir -p "public"
-    - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
+    - mkdir -p "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build"
+    - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build/"
     - cp -vr "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
