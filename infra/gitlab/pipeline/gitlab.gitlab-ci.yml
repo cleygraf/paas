@@ -37,7 +37,7 @@ pages:
     paths:
       - public
   rules:
-    - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "push"
     - when: always
   # needs:
     # - review
