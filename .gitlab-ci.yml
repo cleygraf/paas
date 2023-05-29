@@ -71,3 +71,6 @@ pages:
       - public
   rules:
     - if: $INFRA == "gitlab"
+  dependencies:
+    - review
+
