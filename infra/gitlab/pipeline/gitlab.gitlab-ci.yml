@@ -8,7 +8,7 @@ review:
     - export
     - ls -al
     - mkdir -p "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
-    - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
+    - cp -vr "build/*" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     - cp -r "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
@@ -17,6 +17,9 @@ review:
     url: $URL_REVIEW
     on_stop: stop_review
     auto_stop_in: 1 hours
+  artifacts:
+    paths:
+      - public
   dependencies:
     - generate-deck
     - create-qr
