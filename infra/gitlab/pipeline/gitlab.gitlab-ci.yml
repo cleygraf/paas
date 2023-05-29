@@ -44,11 +44,13 @@ pages:
 stop_review:
   stage: review
   script:
-    - rm "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
+    - rm -vr "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
   when: manual
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     action: stop
+  dependencies:
+    - pages
 
 deploy-prod:
   stage: deploy
