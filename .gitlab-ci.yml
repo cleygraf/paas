@@ -6,6 +6,7 @@ stages:
   - test
   - review
   - deploy
+  - pages
 
 include:
   # Always include
@@ -60,3 +61,13 @@ create-qr:
   artifacts:
     paths:
       - "assets/"
+
+pages:
+  stage: pages
+  script:
+    - ls -al public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $INFRA == "gitlab"
