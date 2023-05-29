@@ -6,7 +6,6 @@ stages:
   - test
   - review
   - deploy
-  - pages
 
 include:
   # Always include
@@ -63,7 +62,7 @@ create-qr:
       - "assets/"
 
 pages:
-  stage: pages
+  stage: review
   script:
     - ls -al public/
   artifacts:
