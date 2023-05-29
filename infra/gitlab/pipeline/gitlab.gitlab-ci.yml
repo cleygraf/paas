@@ -39,6 +39,7 @@ pages:
   rules:
     - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "push"
     - when: always
+    - when: never
   # needs:
     # - review
 
