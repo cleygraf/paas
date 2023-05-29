@@ -46,6 +46,7 @@ pages:
 stop_review:
   stage: review
   script:
+    - ls -al
     - rm -vr "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
   when: manual
   environment:
