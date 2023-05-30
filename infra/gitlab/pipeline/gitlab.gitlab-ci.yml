@@ -14,7 +14,6 @@ pages:
     - cp -vr "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     # create an archive of content
     - tar -czf public/content.tgz public
-    - tar -tzf public/content.tgz
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
   environment:
@@ -58,13 +57,13 @@ stop_review:
     - "[ -d \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\" ] && rm -vr \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\""
     # create an archive of content
     - tar -czf public/content.tgz public
-    - tar -tzf public/content.tgz
-    - echo "$URL_REVIEW"
-    - cat ./assets/url-review.txt
   when: manual
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     action: stop
+  artifacts:
+    paths:
+      - public
   dependencies:
     - pages
 
