@@ -32,21 +32,6 @@ pages:
   except:
     - master
 
-# pages:
-#   stage: review
-#   script:
-#     - echo "$CI_PIPELINE_SOURCE"
-#     - ls -al public/
-#   artifacts:
-#     paths:
-#       - public
-#   rules:
-#     - if: $INFRA == "gitlab" && $CI_PIPELINE_SOURCE == "push"
-#     - when: always
-#     - when: never
-#   needs:
-#     - review
-
 stop_review:
   stage: review
   script:
@@ -67,7 +52,7 @@ stop_review:
   dependencies:
     - pages
 
-deploy-prod:
+page:
   stage: deploy
   script:
     # Get existing content and extract to public
@@ -79,12 +64,16 @@ deploy-prod:
     - cp -vr "assets" "public/"
     # create an archive of content
     - tar -czf public/content.tgz public
+    - tar -tzf public/content.tgz
     - echo "$URL_PROD"
     - cat ./assets/url-prod.txt
   environment:
     name: production
     url: $URL_PROD
   when: manual
+  artifacts:
+    paths:
+      - public
   needs:
     - job: generate-deck
     - job: create-qr
