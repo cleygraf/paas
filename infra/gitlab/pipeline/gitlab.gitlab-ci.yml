@@ -1,25 +1,20 @@
 variables:
   URL_PROD: "$CI_PAGES_URL/build/slides.html"
-  URL_REVIEW: "$CI_PAGES_URL/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build/slides.html"
+  URL_REVIEW: "https://${CI_PROJECT_NAMESPACE}.gitlab.io/-/gl-pages/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/slides.html"
 
 pages:review:
   stage: review
   script:
-    # Get existing content and extract to public
-    - wget https://gitlab-partner-demos.gitlab.io/paas/paas/content.tgz || true
-    - "[ -f content.tgz ] && tar -xzf content.tgz"
     # Create an folder for this commit and copy over content
-    - mkdir -p "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build"
-    - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
-    - cp -vr "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
-    # create an archive of content
-    - tar -czf public/content.tgz public
+    - mkdir -p "public/build"
+    - cp -vr "build" "public/"
+    - cp -vr "assets" "public/"
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     url: $URL_REVIEW
-    on_stop: stop_review
+    on_stop: review
     auto_stop_in: 1 hours
   artifacts:
     paths:
@@ -32,25 +27,14 @@ pages:review:
   except:
     - master
 
-stop_review:
+review:stop:
   stage: review
   script:
-    # Get existing content and extract to public
-    - wget https://gitlab-partner-demos.gitlab.io/paas/paas/content.tgz || true
-    - "[ -f content.tgz ] && tar -xzf content.tgz"
-    # Create an folder for this commit and copy over content
-    - "[ -d \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\" ] && rm -vr \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\""
-    # create an archive of content
-    - tar -czf public/content.tgz public
+    - echo "Gone"
   when: manual
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     action: stop
-  artifacts:
-    paths:
-      - public
-  dependencies:
-    - pages:review
 
 pages:
   stage: deploy
