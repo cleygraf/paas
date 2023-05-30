@@ -52,7 +52,7 @@ stop_review:
   dependencies:
     - pages
 
-pages:
+pages:prod:
   stage: deploy
   script:
     # Get existing content and extract to public
