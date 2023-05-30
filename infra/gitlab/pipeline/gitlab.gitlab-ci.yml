@@ -51,8 +51,16 @@ pages:
 stop_review:
   stage: review
   script:
-    - ls -al
-    - rm -vr "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA"
+    # Get existing content and extract to public
+    - wget https://gitlab-partner-demos.gitlab.io/paas/paas/content.tgz || true
+    - "[ -f content.tgz ] && tar -xzf content.tgz"
+    # Create an folder for this commit and copy over content
+    - "[ -d \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\" ] && rm -vr \"public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA\""
+    # create an archive of content
+    - tar -czf public/content.tgz public
+    - tar -tzf public/content.tgz
+    - echo "$URL_REVIEW"
+    - cat ./assets/url-review.txt
   when: manual
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
