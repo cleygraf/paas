@@ -50,7 +50,7 @@ stop_review:
     paths:
       - public
   dependencies:
-    - pages
+    - pages:review
 
 pages:
   stage: deploy
