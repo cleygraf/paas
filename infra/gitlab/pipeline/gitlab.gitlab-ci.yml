@@ -1,6 +1,6 @@
 variables:
   URL_PROD: "$CI_PAGES_URL/build/slides.html"
-  URL_REVIEW: "https://${CI_PROJECT_NAMESPACE}.gitlab.io/-/gl-pages/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/slides.html"
+  URL_REVIEW: "https://${CI_PROJECT_ROOT_NAMESPACE}.gitlab.io/-/${CI_PROJECT_NAME}/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/slides.html"
 
 pages:review:
   stage: review
