@@ -70,7 +70,7 @@ pages:prod:
   environment:
     name: production
     url: $URL_PROD
-  when: manual
+#  when: manual
   artifacts:
     paths:
       - public
