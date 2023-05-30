@@ -14,7 +14,7 @@ pages:review:
   environment:
     name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     url: $URL_REVIEW
-    on_stop: review
+    on_stop: review:stop
     auto_stop_in: 1 hours
   artifacts:
     paths:
