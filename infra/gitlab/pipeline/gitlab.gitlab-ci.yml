@@ -9,6 +9,8 @@ pages:
     - mkdir -p "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build"
     - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     - cp -vr "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
+    - tar -czf public/content.tgz public
+    - tar -tzf public/content.tgz
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
   environment:
