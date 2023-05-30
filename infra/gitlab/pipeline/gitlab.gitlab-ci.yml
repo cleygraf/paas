@@ -5,9 +5,14 @@ variables:
 pages:
   stage: review
   script:
+    # Get existing content and extract to public
+    - curl https://gitlab-partner-demos.gitlab.io/paas/paas/content.tgz --output content.tgz || true
+    - [ -f content.tgz ] && tar -xzf content.tgz
+    # Create an folder for this commit and copy over content
     - mkdir -p "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build"
     - cp -vr "build" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
     - cp -vr "assets" "public/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/"
+    # create an archive of content
     - tar -czf public/content.tgz public
     - tar -tzf public/content.tgz
     - echo "$URL_REVIEW"
