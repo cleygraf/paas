@@ -2,7 +2,7 @@ variables:
   URL_PROD: "$CI_PAGES_URL/build/slides.html"
   URL_REVIEW: "$CI_PAGES_URL/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA/build/slides.html"
 
-pages:
+pages:review
   stage: review
   script:
     # Get existing content and extract to public
@@ -52,25 +52,19 @@ stop_review:
   dependencies:
     - pages
 
-pages:prod:
+pages:
   stage: deploy
   script:
-    # Get existing content and extract to public
-    - wget https://gitlab-partner-demos.gitlab.io/paas/paas/content.tgz || true
-    - "[ -f content.tgz ] && tar -xzf content.tgz"
     # Create an folder for this commit and copy over content
     - mkdir -p "public/build"
     - cp -vr "build" "public/"
     - cp -vr "assets" "public/"
-    # create an archive of content
-    - tar -czf public/content.tgz public
-    - tar -tzf public/content.tgz
     - echo "$URL_PROD"
     - cat ./assets/url-prod.txt
   environment:
     name: production
     url: $URL_PROD
-#  when: manual
+  when: manual
   artifacts:
     paths:
       - public
