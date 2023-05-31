@@ -1,0 +1,57 @@
+variables:
+  URL_PROD: "$CI_PAGES_URL/build/slides.html"
+  URL_REVIEW: "https://${CI_PROJECT_ROOT_NAMESPACE}.gitlab.io/-/${CI_PROJECT_NAME}/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/slides.html"
+
+pages:review:
+  stage: review
+  script:
+    # Create an folder for this commit and copy over content
+    - mkdir -p "public/build"
+    - cp -vr "build" "public/"
+    - cp -vr "assets" "public/"
+    - echo "$URL_REVIEW"
+    - cat ./assets/url-review.txt
+  environment:
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    url: $URL_REVIEW
+    on_stop: review:stop
+    auto_stop_in: 1 hours
+  artifacts:
+    paths:
+      - public
+  dependencies:
+    - generate-deck
+    - create-qr
+  only:
+    - branches
+  except:
+    - master
+
+review:stop:
+  stage: review
+  script:
+    - echo "Gone"
+  when: manual
+  environment:
+    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    action: stop
+
+pages:
+  stage: deploy
+  script:
+    # Create an folder for this commit and copy over content
+    - mkdir -p "public/build"
+    - cp -vr "build" "public/"
+    - cp -vr "assets" "public/"
+    - echo "$URL_PROD"
+    - cat ./assets/url-prod.txt
+  environment:
+    name: production
+    url: $URL_PROD
+  when: manual
+  artifacts:
+    paths:
+      - public
+  needs:
+    - job: generate-deck
+    - job: create-qr
