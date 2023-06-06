@@ -9,7 +9,7 @@ steps:
         'run',
         'services',
         'delete',
-        '$REF_NAME--$BRANCH_NAME--$SHORT_SHA',
+        '$REF_NAME--$SHORT_SHA',
         '--region',
         'europe-west4',
         '--quiet',
