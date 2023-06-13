@@ -20,7 +20,7 @@ include:
     rules:
       - if: $INFRA == "gitlab"
 
-# Stages
+# Jobs
 markdownlint:
   stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
