@@ -45,7 +45,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <div class="content-container">
     <div class="content">
         <div style="font-size:60px"><h2><span style="color:#fc6d26;font-size:130%"><b>G</b></span>itLab</h2></div>
-        <div style="font-size:60px"><h2><span style="color:#4285F4;font-size:130%"><b>G</b></span>oogle Cloud</h2></div>
+        <div style="font-size:60px"><h2><span style="color:#4285F4;font-size:130%"><b>G</b></span>oogle Kloud</h2></div>
     </div>
 </div>
 
