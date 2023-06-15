@@ -51,6 +51,23 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
+---
+
+<div class="white-center"><p>Why?</p></div>
+
+---
+
+![bg 90%](./../assets/motorwagen_1886.jpg)
+![bg 90%](./../assets/c-class.jpg)
+
+---
+
+![bg 60%](./../assets/mb_manufactoring_line.jpg)
+
+---
+
 ## GitLab's Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
@@ -143,12 +160,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
 <!-- footer: "![w:15 h:15](./../assets/gitlab-logo.svg) [These slides as PDF](slides.pdf)" -->
-
----
-
-![bg](./../assets/16_0-cover-image.png)
-
-<!-- footer: " " --->
 
 ---
 
