@@ -51,6 +51,23 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
+---
+
+<div class="white-center"><p>Why?</p></div>
+
+---
+
+![bg 90%](./../assets/motorwagen_1886.jpg)
+![bg 90%](./../assets/c-class.jpg)
+
+---
+
+![bg 60%](./../assets/mb_manufactoring_line.jpg)
+
+---
+
 ## GitLab's Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
