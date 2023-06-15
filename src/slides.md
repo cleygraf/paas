@@ -163,12 +163,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ---
 
-![bg](./../assets/16_0-cover-image.png)
-
-<!-- footer: " " --->
-
----
-
 ## **Updated** Production PaaS App
 
 ![bg 30%](./../assets/url-prod.png)
