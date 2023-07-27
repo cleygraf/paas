@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab on Google Cloud
+title: GitLab - Lunch & Lern
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
