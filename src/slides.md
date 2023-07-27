@@ -7,10 +7,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em">
-        GitLab on Google Cloud
+        GitLab - Lunch & Lern
     </h1>
     <h2 style="margin-bottom:1.5em">
-        Building a <span style="color:#fc6d26">PaaS</span> on Google Cloud with GitLab
+        ClearRoute
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -35,17 +35,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
             </div>
         </div>
-    </div>
-</div>
-
----
-
-## Commonalities
-
-<div class="content-container">
-    <div class="content">
-        <div style="font-size:60px"><h2><span style="color:#fc6d26;font-size:130%"><b>G</b></span>itLab</h2></div>
-        <div style="font-size:60px"><h2><span style="color:#4285F4;font-size:130%"><b>G</b></span>oogle Kloud</h2></div>
     </div>
 </div>
 
