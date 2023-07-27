@@ -44,12 +44,16 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-<div class="white-center"><p>Why?</p></div>
+<div class="white-center"><p>Cars?</p></div>
 
 ---
 
 ![bg 90%](./../assets/motorwagen_1886.jpg)
 ![bg 90%](./../assets/c-class.jpg)
+
+---
+
+<div class="white-center"><p>And Software?</p></div>
 
 ---
 
@@ -64,6 +68,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Ideas go in, applications come out
 - Shift security left: checks at each stage
 - Full visibility from planning to production
+
+---
+
+## What is a PaaS?
 
 ---
 
@@ -110,9 +118,9 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ---
 
-## GitLab &#x1F9E1; Google Cloud
+## GitLab developer work flow
 
-<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
