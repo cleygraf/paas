@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em">
-        GitLab - Lunch & Lern
+        GitLab - Lunch & Learn
     </h1>
     <h2 style="margin-bottom:1.5em">
         <b>Clear<span class="clearroute-green">Route</span></b>
