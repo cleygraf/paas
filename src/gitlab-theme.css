@@ -86,6 +86,10 @@ blockquote::after {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.clearroute-green {
+  color: rgb(0,232,175 );
+}
+
 .content-container {
   display: table;
   position: relative;
