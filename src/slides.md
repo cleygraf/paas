@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab - Lunch & Lern
+title: GitLab - Lunch & Learn
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
