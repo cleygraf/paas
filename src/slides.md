@@ -53,11 +53,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-<div class="white-center"><p>And Software?</p></div>
+![bg 60%](./../assets/mb_manufactoring_line.jpg)
 
 ---
 
-![bg 60%](./../assets/mb_manufactoring_line.jpg)
+<div class="white-center"><p>And Software?</p></div>
 
 ---
 
