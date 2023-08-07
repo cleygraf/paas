@@ -151,9 +151,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 
 <div class="ai">
 
-![w:30 h:30](./../assets/ChatGPT_logo.png)
-
-Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
+![w:30 h:30](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
 
 ...
 </div>
