@@ -116,7 +116,8 @@ blockquote::after {
   vertical-align: middle;
 }
 
-.ai {
+.ai 
+{
   font-family: 'monospace',Consolas,"courier new";
   font-size: 1.0em;
   background-color: rgb(111, 110, 110);
@@ -124,3 +125,14 @@ blockquote::after {
   padding: 10px;
 }
 
+.ai p 
+{
+  margin-top: 0px;
+  margin-bottom: 25px;
+  float: right;
+}
+
+.ai image 
+{
+  float: left;
+}
