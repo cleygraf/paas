@@ -80,7 +80,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-## What is source code management?
+<!-- header: "<h2>What is source code management?</h2>" -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
@@ -92,7 +92,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-<!-- header: '## What is source code management?' -->
+<!-- header: "## What is source code management?" -->
 
 <div class="ai">
 Key aspects of source code management include:
