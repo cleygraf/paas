@@ -104,8 +104,8 @@ blockquote::after {
   vertical-align: middle;
 }
 
-language-ai {
-  font-family: Consolas,"courier new";
+.ai {
+  font-family: 'monospace',Consolas,"courier new";
   font-size: 1.2em;;
 }
 
