@@ -146,6 +146,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 </div>
 
 ---
+![bg left:0.1% opacity:.0](./../assets/gitlab-logo.svg)
 <!-- header:  "What is git?" -->
 
 <div class="ai">
