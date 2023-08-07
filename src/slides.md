@@ -6,7 +6,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
-    <h1 style="margin-top:1em;align=right">
+    <h1 style="margin-top:1em;text-align=right">
         git & GitLab
     </h1>
     <h2 style="margin-bottom:1.5em">
@@ -88,7 +88,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="ai">
 Key aspects of source code management include:
-
 
 **Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
 ...
