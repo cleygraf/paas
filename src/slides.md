@@ -82,7 +82,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
-![w:20 h:20](./../assets/ChatGPT_logo.png)
+![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
  Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
  
@@ -93,13 +93,13 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
-![w:20 h:20](./../assets/ChatGPT_logo.png)
+![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
 Key aspects of source code management include:
 
-1. **Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
+**Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
 
-2. **Collaboration**: SCM enables multiple developers to work on the same project simultaneously. Developers can create branches (parallel copies) of the codebase to work on specific features or fixes without interfering with each other's work.
+**Collaboration**: SCM enables multiple developers to work on the same project simultaneously. Developers can create branches (parallel copies) of the codebase to work on specific features or fixes without interfering with each other's work.
 
 ...
 </div>
@@ -108,12 +108,24 @@ Key aspects of source code management include:
 
 ## What is source code management?
 
-![w:20 h:20](./../assets/ChatGPT_logo.png)
+![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
+**Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
 
-3. **Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
+**Merge and Conflict Resolution**: When developers work on different branches and want to combine their changes, an SCM system helps merge those changes intelligently. In cases where conflicting changes occur (e.g., when two developers modify the same lines of code), the system provides tools to resolve those conflicts.
 
-4. **Merge and Conflict Resolution**: When developers work on different branches and want to combine their changes, an SCM system helps merge those changes intelligently. In cases where conflicting changes occur (e.g., when two developers modify the same lines of code), the system provides tools to resolve those conflicts.
+...
+</div>
+
+---
+
+## What is source code management?
+
+![w:30 h:30](./../assets/ChatGPT_logo.png)
+<div class="ai">
+**Reverting Changes**: If a change causes problems or introduces bugs, SCM allows developers to revert back to a previous version of the code, effectively undoing problematic changes.
+
+**Code Review**: SCM systems often integrate with code review tools, making it easier for team members to review and discuss proposed changes before they are merged into the main codebase.
 
 ...
 </div>
