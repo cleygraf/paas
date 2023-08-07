@@ -14,7 +14,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
-<!--             <div>
+            <div>
                 <img class="avatar" src="./../assets/avatar-chris.jpeg">
             </div>
             <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
@@ -22,10 +22,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                     Christoph Leygraf
                 </h2>
                 <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
-            </div> -->
+            </div>
         </div>
         <div style="display:flex; flex-direction:row; margin-left:2em">
-            <div>
+<!--             <div>
                 <img class="avatar" src="./../assets/avatar-peter.jpeg">
             </div>
             <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
@@ -34,7 +34,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 </h2>
                 <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
