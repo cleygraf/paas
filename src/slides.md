@@ -40,7 +40,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-## Agenda
+<!-- header: Agenda --> 
 
 - Introduction, today's goals
 - Preface: What's GitLab?
@@ -48,6 +48,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - GitLab Developer Workflow
 
 ---
+<!-- header:  --> 
 
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
@@ -70,7 +71,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-## GitLab's Software Factory Approach
+<!-- header: "GitLab's Software Factory Approach" -->
 
 ![bg](./../assets/software-factory.svg)
 
@@ -79,8 +80,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Full visibility from planning to production
 
 ---
-
-<!-- header: "<h1>What is source code management?</h1>" -->
+<!-- header: "What is source code management?" -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
@@ -145,8 +145,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 </div>
 
 ---
-
-<!-- header:  <h1>What is git?</h1> -->
+<!-- header:  "What is git?" -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
@@ -157,7 +156,7 @@ Git is a distributed version control system (DVCS) that was created by Linus Tor
 </div>
 
 ---
-<!-- header:  <h1>Who invented git?</h1> -->
+<!-- header:  "Who invented git?" -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
