@@ -95,7 +95,9 @@ pre {
 ---
 
 <div class="ai">
-Key aspects of source code management include: Version Tracking: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.```
+Key aspects of source code management include:
+
+_Version Tracking_: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
 ...
 </div>
 
