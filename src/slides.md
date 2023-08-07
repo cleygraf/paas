@@ -73,9 +73,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
-`Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
+```chris
+Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
 
-...`
+...
+```
 
 ---
 
