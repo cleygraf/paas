@@ -40,6 +40,15 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+## Agenda
+
+- Introduction, today's goals
+- Preface: What's GitLab?
+- SCM: git (cli & VS Code)
+- GitLab Developer Workflow
+
+---
+
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
@@ -76,14 +85,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![w:40 h:40](./../assets/ChatGPT_logo.png)
 
 <style scoped>
-pre {
-   font-size: 10rem;
+code {
+   font-size: 2rem;
 }
 </style>
 
-```cs
-// I am code block
-```
 
 ```ai
 Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
