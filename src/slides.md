@@ -85,7 +85,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 
 <style scoped>
-code {
+pre {
    font-size: 6rem;
 }
 </style>
@@ -94,7 +94,7 @@ code {
 Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
 
 ...
-```
+\```
 
 ---
 
@@ -150,6 +150,13 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+
+---
+
+# Excercise 1
+
+1. First step with git on the command line (togehther)
+2.  
 
 ---
 
