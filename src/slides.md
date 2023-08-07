@@ -1,16 +1,16 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab on Google Cloud
+title: GitLab - Lunch & Learn
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em">
-        GitLab on Google Cloud
+        GitLab - Lunch & Learn
     </h1>
     <h2 style="margin-bottom:1.5em">
-        Building a <span style="color:#fc6d26">PaaS</span> on Google Cloud with GitLab
+        <b>Clear<span class="clearroute-green">Route</span></b>
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -40,22 +40,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-## Commonalities
-
-<div class="content-container">
-    <div class="content">
-        <div style="font-size:60px"><h2><span style="color:#fc6d26;font-size:130%"><b>G</b></span>itLab</h2></div>
-        <div style="font-size:60px"><h2><span style="color:#4285F4;font-size:130%"><b>G</b></span>oogle Kloud</h2></div>
-    </div>
-</div>
-
----
-
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
 
-<div class="white-center"><p>Why?</p></div>
+<div class="white-center"><p>Cars?</p></div>
 
 ---
 
@@ -68,6 +57,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+<div class="white-center"><p>And Software?</p></div>
+
+---
+
 ## GitLab's Software Factory Approach
 
 ![bg](./../assets/software-factory.svg)
@@ -75,6 +68,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Ideas go in, applications come out
 - Shift security left: checks at each stage
 - Full visibility from planning to production
+
+---
+
+## What is a PaaS?
 
 ---
 
@@ -121,9 +118,9 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ---
 
-## GitLab &#x1F9E1; Google Cloud
+## GitLab developer work flow
 
-<img src="./../assets/gcp-mapping.svg" style="width:100%; margin-top:1em">
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
