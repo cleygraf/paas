@@ -86,7 +86,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <style scoped>
 code {
-   font-size: 2rem;
+   font-size: 6rem;
 }
 </style>
 
