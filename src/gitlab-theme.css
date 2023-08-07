@@ -123,6 +123,7 @@ blockquote::after {
   background-color: rgb(111, 110, 110);
   color: rgb(233, 233, 233);
   padding: 10px;
+  margin-top: 8.4px;
 }
 
 .ai p 
