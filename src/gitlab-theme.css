@@ -18,10 +18,11 @@ section {
   color: white;
   font-size: 28px;
   padding-top: 90px;
+  padding-bottom: 90px;
+  vertical-align: middle;
 }
 
 footer {
-  padding: 70px;
 }
 
 header {

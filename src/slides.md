@@ -39,8 +39,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 </div>
 
 ---
-
-<!-- header: Agenda --> 
+<!-- header: "Agenda" --> 
 
 - Introduction, today's goals
 - Preface: What's GitLab?
@@ -48,7 +47,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - GitLab Developer Workflow
 
 ---
-<!-- header:  --> 
+<!-- header: ""  --> 
 
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
