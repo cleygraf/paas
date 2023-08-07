@@ -154,7 +154,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 # Excercise 1
 
 1. First step with git on the command line (togehther)
-2.  
+2. Sec 
 
 ---
 
