@@ -129,10 +129,4 @@ blockquote::after {
 {
   margin-top: 0px;
   margin-bottom: 25px;
-  float: right;
-}
-
-.ai image 
-{
-  float: left;
 }
