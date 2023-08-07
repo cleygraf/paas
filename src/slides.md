@@ -1,16 +1,16 @@
 ---
 marp: true
 theme: gitlab-theme
-title: Computacenter DE - git & GitLab
+title: git & GitLab - Computacenter DE
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em">
-        Computacenter DE - git & GitLab
+        git & GitLab
     </h1>
     <h2 style="margin-bottom:1.5em">
-        <b>Clear<span class="clearroute-green">Route</span></b>
+        <b>Computacenter DE</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
