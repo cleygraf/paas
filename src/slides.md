@@ -146,23 +146,11 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 </div>
 
 ---
-![bg left:5% opacity:.9](./../assets/gitlab-logo.svg)
 <!-- header:  "What is git?" -->
 
 <div class="ai">
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
-
-...
-</div>
-
----
-<!-- header:  "Who invented git?" -->
-
-![w:30 h:30](./../assets/ChatGPT_logo.png)
-<div class="ai">
-
-Git was invented by Linus Torvalds, the same individual who created the Linux operating system. Linus began working on Git in 2005 to address the shortcomings of existing version control systems, especially in the context of managing the development of the Linux kernel. He designed Git as a distributed version control system that could handle the complex and collaborative nature of the Linux kernel development process.
 
 ...
 </div>
@@ -236,8 +224,7 @@ Remark: Please use GitLab instead of GitHub ;-)
 <!-- footer: "https://about.gitlab.com/" -->
 
 ---
-
-## Useful links
+<!-- header:  "Useful links?" -->
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab 2023 Global DevSecOps Report Series](https://about.gitlab.com/developer-survey/)
 
@@ -254,8 +241,7 @@ Remark: Please use GitLab instead of GitHub ;-)
 <!-- footer: "![w:15 h:15](./../assets/gitlab-logo.svg) [These slides as PDF](slides.pdf)" -->
 
 ---
-
-## **Updated** Production PaaS App
+<!-- header:  "<b>Updated</b> Production PaaS App" -->
 
 ![bg 30%](./../assets/url-prod.png)
 
