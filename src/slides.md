@@ -170,24 +170,15 @@ Git was invented by Linus Torvalds, the same individual who created the Linux op
 </div>
 
 ---
-
-## What is a PaaS?
+<!-- header:  "What is a PaaS?" -->
 
 ---
-
-## What is a PaaS?
-
-<br/>
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 > Platform as a service (...) is a category of cloud computing services that allows customers to provision, instantiate, run, and manage a modular bundle comprising a computing platform and one or more applications, without the complexity of building and maintaining the infrastructure typically associated with developing and launching the application(s), and to allow developers to create, develop, and package such software bundles.
 
 ---
-
-## What is a PaaS?
-
-<br/>
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
@@ -196,8 +187,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <div class="red-stamp"><p>WRONG!!!</p></div>
 
 ---
-
-## For today it's ...
+<!-- header:  "For today it's ..." -->
 
 <div class="content-container">
     <div class="content">
@@ -209,24 +199,21 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 </div>
 
 ---
-
-## Production PaaS App
+<!-- header:  "Production PaaS App" -->
 
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL_PROD## --->
 
 ---
-
-## Goal: GitLab developer work flow
+<!-- header:  "Goal: GitLab developer work flow" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-
-# Excercise 1
+<!-- header:  "Excercise 1" -->
 
 1. First step with git on the command line (guided, togehther)
 2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
@@ -234,6 +221,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 Remark: Please use GitLab instead of GitHub ;-) 
 
 ---
+<!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
