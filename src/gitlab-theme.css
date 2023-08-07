@@ -49,7 +49,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.6em;
+  font-size: 3.0em;
 }
 
 blockquote {
@@ -116,7 +116,7 @@ blockquote::after {
   vertical-align: middle;
 }
 
-ai 
+.ai 
 {
   font-family: 'monospace',Consolas,"courier new";
   font-size: 1.0em;
