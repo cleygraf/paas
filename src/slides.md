@@ -80,7 +80,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
-<!-- header: "<h2>What is source code management?</h2>" -->
+<!-- header: "<h1>What is source code management?</h1>" -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
@@ -91,8 +91,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 </div>
 
 ---
-
-<!-- header: "## What is source code management?" -->
 
 <div class="ai">
 Key aspects of source code management include:
@@ -106,8 +104,6 @@ Key aspects of source code management include:
 
 ---
 
-## What is source code management?
-
 <div class="ai">
 
 **Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
@@ -118,8 +114,6 @@ Key aspects of source code management include:
 </div>
 
 ---
-
-## What is source code management?
 
 <div class="ai">
 
@@ -132,8 +126,6 @@ Key aspects of source code management include:
 
 ---
 
-## What is source code management?
-
 <div class="ai">
 
 **Backup and Disaster Recovery**: By storing code and its history in a centralized repository or distributed system, SCM provides a form of backup and allows for disaster recovery. If a codebase is lost or corrupted, developers can retrieve previous versions from the SCM system.
@@ -145,8 +137,6 @@ Key aspects of source code management include:
 
 ---
 
-## What is source code management?
-
 <div class="ai">
 
 Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, has gained widespread adoption due to its distributed nature, speed, and powerful branching capabilities. GitHub, GitLab, and Bitbucket are platforms built around Git that provide additional features for hosting and collaborating on repositories.
@@ -156,7 +146,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 
 ---
 
-## What is git?
+<!-- header:  <h1>What is git?</h1> -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
@@ -167,8 +157,7 @@ Git is a distributed version control system (DVCS) that was created by Linus Tor
 </div>
 
 ---
-
-## Who invented git?
+<!-- header:  <h1>Who invented git?</h1> -->
 
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
