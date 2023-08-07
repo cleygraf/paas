@@ -13,8 +13,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
         <b>Computacenter DE</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
-<!--         <div style="display:flex; flex-direction:row">
-            <div>
+        <div style="display:flex; flex-direction:row">
+<!--             <div>
                 <img class="avatar" src="./../assets/avatar-chris.jpeg">
             </div>
             <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
@@ -22,8 +22,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                     Christoph Leygraf
                 </h2>
                 <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
         <div style="display:flex; flex-direction:row; margin-left:2em">
             <div>
                 <img class="avatar" src="./../assets/avatar-peter.jpeg">
@@ -73,7 +73,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
-```
+```shell
 Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
 
 ...
