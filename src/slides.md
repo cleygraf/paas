@@ -1,13 +1,13 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab - Lunch & Learn
+title: Computacenter DE - git & GitLab
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em">
-        GitLab - Lunch & Learn
+        Computacenter DE - git & GitLab
     </h1>
     <h2 style="margin-bottom:1.5em">
         <b>Clear<span class="clearroute-green">Route</span></b>
@@ -24,7 +24,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
             </div>
         </div>
-        <div style="display:flex; flex-direction:row; margin-left:2em">
+        <!-- <div style="display:flex; flex-direction:row; margin-left:2em">
             <div>
                 <img class="avatar" src="./../assets/avatar-peter.jpeg">
             </div>
@@ -34,7 +34,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 </h2>
                 <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
