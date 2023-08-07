@@ -13,7 +13,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
         <b>Computacenter DE</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
-        <div style="display:flex; flex-direction:row">
+<!--         <div style="display:flex; flex-direction:row">
             <div>
                 <img class="avatar" src="./../assets/avatar-chris.jpeg">
             </div>
@@ -23,8 +23,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 </h2>
                 <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
             </div>
-        </div>
-        <!-- <div style="display:flex; flex-direction:row; margin-left:2em">
+        </div> -->
+        <div style="display:flex; flex-direction:row; margin-left:2em">
             <div>
                 <img class="avatar" src="./../assets/avatar-peter.jpeg">
             </div>
@@ -34,7 +34,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                 </h2>
                 <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
 
