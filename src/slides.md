@@ -85,7 +85,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="ai">
 
- Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
+ ![w:23 h:23](./../assets/ChatGPT_logo.png): Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
  
  ...
 </div>
@@ -94,7 +94,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="ai">
 
-Key aspects of source code management include:
+![w:23 h:23](./../assets/ChatGPT_logo.png): Key aspects of source code management include:
 
 **Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
 
@@ -107,7 +107,7 @@ Key aspects of source code management include:
 
 <div class="ai">
 
-**Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
+![w:23 h:23](./../assets/ChatGPT_logo.png): **Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
 
 **Merge and Conflict Resolution**: When developers work on different branches and want to combine their changes, an SCM system helps merge those changes intelligently. In cases where conflicting changes occur (e.g., when two developers modify the same lines of code), the system provides tools to resolve those conflicts.
 
@@ -118,7 +118,7 @@ Key aspects of source code management include:
 
 <div class="ai">
 
-**Reverting Changes**: If a change causes problems or introduces bugs, SCM allows developers to revert back to a previous version of the code, effectively undoing problematic changes.
+![w:23 h:23](./../assets/ChatGPT_logo.png): **Reverting Changes**: If a change causes problems or introduces bugs, SCM allows developers to revert back to a previous version of the code, effectively undoing problematic changes.
 
 **Code Review**: SCM systems often integrate with code review tools, making it easier for team members to review and discuss proposed changes before they are merged into the main codebase.
 
@@ -129,7 +129,7 @@ Key aspects of source code management include:
 
 <div class="ai">
 
-**Backup and Disaster Recovery**: By storing code and its history in a centralized repository or distributed system, SCM provides a form of backup and allows for disaster recovery. If a codebase is lost or corrupted, developers can retrieve previous versions from the SCM system.
+![w:23 h:23](./../assets/ChatGPT_logo.png): **Backup and Disaster Recovery**: By storing code and its history in a centralized repository or distributed system, SCM provides a form of backup and allows for disaster recovery. If a codebase is lost or corrupted, developers can retrieve previous versions from the SCM system.
 
 **Branching Strategies**: SCM systems support various branching strategies, such as feature branching, release branching, and hotfix branching. These strategies help manage the flow of changes and stabilize code for different stages of development.
 
@@ -140,7 +140,7 @@ Key aspects of source code management include:
 
 <div class="ai">
 
-Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, has gained widespread adoption due to its distributed nature, speed, and powerful branching capabilities. GitHub, GitLab, and Bitbucket are platforms built around Git that provide additional features for hosting and collaborating on repositories.
+![w:23 h:23](./../assets/ChatGPT_logo.png): Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, has gained widespread adoption due to its distributed nature, speed, and powerful branching capabilities. GitHub, GitLab, and Bitbucket are platforms built around Git that provide additional features for hosting and collaborating on repositories.
 
 ...
 </div>
@@ -150,7 +150,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 
 <div class="ai">
 
-![w:25 h:25](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
+![w:23 h:23](./../assets/ChatGPT_logo.png): Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
 
 ...
 </div>
