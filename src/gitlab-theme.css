@@ -106,7 +106,7 @@ blockquote::after {
 
 .ai {
   font-family: 'monospace',Consolas,"courier new";
-  font-size: 1.1em;
+  font-size: 1.0em;
   background-color: rgb(111, 110, 110);
   color: rgb(233, 233, 233);
 }
