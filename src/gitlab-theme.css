@@ -32,7 +32,7 @@ header {
   padding-right: 70px;
   padding-bottom: 25px;
   padding-top: 25px;
-  border-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 a {
@@ -128,5 +128,10 @@ blockquote::after {
 .ai p 
 {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.ai p:last-child {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
