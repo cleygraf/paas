@@ -93,6 +93,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div class="ai">
+
 Key aspects of source code management include:
 
 **Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
@@ -161,7 +162,7 @@ Git is a distributed version control system (DVCS) that was created by Linus Tor
 ![w:30 h:30](./../assets/ChatGPT_logo.png)
 <div class="ai">
 
-it was invented by Linus Torvalds, the same individual who created the Linux operating system. Linus began working on Git in 2005 to address the shortcomings of existing version control systems, especially in the context of managing the development of the Linux kernel. He designed Git as a distributed version control system that could handle the complex and collaborative nature of the Linux kernel development process.
+Git was invented by Linus Torvalds, the same individual who created the Linux operating system. Linus began working on Git in 2005 to address the shortcomings of existing version control systems, especially in the context of managing the development of the Linux kernel. He designed Git as a distributed version control system that could handle the complex and collaborative nature of the Linux kernel development process.
 
 ...
 </div>
