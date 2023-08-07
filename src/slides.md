@@ -150,7 +150,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 
 <div class="ai">
 
-![w:20 h:20](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
+![w:25 h:25](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
 
 ...
 </div>
@@ -199,9 +199,17 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-<!-- header:  "Excercise: git cli" -->
+<!-- header:  "Excercise: <i>git cli</i>" -->
 
-1. First step with git on the command line (guided, togehther)
+1. First steps with git on the command line (guided, togehther)
+2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
+   
+**Remark**: Please use GitLab instead of GitHub ;-) 
+
+---
+<!-- header:  "Excercise: <i>git VS Code</i>" -->
+
+1. Utilize VS Code to interfere with GitLab (guided, togehther)
 2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
    
 **Remark**: Please use GitLab instead of GitHub ;-) 
