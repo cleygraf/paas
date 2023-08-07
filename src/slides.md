@@ -33,8 +33,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
                     Péter Bozsó
                 </h2>
                 <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </div>
 </div>
 
