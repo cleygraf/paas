@@ -1,5 +1,9 @@
 image: docker:latest
 
+variables:
+  APP_NAME: "paas-demo"
+  INFRA: "gitlab"
+
 stages:
   - prechecks
   - build
@@ -19,6 +23,9 @@ include:
   - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
     rules:
       - if: $INFRA == "gitlab"
+  - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
+    rules:
+      - if: $INFRA == null
 
 # Jobs
 markdownlint:
