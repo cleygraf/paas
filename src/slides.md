@@ -82,14 +82,25 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
+![w:20 h:20](./../assets/ChatGPT_logo.png)
 <div class="ai">
-![w:30 h:30](./../assets/ChatGPT_logo.png) Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.```
+ Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
+ ...
 </div>
 
+---
+
+## What is source code management?
+
+![w:20 h:20](./../assets/ChatGPT_logo.png)
 <div class="ai">
 Key aspects of source code management include:
 
-**Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
+1. **Version Tracking**: SCM systems track changes made to source code files over time. Each change is recorded as a separate version, allowing developers to view and compare different versions of files.
+
+2. **Collaboration**: SCM enables multiple developers to work on the same project simultaneously. Developers can create branches (parallel copies) of the codebase to work on specific features or fixes without interfering with each other's work.
+
+3. **Change History**: SCM maintains a chronological history of changes made to the codebase. This history includes information about who made the change, what changes were made, and when they were made. This information can be invaluable for debugging, auditing, and understanding the evolution of the codebase.
 ...
 </div>
 
@@ -152,8 +163,10 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 # Excercise 1
 
-1. First step with git on the command line (togehther)
-2. dasdas
+1. First step with git on the command line (guided, togehther)
+2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
+   
+Remark: Please use GitLab instead of GitHub ;-) 
 
 ---
 
