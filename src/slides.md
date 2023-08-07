@@ -82,7 +82,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ## What is source code management?
 
-![w:40 h:40](./../assets/ChatGPT_logo.png)
+![w:30 h:30](./../assets/ChatGPT_logo.png)
 
 <style scoped>
 code {
