@@ -150,7 +150,7 @@ Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, 
 
 <div class="ai">
 
-![w:30 h:30](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
+![w:20 h:20](./../assets/ChatGPT_logo.png) Git is a distributed version control system (DVCS) that was created by Linus Torvalds in 2005. It is widely used for tracking changes in source code during software development and for coordinating work among multiple developers. Git is designed to be fast, efficient, and capable of handling both small and large projects with ease. 
 
 ...
 </div>
@@ -199,12 +199,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-<!-- header:  "Excercise 1" -->
+<!-- header:  "Excercise: git cli" -->
 
 1. First step with git on the command line (guided, togehther)
 2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
    
-Remark: Please use GitLab instead of GitHub ;-) 
+**Remark**: Please use GitLab instead of GitHub ;-) 
 
 ---
 <!-- header:  "" -->
