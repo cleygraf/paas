@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: git & GitLab - Computacenter DE
+title: git & GitLab - Ge CompuNet
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
