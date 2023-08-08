@@ -306,6 +306,13 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 **Remark**: Please use GitLab instead of GitHub ;-) 
 
 ---
+<!-- header:  "GitLab developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
