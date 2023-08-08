@@ -56,6 +56,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 60%](./../assets/mb_manufactoring_line.jpg)
 
 ---
+<!-- header: "" -->
 
 <div class="white-center"><p>And Software?</p></div>
 
@@ -70,11 +71,16 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Full visibility from planning to production
 
 ---
+<!-- header: "" -->
+
+<div class="white-center"><p>What is DevOps?</p></div>
+
+---
 <!-- header: "What is DevOps?" -->
 
 <div class="ai">
 
-DevOps is a set of practices, principles, and cultural philosophies aimed at improving collaboration and communication between software development (Dev) and IT operations (Ops) teams. The goal of DevOps is to streamline and automate the software development and deployment process, resulting in faster, more reliable, and more efficient software delivery.
+![w:23 h:23](./../assets/ChatGPT_logo.png) DevOps is a set of practices, principles, and cultural philosophies aimed at improving collaboration and communication between software development (Dev) and IT operations (Ops) teams. The goal of DevOps is to streamline and automate the software development and deployment process, resulting in faster, more reliable, and more efficient software delivery.
  
  ...
 </div>
@@ -153,11 +159,16 @@ DevOps is a set of practices, principles, and cultural philosophies aimed at imp
 </div>
 
 ---
+<!-- header: "" -->
+
+<div class="white-center"><p>What is source code management?</p></div>
+
+---
 <!-- header: "What is source code management?" -->
 
 <div class="ai">
 
- ![w:23 h:23](./../assets/ChatGPT_logo.png) Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
+![w:23 h:23](./../assets/ChatGPT_logo.png) Source code management (SCM), also known as version control or revision control, is a set of practices and tools used in software development to track and manage changes to source code and other related files. The primary goal of source code management is to enable collaboration among developers working on the same codebase while ensuring the integrity and traceability of the codebase's history.
  
  ...
 </div>
@@ -218,6 +229,11 @@ DevOps is a set of practices, principles, and cultural philosophies aimed at imp
 </div>
 
 ---
+<!-- header: "" -->
+
+<div class="white-center"><p>What is git?</p></div>
+
+---
 <!-- header:  "What is git?" -->
 
 <div class="ai">
@@ -228,9 +244,12 @@ DevOps is a set of practices, principles, and cultural philosophies aimed at imp
 </div>
 
 ---
-<!-- header:  "What is a PaaS?" -->
+<!-- header: "" -->
+
+<div class="white-center"><p>What is a PaaS?</p></div>
 
 ---
+<!-- header:  "What is a PaaS?" -->
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
