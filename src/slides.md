@@ -10,7 +10,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
         git & GitLab
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right">
-        <b>Computacenter DE</b>
+        <b>GE CompuNet</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -25,15 +25,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
             </div>
         </div>
         <div style="display:flex; flex-direction:row; margin-left:2em">
-<!--             <div>
-                <img class="avatar" src="./../assets/avatar-peter.jpeg">
-            </div>
-            <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
-                <h2>
-                    Péter Bozsó
-                </h2>
-                <a href= "mailto:pbozso@gitlab.com">pbozso@gitlab.com</a>
-            </div> -->
         </div>
     </div>
 </div>
@@ -77,6 +68,89 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Ideas go in, applications come out
 - Shift security left: checks at each stage
 - Full visibility from planning to production
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+DevOps is a set of practices, principles, and cultural philosophies aimed at improving collaboration and communication between software development (Dev) and IT operations (Ops) teams. The goal of DevOps is to streamline and automate the software development and deployment process, resulting in faster, more reliable, and more efficient software delivery.
+ 
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) DevOps seeks to break down the traditional silos that often exist between development and operations teams. By fostering collaboration and shared responsibility, DevOps aims to eliminate bottlenecks, reduce errors, and improve the overall quality of software products. This is achieved through a combination of automation, continuous integration, continuous delivery (CI/CD), and a culture of constant improvement.
+ 
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) Key principles of DevOps include:
+
+**Collaboration**: Encouraging developers, operations personnel, and other stakeholders to work together closely throughout the entire software development lifecycle.
+
+**Automation**: Automating repetitive tasks such as building, testing, deployment, and infrastructure provisioning to reduce manual errors and accelerate delivery.
+
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) **Continuous Integration (CI)**: Frequently integrating code changes into a shared repository, allowing for early detection of integration issues and promoting a more consistent development process.
+
+**Continuous Delivery (CD)**: Automatically deploying code changes to production or staging environments after passing automated tests, enabling faster and more reliable releases.
+
+**Infrastructure as Code (IaC)**: Managing and provisioning infrastructure using code and automation tools, making it easier to maintain and replicate environments.
+ 
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) **Monitoring and Feedback**: Collecting and analyzing data from applications and infrastructure to gain insights into performance, user behavior, and issues, which helps in making informed decisions for improvements.
+
+**Microservices**: Architecting applications as smaller, independent services that can be developed, deployed, and scaled independently, enhancing flexibility and maintainability.
+
+**Security as Code**: Integrating security practices into the development process, ensuring that security is a continuous concern and not an afterthought.
+
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) **Culture of Learning**: Promoting a culture that encourages learning from failures, embracing experimentation, and striving for continuous improvement.
+
+**Lean Practices**: Reducing waste in the development process by optimizing workflows and focusing on delivering value to users.
+
+ ...
+</div>
+
+---
+<!-- header: "What is DevOps?" -->
+
+<div class="ai">
+
+![w:23 h:23](./../assets/ChatGPT_logo.png) DevOps can lead to benefits such as faster time-to-market, increased deployment frequency, improved reliability, reduced lead time for bug fixes, and better collaboration between teams. However, adopting DevOps requires changes in both technical practices and organizational culture, which can be a gradual process that varies depending on the organization's existing workflows and technology stack.
+
+</div>
 
 ---
 <!-- header: "What is source code management?" -->
@@ -138,7 +212,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="ai">
 
-![w:23 h:23](./../assets/ChatGPT_logo.png) Popular SCM systems include Git, Mercurial, and Subversion. Git, in particular, has gained widespread adoption due to its distributed nature, speed, and powerful branching capabilities. GitHub, GitLab, and Bitbucket are platforms built around Git that provide additional features for hosting and collaborating on repositories.
+![w:23 h:23](./../assets/ChatGPT_logo.png) Popular SCM systems include **Git**, Mercurial, and Subversion. Git, in particular, has gained widespread adoption due to its distributed nature, speed, and powerful branching capabilities. GitHub, GitLab, and Bitbucket are platforms built around Git that provide additional features for hosting and collaborating on repositories.
 
 ...
 </div>
