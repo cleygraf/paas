@@ -1,5 +1,9 @@
 image: docker:latest
 
+variables:
+  APP_NAME: "paas-demo"
+  INFRA: "gitlab"
+
 stages:
   - prechecks
   - build
@@ -19,13 +23,16 @@ include:
   - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
     rules:
       - if: $INFRA == "gitlab"
+  - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
+    rules:
+      - if: $INFRA == null
 
 # Jobs
 markdownlint:
   stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
   script:
-    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024,~MD034,~MD007 --warnings .
+    - mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024,~MD034,~MD007,~MD031,~MD029 --warnings .
 
 generate-deck:
   stage: build

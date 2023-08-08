@@ -17,10 +17,23 @@ section {
   font-family: 'Inter';
   color: white;
   font-size: 28px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 footer {
-  padding: 70px;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  height: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 25px;
 }
 
 a {
@@ -37,7 +50,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.6em;
+  font-size: 3.0em;
 }
 
 blockquote {
@@ -78,16 +91,12 @@ blockquote::after {
   top: 30%;
   left: 50%;
   color: rgb(255, 255, 255);
-  font-size: 200px;
+  font-size: 100px;
   font-weight: bold;
   position: absolute;
   text-align: center;
   display: inline-block;
   transform: translateX(-50%) translateY(-50%);
-}
-
-.clearroute-green {
-  color: rgb(0,232,175 );
 }
 
 .content-container {
@@ -102,4 +111,25 @@ blockquote::after {
   display: table-cell;
   text-align: left;
   vertical-align: middle;
+}
+
+.ai 
+{
+  font-family: 'monospace',Consolas,"courier new";
+  font-size: 1.0em;
+  background-color: rgb(111, 110, 110);
+  color: rgb(233, 233, 233);
+  padding: 10px;
+  margin-top: 8.4px;
+}
+
+.ai p 
+{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.ai p:last-child {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
