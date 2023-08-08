@@ -300,6 +300,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
    - Add, change files
    - Push
    - Create branch, checkout branch, merge branch
+   - Delete local repo
+
 2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
    
 **Remark**: Please use GitLab instead of GitHub ;-) 
@@ -308,6 +310,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- header:  "Excercise: <i>git VS Code</i>" -->
 
 1. Utilize VS Code to interfere with GitLab (guided, togehther)
+   - Clone locally, open directory
+   - Add, change files
+   - Push
+   - Use GitLab's web ui Create branch
+   - Checkout new branch locally
+
 2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
    
 **Remark**: Please use GitLab instead of GitHub ;-) 
