@@ -161,10 +161,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header: "" -->
 
-<div class="white-center"><p>What is source code management?</p></div>
+<div class="white-center"><p>What is Source Code Management (SCM)?</p></div>
 
 ---
-<!-- header: "What is source code management?" -->
+<!-- header: "What is Source Code Management (SCM)?" -->
 
 <div class="ai">
 
