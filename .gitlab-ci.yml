@@ -2,7 +2,7 @@ image: docker:latest
 
 variables:
   APP_NAME: "paas-demo"
-  INFRA: "gitlab"
+  INFRA: "google"
 
 stages:
   - prechecks
