@@ -9,8 +9,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
     <h1 style="margin-top:1em;text-align:right">
         DevOpsDays London 2022
     </h1>
-    <h2 style="margin-bottom:1.5em;text-align:right">
-        <b>Adapatavist</b>
+    <h2 style="margin-bottom:1.5em;text-align:right;color:#FF6633">
+        <b>Adaptavist</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
