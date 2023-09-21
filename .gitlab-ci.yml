@@ -20,12 +20,12 @@ include:
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
     rules:
       - if: $INFRA == "google"
-  - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
-    rules:
-      - if: $INFRA == "gitlab"
-  - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
-    rules:
-      - if: $INFRA == null
+  # - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
+  #   rules:
+  #     - if: $INFRA == "gitlab"
+  # - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
+  #   # rules:
+  #     - if: $INFRA == null
 
 # Jobs
 markdownlint:
