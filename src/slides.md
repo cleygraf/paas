@@ -109,43 +109,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-<!-- header:  "Excercise: <i>git cli</i>" -->
-
-1. First steps with git on the command line (guided, togehther)
-   - Chris only: Create project
-   - Clone locally, enter directory
-   - Create a directory with your name and change into this dir
-   - Add, change files
-   - Push
-   - Create branch, checkout branch, merge branch
-   - Delete local repo
-
-2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
-   
-**Remark**: Please use GitLab instead of GitHub ;-) 
-
----
-<!-- header:  "Excercise: <i>git VS Code</i>" -->
-
-1. Utilize VS Code to interfere with GitLab (guided, togehther)
-   - Clone locally, open directory
-   - Add, change files
-   - Push
-   - Use GitLab's web ui Create branch
-   - Checkout new branch locally
-
-2. [Self paced](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/#how-to-set-up-a-new-git-repository)
-   
-**Remark**: Please use GitLab instead of GitHub ;-) 
-
----
-<!-- header:  "GitLab developer work flow" -->
-
-<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
-
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
-
----
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
