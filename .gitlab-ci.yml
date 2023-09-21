@@ -24,7 +24,7 @@ include:
     rules:
       - if: $INFRA == "gitlab"
   - local: "/infra/gitlab/pipeline/gitlab.gitlab-ci.yml"
-    # rules:
+    rules:
       - if: $INFRA == null
 
 # Jobs
