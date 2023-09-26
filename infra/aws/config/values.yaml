@@ -1,0 +1,26 @@
+gitlabUrl: https://gitlab.com/
+runnerRegistrationToken: "glrt-hVyn7PXiAsuTos-3bR9q"
+rbac:
+  create: true
+runners:
+  privileged: true
+  config: |
+    [[runners]]
+      environment = [
+        "DOCKER_HOST=tcp://docker:2376",
+        "DOCKER_TLS_CERTDIR=/certs",
+        "DOCKER_TLS_VERIFY=1",
+        "DOCKER_CERT_PATH=$DOCKER_TLS_CERTDIR/client"
+        ]
+      [runners.kubernetes]
+        namespace = "{{.Release.Namespace}}"
+        image = "docker:19.03.12"
+        privileged = true
+        poll_timeout = 300
+        poll_interval = 10
+        cpu_request = "2"
+        [[runners.kubernetes.volumes.empty_dir]]
+          name = "certs"
+          mount_path = "/certs/client"
+          medium = "Memory"
+
