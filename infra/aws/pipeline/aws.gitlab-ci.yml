@@ -12,7 +12,8 @@ build-container:
   stage: build
   image: amazon/aws-cli
   before_script:
-    - amazon-linux-extras install docker 
+    - amazon-linux-extras install docker
+    - sudo dnf install -y amazon-ecr-credential-helper 
     - aws --version
     - docker --version
     - export
