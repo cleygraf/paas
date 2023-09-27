@@ -95,11 +95,74 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 </div>
 
 ---
+
 <!-- header:  "Production PaaS App" -->
 
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL_PROD## --->
+
+---
+<!-- header:  "Architecture" -->
+
+# Concept
+
+- This is a demo and not meant for production!
+- It is build to be educational, not show how smart (probably/eher how dumb) I am ;-)
+- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come)
+- I am aiming for teaching you the ideas and concepts, not the details. 
+- As a side kick this is a playground for me to show cool stuff.
+- No knowledge of GitLab or of a certain programming language is required. Only basic understanding of software development concept and cloud technologies is expected.
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Architecture" -->
+
+# Consequences of the concept
+
+- Keep it as simple as possible (KISS principle)
+- Make it as secure as needed for a demo
+- Share it with the public, but BYOI
+- Use simple text files with markdown instead of a programming language like rust, go, ...
+
+---
+<!-- header:  "Architecture" -->
+
+# Components in case of AWS
+
+- GitLab SaaS (including runners)
+- AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
+- AWS ECR (Elastic Container Registry)
+- AWS Fargate (Container )
+
+---
+<!-- header:  "Architecture" -->
+
+# Components in case of Google Cloud
+
+- GitLab SaaS (including runners and GitLab SAST)
+- Google Cloud Build
+- Google Container Registry 
+- Google Cloud Run
+
+---
+<!-- header:  "Architecture" -->
+
+# Components in case of GitLab
+
+- GitLab SaaS (including runners)
+- GitLab Pages
+
+---
+<!-- header:  "Architecture" -->
+
+# Prerequisits
+
+- GitLab SaaS (including runners)
+- An AWS EKS cluster (OIDC enabled)
+- Create roles, policies and configure the EKS cluster to use IRSA (including a service account and namespace)
+- Install GitLab runners with the help of the GitLab provided helm chart
+- Provide a `values.yaml` file to make the runners use the service account and namespace mentioned before
 
 ---
 <!-- header:  "Goal: GitLab developer work flow" -->
@@ -124,7 +187,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 </div>
 
 <!-- footer: "https://about.gitlab.com/" -->
-
 ---
 <!-- header:  "Useful links?" -->
 
