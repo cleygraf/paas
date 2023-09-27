@@ -13,7 +13,7 @@ build-container:
   image: amazon/aws-cli
   before_script:
     - amazon-linux-extras install docker
-    - yum install amazon-ecr-credential-helper 
+    - yum -y install amazon-ecr-credential-helper 
     - aws --version
     - docker --version
     - export
