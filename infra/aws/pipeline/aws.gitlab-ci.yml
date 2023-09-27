@@ -3,11 +3,6 @@ include:
     rules:
       - if: $GITLAB_CI != 'false'
 
-container_scanning:
-  variables:
-    CS_REGISTRY_USER: _json_key
-    CS_REGISTRY_PASSWORD: "$GCP_REGISTRY_KEY"
-    CS_IMAGE: "gcr.io/$GCP_PROJECT_ID__TEST/$APP_NAME--$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
 
 variables:
   URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
@@ -15,14 +10,16 @@ variables:
 
 build-container:
   stage: build
-  image: google/cloud-sdk
+  image: amazon/aws-cli
+  before_script:
+    - aws --version
   services:
     - docker:dind
+  tags:
+    - aws
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=./infra/google/pipeline/cloudbuild-build-container.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
+    - docker build -t "$AWS_REPO_URI/$PROJECT_ID/$REF_NAME--$BRANCH_NAME:$SHORT_SHA"
+    - docker push "$AWS_REPO_URI/$PROJECT_ID/$REF_NAME--$BRANCH_NAME:$SHORT_SHA"
   needs:
     - job: generate-deck
     - job: create-qr
