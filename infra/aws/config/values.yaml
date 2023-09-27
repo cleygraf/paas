@@ -14,6 +14,8 @@ runners:
         "DOCKER_TLS_CERTDIR=/certs",
         "DOCKER_TLS_VERIFY=1",
         "DOCKER_CERT_PATH=$DOCKER_TLS_CERTDIR/client"
+        "AWS_EC2_METADATA_DISABLED"="true"
+        "AWS_SDK_LOAD_CONFIG"="true"
         ]
       [runners.kubernetes]
         namespace = "gitlab-runner"

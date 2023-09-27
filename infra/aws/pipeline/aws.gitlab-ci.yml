@@ -19,6 +19,7 @@ build-container:
   tags:
     - aws
   script:
+    - export | grep "AWS"
     - dockerConfig="~/.docker"
     - mkdir -p "$dockerConfig"
     - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
