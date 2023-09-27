@@ -12,7 +12,9 @@ build-container:
   stage: build
   image: amazon/aws-cli
   before_script:
+    - amazon-linux-extras install docker
     - aws --version
+    - docker --version
   services:
     - docker:dind
   tags:
