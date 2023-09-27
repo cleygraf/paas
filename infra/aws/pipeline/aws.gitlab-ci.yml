@@ -15,6 +15,7 @@ build-container:
     - amazon-linux-extras install docker
     - aws --version
     - docker --version
+    - export
   services:
     - docker:dind
   tags:
