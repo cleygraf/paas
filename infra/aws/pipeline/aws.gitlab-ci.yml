@@ -12,16 +12,16 @@ build-container:
   stage: build
   image: amazon/aws-cli
   before_script:
-    - amazon-linux-extras install docker
-    - yum -y install amazon-ecr-credential-helper 
-    - aws --version
-    - docker --version
-    - export
+    - amazon-linux-extras install docker > /dev/null 2>&1
+    - yum -y install amazon-ecr-credential-helper > /dev/null 2>&1
   services:
     - docker:dind
   tags:
     - aws
   script:
+    - dockerConfig=\${DOCKER_CONFIG:-~/.docker}
+    - [ -d \${dockerConfig} ] && echo "Docker directory Exists" || mkdir -p \${dockerConfig}
+    - echo '{"credsStore":"ecr-login"}' > \${dockerConfig}/config.json
     - docker build -t "$AWS_REPO_URI/paas:latest" .
     - docker push "$AWS_REPO_URI/paas:latest"
 #    - docker build -t "$AWS_REPO_URI/$CI_PROJECT_NAME/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHORT_SHA" .
