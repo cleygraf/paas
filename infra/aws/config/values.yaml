@@ -2,8 +2,11 @@ gitlabUrl: https://gitlab.com/
 runnerRegistrationToken: "glrt-hVyn7PXiAsuTos-3bR9q"
 rbac:
   create: true
+service:
+  enabled: true
 runners:
   privileged: true
+  serviceAccountName: gitlab-runner
   config: |
     [[runners]]
       environment = [
@@ -13,14 +16,21 @@ runners:
         "DOCKER_CERT_PATH=$DOCKER_TLS_CERTDIR/client"
         ]
       [runners.kubernetes]
-        namespace = "{{.Release.Namespace}}"
+        namespace = "gitlab-runner"
         image = "docker:19.03.12"
         privileged = true
         poll_timeout = 300
         poll_interval = 10
-        cpu_request = "2"
+        cpu_request = "1"
         [[runners.kubernetes.volumes.empty_dir]]
           name = "certs"
           mount_path = "/certs/client"
           medium = "Memory"
+resources:
+  limits:
+    memory: 256Mi
+    cpu: 200m
+  requests:
+    memory: 128Mi
+    cpu: 100m
 
