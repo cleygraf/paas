@@ -20,12 +20,11 @@ build-container:
     - aws
   script:
     - export | grep "AWS"
-    - dockerConfig="~/.docker"
-    - mkdir -p "$dockerConfig"
-    - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
-    - ls -al "$dockerConfig/"
-    - cat "$dockerConfig/config.json"
+    # - dockerConfig="~/.docker"
+    # - mkdir -p "$dockerConfig"
+    # - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
     - docker build -t "$AWS_REPO_URI/paas:latest" .
+    - aws ecr get-login-password | docker login --username AWS --password-stdin $AWS_REPO_URI
     - docker push "$AWS_REPO_URI/paas:latest"
 #    - docker build -t "$AWS_REPO_URI/$CI_PROJECT_NAME/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHORT_SHA" .
 #    - docker push "$AWS_REPO_URI/$CI_PROJECT_NAME/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHORT_SHA"
