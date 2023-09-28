@@ -178,7 +178,7 @@ Works with a trial license!
 
 - GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA (including a service account and namespace)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA
 - GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
 - ECS fargate with two services, load balancers and task definitions 
 
