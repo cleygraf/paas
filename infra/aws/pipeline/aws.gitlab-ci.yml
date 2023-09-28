@@ -6,7 +6,12 @@ include:
 
 variables:
   URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
-  URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"
+  URL_REVIEW: "https://$APP_NAME--$CI_COMMIT_SHORT_SHA-$BASE_DOMAIN_REVIEW"  
+  AWS_EXECUTION_ROLE_ARN_REVIEW: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
+  AWS_ECS_CLUSTER_REVIEW: "gitlab-review"
+  AWS_ECS_SERVCIE_REVIEW: "gitlab-review-svc"
+  AWS_ECS_TASK_DEFINITION_REVIEW: "paas-review"
+  AWS_ECS_TASK_FAMILY_REVIEW: "paas-review"
 
 build-container:
   stage: build
@@ -31,19 +36,18 @@ build-container:
 
 review:
   stage: review
-  image: google/cloud-sdk
+  image: amazon/aws-cli
   script:
-    - echo $GCP_SERVICE_KEY__TEST > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID__TEST
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=./infra/google/pipeline/cloudbuild-run-review.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="review",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-    - echo "$URL_REVIEW"
-    - cat ./assets/url-review.txt
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_DEFAULT_REGION
+    - definitions=$(cat ../infra/aws/config/task_definition.json/review/task_definitions.json)
+    - echo $definitions
+    - aws ecs register-task-definition  --region "${AWS_DEFAULT_REGION}" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory  "512" --network-mode  "awsvpc"  --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
+    - aws ecs update-service --region "${AWS_DEFAULT_REGION}" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVCIE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
   environment:
-    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    name: review
     url: $URL_REVIEW
-    on_stop: stop_review
-    auto_stop_in: 1 hours
   only:
     - branches
   except:
