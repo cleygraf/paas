@@ -18,10 +18,12 @@ build-container:
   tags:
     - aws
   script:
+    # Make docker work with IRSA
     # - dockerConfig="~/.docker"
     # - mkdir -p "$dockerConfig"
     # - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
     - docker build -t "$AWS_REPO_URI:latest" .
+    # Login if IRSA isn't working
     - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
     - docker push "$AWS_REPO_URI:latest"
   needs:
@@ -31,8 +33,8 @@ build-container:
 review:
   stage: review
   image: amazon/aws-cli
-  # tags:
-  #   - aws
+  tags:
+    - aws
   script:
     # - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
     # - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
