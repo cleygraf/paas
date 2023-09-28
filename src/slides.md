@@ -71,7 +71,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header: "GitLab's hosting options" -->
 
-- _[SaaS](https://gitlab.com) (provides runners too!)_
+- _[SaaS](https://gitlab.com) (provides runners too! [Free tier + Premium and Ultimat Edition](src/talk-track.md))_
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
