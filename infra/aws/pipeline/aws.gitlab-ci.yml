@@ -12,7 +12,7 @@ build-container:
   image: amazon/aws-cli
   before_script:
     - amazon-linux-extras install docker > /dev/null 2>&1
-    # - yum -y install amazon-ecr-credential-helper > /dev/null 2>&1
+    - yum -y install amazon-ecr-credential-helper > /dev/null 2>&1
   services:
     - docker:dind
   tags:
@@ -23,7 +23,7 @@ build-container:
     # - mkdir -p "$dockerConfig"
     # - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
     - docker build -t "$AWS_REPO_URI:latest" .
-    # Login if IRSA isn't working
+    # Uncomment next line for use with IRSA
     - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
     - docker push "$AWS_REPO_URI:latest"
   needs:
@@ -39,7 +39,7 @@ review:
     # - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
     # - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
     # - aws configure set region $AWS_DEFAULT_REGION
-    - definitions=$(cat ../infra/aws/config/task_definition.json/review/task_definitions.json)
+    - definitions=$(cat ./infra/aws/config/review/task_definition.json)
     - echo $definitions
     - aws ecs register-task-definition  --region "${AWS_DEFAULT_REGION}" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory  "512" --network-mode  "awsvpc"  --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
     - aws ecs update-service --region "${AWS_DEFAULT_REGION}" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVCIE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
