@@ -172,6 +172,15 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
+<!-- header:  "Architecture" -->
+
+# Improvements to consider
+
+- Get IRSA working again ;-) 
+- Alternativly use Fargate with associated IAM roles
+- More granular permissions
+
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
