@@ -103,25 +103,21 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ##URL_PROD## --->
 
 ---
-<!-- header:  "Architecture" -->
-
-# Concept
+<!-- header:  "Concept" -->
 
 - This is a demo and not meant for production!
-- It is build to be educational, not show how smart (probably/eher how dumb) I am ;-)
-- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come)
-- I am aiming for teaching you the ideas and concepts, not the details. 
+- It is build to be educational, not show how smart (rather how dumb) I am ;-)
+- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
+- I am aiming for teaching ideas and concepts, not the details. 
 - As a side kick this is a playground for me to show cool stuff.
-- No knowledge of GitLab or of a certain programming language is required. Only basic understanding of software development concept and cloud technologies is expected.
+- No knowledge of GitLab or of a certain programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "Architecture" -->
-
-# Consequences of the concept
+<!-- header:  "Concept - Consequences" -->
 
 - Keep it as simple as possible (KISS principle)
-- Make it as secure as needed for a demo
+- Make it only as secure as needed for a demo
 - Share it with the public, but BYOI
 - Use simple text files with markdown instead of a programming language like rust, go, ...
 
@@ -163,6 +159,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Create roles, policies and configure the EKS cluster to use IRSA (including a service account and namespace)
 - Install GitLab runners with the help of the GitLab provided helm chart
 - Provide a `values.yaml` file to make the runners use the service account and namespace mentioned before
+- ECS fargate configured with two services, load balancers ...
 
 ---
 <!-- header:  "Goal: GitLab developer work flow" -->
