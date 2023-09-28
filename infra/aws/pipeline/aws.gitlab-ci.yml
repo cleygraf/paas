@@ -1,11 +1,18 @@
 variables:
-  URL_PROD: "http://$APP_NAME-$BASE_DOMAIN_PROD"
+  URL_PROD: "http://gitlab-prod-lb-218443987.eu-central-1.elb.amazonaws.com"
   URL_REVIEW: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
-  AWS_EXECUTION_ROLE_ARN_REVIEW: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
+  # Review environment
   AWS_ECS_CLUSTER_REVIEW: "gitlab-review"
-  AWS_ECS_SERVCIE_REVIEW: "gitlab-review-svc"
+  AWS_ECS_SERVICE_REVIEW: "gitlab-review-svc"
   AWS_ECS_TASK_DEFINITION_REVIEW: "paas-review"
   AWS_ECS_TASK_FAMILY_REVIEW: "paas-review"
+  AWS_EXECUTION_ROLE_ARN_REVIEW: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
+  # Production environment
+  AWS_ECS_CLUSTER_PROD: "gitlab-prod"
+  AWS_ECS_SERVICE_PROD: "gitlab-prod-svc"
+  AWS_ECS_TASK_DEFINITION_PROD: "paas-prod"
+  AWS_ECS_TASK_FAMILY_PROD: "paas-prod"
+  AWS_EXECUTION_ROLE_ARN_PROD: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
 
 build-container:
   stage: build
@@ -38,7 +45,7 @@ review:
   script:
     - definitions=$(cat ./infra/aws/config/review/task_definition.json)
     - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory "1024" --network-mode  "awsvpc" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
-    - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVCIE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
+    - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVICE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
   environment:
     name: review
     url: $URL_REVIEW
@@ -49,16 +56,13 @@ review:
 
 deploy-prod:
   stage: deploy
-  image: google/cloud-sdk
-  services:
-    - docker:dind
+  image: amazon/aws-cli
+  tags:
+    - aws
   script:
-    - echo $GCP_SERVICE_KEY > gcloud-service-key.json
-    - gcloud auth activate-service-account --key-file gcloud-service-key.json
-    - gcloud config set project $GCP_PROJECT_ID
-    - tar -zcf /tmp/source.tgz . && gcloud builds submit --config=./infra/google/pipeline/cloudbuild-deploy-prod.yaml --substitutions=BRANCH_NAME="$CI_COMMIT_REF_NAME",TRIGGER_NAME="build-container",SHORT_SHA="$CI_COMMIT_SHORT_SHA",REF_NAME="$APP_NAME" /tmp/source.tgz
-    - echo "$URL_PROD"
-    - cat ./assets/url-prod.txt
+    - definitions=$(cat ./infra/aws/config/prod/task_definition.json)
+    - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_PROD" --container-definitions "$definitions" --cpu "256" --memory "1024" --network-mode  "awsvpc" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_PROD" 
+    - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_PROD" --service "$AWS_ECS_SERVICE_PROD"  --task-definition "$AWS_ECS_TASK_DEFINITION_PROD"
   environment:
     name: production
     url: $URL_PROD
