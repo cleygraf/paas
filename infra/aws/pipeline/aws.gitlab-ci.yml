@@ -41,7 +41,7 @@ review:
     # - aws configure set region $AWS_DEFAULT_REGION
     - definitions=$(cat ./infra/aws/config/review/task_definition.json)
     - echo $definitions
-    - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
+    - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --network-mode  "awsvpc" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
     # - aws ecs register-task-definition  --region "${AWS_DEFAULT_REGION}" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory  "512" --network-mode  "awsvpc"  --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
     - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVCIE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
   environment:
