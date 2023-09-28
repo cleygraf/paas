@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-        GitLab Workshop Stockholm, 2023-09-28
+        GitLab Workshop Stockholm, 2024-09-28
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
         <b>AWS</b>
@@ -109,7 +109,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - It is build to be educational, not show how smart (rather how dumb) I am ;-)
 - I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
 - I am aiming for teaching ideas and concepts, not the details. 
-- As a side kick this is a playground for me to show off cool stuff.
+- As a side kick this is just a playground for me to show off cool stuff.
 - No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -124,15 +124,15 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ---
 <!-- header:  "Architecture - AWS" -->
 
-- GitLab SaaS (including runners)
+- GitLab SaaS (with runners)
 - AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
 - AWS ECR (Elastic Container Registry)
-- AWS Fargate (Container )
+- AWS Fargate (Serverless Compute Engine)
 
 ---
 <!-- header:  "Architecture - Google Cloud" -->
 
-- GitLab SaaS (including runners and GitLab SAST)
+- GitLab SaaS (with runners and GitLab SAST)
 - Google Cloud Build
 - Google Container Registry 
 - Google Cloud Run
@@ -140,22 +140,19 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ---
 <!-- header:  "Architecture - GitLab" -->
 
-- GitLab SaaS (including runners)
+- GitLab SaaS (with runners)
 - GitLab Pages
 
 Works with a trial license!
 
 ---
-<!-- header:  "Architecture" -->
+<!-- header:  "Prerequisits - AWS" -->
 
-# Prerequisits
-
-- GitLab SaaS (including runners)
+- GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Create roles, policies and configure the EKS cluster to use IRSA (including a service account and namespace)
-- Install GitLab runners with the help of the GitLab provided helm chart
-- Provide a `values.yaml` file to make the runners use the service account and namespace mentioned before
-- ECS fargate configured with two services, load balancers ...
+- Roles, policies, service accounts and namespaces for EKS cluster to use IRSA (including a service account and namespace)
+- GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
+- ECS fargate with two services, load balancers and task definitions 
 
 ---
 <!-- header:  "Goal: GitLab developer work flow" -->
@@ -165,9 +162,19 @@ Works with a trial license!
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-<!-- header:  "CI/CD Pipeline" -->
+<!-- header:  "GitLab groups and projects" -->
 
-# Stages and jobs
+- Groups
+  - Variables
+  - Runners
+  - Epics
+  - Projects
+    - Variables
+    - Issues
+    - Repository
+
+---
+<!-- header:  "CI/CD Pipeline - Stages and jobs" -->
 
 - prechecks
   - markdownlint
@@ -183,9 +190,7 @@ Works with a trial license!
   - deploy-prod
 
 ---
-<!-- header:  "Architecture" -->
-
-# Improvements to consider
+<!-- header:  "Improvements to consider" -->
 
 - Get IRSA working again ;-) 
 - Alternativly use Fargate with associated IAM roles
