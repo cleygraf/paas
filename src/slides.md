@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: git & GitLab - Ge CompuNet
+title: GitLab AWS Workshop
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
@@ -109,22 +109,20 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - It is build to be educational, not show how smart (rather how dumb) I am ;-)
 - I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
 - I am aiming for teaching ideas and concepts, not the details. 
-- As a side kick this is a playground for me to show cool stuff.
-- No knowledge of GitLab or of a certain programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
+- As a side kick this is a playground for me to show off cool stuff.
+- No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Concept - Consequences" -->
 
-- Keep it as simple as possible (KISS principle)
-- Make it only as secure as needed for a demo
-- Share it with the public, but BYOI
-- Use simple text files with markdown instead of a programming language like rust, go, ...
+- Keep it as simple as possible (KISS principle).
+- Make it only as secure as needed for a demo.
+- Share it with the public, but BYOI.
+- Use simple text files with markdown instead of a programming language like rust, go, ... .
 
 ---
-<!-- header:  "Architecture" -->
-
-# Components in case of AWS
+<!-- header:  "Architecture - AWS" -->
 
 - GitLab SaaS (including runners)
 - AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
@@ -132,9 +130,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - AWS Fargate (Container )
 
 ---
-<!-- header:  "Architecture" -->
-
-# Components in case of Google Cloud
+<!-- header:  "Architecture - Google Cloud" -->
 
 - GitLab SaaS (including runners and GitLab SAST)
 - Google Cloud Build
@@ -142,12 +138,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Google Cloud Run
 
 ---
-<!-- header:  "Architecture" -->
-
-# Components in case of GitLab
+<!-- header:  "Architecture - GitLab" -->
 
 - GitLab SaaS (including runners)
 - GitLab Pages
+
+Works with a trial license!
 
 ---
 <!-- header:  "Architecture" -->
