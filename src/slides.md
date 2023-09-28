@@ -101,7 +101,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 </div>
 
 ---
-
 <!-- header:  "Production PaaS App" -->
 
 ![bg 30%](./../assets/url-prod.png)
@@ -132,6 +131,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Share it with the public, but BYOI.
 - Uses simple text files with markdown instead of a programming language like rust, go, ... .
 
+<!-- footer: [https://gitlab.com/gitlab-partner-demos/paas/paas](https://gitlab.com/gitlab-partner-demos/paas/paas) --->
 ---
 <!-- header:  "Architecture - AWS" -->
 
@@ -140,6 +140,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - AWS ECR (Elastic Container Registry)
 - AWS Fargate (Serverless Compute Engine)
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Architecture - Google Cloud" -->
 
@@ -173,12 +174,11 @@ Works with a trial license!
 > Applications in a Pod's containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. ... Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance's role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.
 
 ---
-<!-- header:  "Goal: GitLab developer work flow" -->
+<!-- header:  "GitLab's developer work flow" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
-
 ---
 <!-- header:  "GitLab Groups" -->
 
@@ -199,6 +199,11 @@ Works with a trial license!
     - Issues
     - Repository
 ---
+<!-- header:  "GitLab's developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+---
 <!-- header:  "GitLAb Pipeline - Stages and jobs" -->
 
 - prechecks
@@ -214,6 +219,23 @@ Works with a trial license!
 - deploy
   - deploy-prod
 
+---
+<!-- header:  "GitLab's developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+---
+<!-- header:  "Review PaaS App" -->
+
+![bg 30%](./../assets/url-review.png)
+
+<!-- footer: ##URL_Review## --->
+---
+<!-- header:  "Production PaaS App" -->
+
+![bg 30%](./../assets/url-prod.png) 
+
+<!-- footer: ##URL_PROD## --->
 ---
 <!-- header:  "Improvements to consider" -->
 
