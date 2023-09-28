@@ -53,7 +53,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <div class="white-center"><p>And Software?</p></div>
 
 ---
-
 <!-- header: "GitLab's Software Factory Approach" -->
 
 ![bg](./../assets/software-factory.svg)
@@ -61,6 +60,13 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Ideas go in, applications come out
 - Shift security left: checks at each stage
 - Full visibility from planning to production
+
+---
+<!-- header: "GitLab's hosting options" -->
+
+- _[SaaS](https://gitlab.com) (provides runners too!)_
+- [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
+- [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by yourself)
 
 ---
 <!-- header: "" -->
@@ -101,7 +107,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL_PROD## --->
+---
+<!-- header:  "Goal: Fix my mistakes" -->
 
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Concept" -->
 
@@ -162,7 +173,15 @@ Works with a trial license!
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
-<!-- header:  "GitLab groups and projects" -->
+<!-- header:  "GitLab Groups" -->
+
+- Groups
+  - Variables
+  - Runners
+  - Epics
+
+---
+<!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
   - Variables
@@ -172,9 +191,8 @@ Works with a trial license!
     - Variables
     - Issues
     - Repository
-
 ---
-<!-- header:  "CI/CD Pipeline - Stages and jobs" -->
+<!-- header:  "GitLAb Pipeline - Stages and jobs" -->
 
 - prechecks
   - markdownlint
