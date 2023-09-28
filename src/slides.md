@@ -64,6 +64,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
+<!-- header: ""  --> 
+
+![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
+---
 <!-- header: "GitLab's hosting options" -->
 
 - _[SaaS](https://gitlab.com) (provides runners too!)_
