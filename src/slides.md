@@ -71,9 +71,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header: "GitLab's hosting options" -->
 
-- _[SaaS](https://gitlab.com) (provides runners too!)_
+- *[SaaS](https://gitlab.com) (provides runners too!)*
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
+
+[Free tier (SaaS) + Premium and Ultimat Editions](src/talk-track.md)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -176,9 +178,9 @@ Works with a trial license!
 
 - GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA (including a service account and namespace)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA
 - GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
-- ECS fargate with two services, load balancers and task definitions 
+- ECS Fargate with two services, load balancers and task definitions 
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
