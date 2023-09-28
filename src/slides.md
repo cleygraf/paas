@@ -172,12 +172,31 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 
 ---
+<!-- header:  "CI/CD Pipeline" -->
+
+# Stages and jobs
+
+- prechecks
+  - markdownlint
+- build
+  - create-qr
+  - generate-deck
+  - build-container (tags: aws)
+- test
+  - kics-iac-sast
+- review
+  - review (tags: aws)
+- deploy
+  - deploy-prod
+
+---
 <!-- header:  "Architecture" -->
 
 # Improvements to consider
 
 - Get IRSA working again ;-) 
 - Alternativly use Fargate with associated IAM roles
+- Add SAST container scanning or ECR Image scanning
 - More granular permissions
 
 ---
