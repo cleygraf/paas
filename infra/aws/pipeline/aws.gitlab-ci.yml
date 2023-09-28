@@ -31,10 +31,12 @@ build-container:
 review:
   stage: review
   image: amazon/aws-cli
+  # tags:
+  #   - aws
   script:
-    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
-    - aws configure set region $AWS_DEFAULT_REGION
+    # - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    # - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    # - aws configure set region $AWS_DEFAULT_REGION
     - definitions=$(cat ../infra/aws/config/task_definition.json/review/task_definitions.json)
     - echo $definitions
     - aws ecs register-task-definition  --region "${AWS_DEFAULT_REGION}" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory  "512" --network-mode  "awsvpc"  --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
