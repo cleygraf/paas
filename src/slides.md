@@ -143,7 +143,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Share it with the public, but BYOI.
 - Uses simple text files with markdown instead of a programming language like rust, go, ... .
 
-<!-- footer: [https://gitlab.com/gitlab-partner-demos/paas/paas](https://gitlab.com/gitlab-partner-demos/paas/paas) --->
+<!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
 ---
 <!-- header:  "Architecture - AWS" -->
 
