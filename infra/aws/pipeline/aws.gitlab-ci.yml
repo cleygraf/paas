@@ -1,6 +1,6 @@
 variables:
-  URL_PROD: "https://$APP_NAME-$BASE_DOMAIN_PROD"
-  URL_REVIEW: "https://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
+  URL_PROD: "http://$APP_NAME-$BASE_DOMAIN_PROD"
+  URL_REVIEW: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
   AWS_EXECUTION_ROLE_ARN_REVIEW: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
   AWS_ECS_CLUSTER_REVIEW: "gitlab-review"
   AWS_ECS_SERVCIE_REVIEW: "gitlab-review-svc"
