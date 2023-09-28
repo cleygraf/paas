@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-        GitLab Workshop Stockholm, 2023-09-28
+        GitLab Workshop Stockholm, 2024-09-28
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
         <b>AWS</b>
@@ -180,7 +180,7 @@ Works with a trial license!
 - An AWS EKS cluster (OIDC enabled)
 - Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA
 - GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
-- ECS fargate with two services, load balancers and task definitions 
+- ECS Fargate with two services, load balancers and task definitions 
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
