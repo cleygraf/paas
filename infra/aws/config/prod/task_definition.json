@@ -1,0 +1,33 @@
+[
+    {
+        "name": "paas",
+        "image": "687015913858.dkr.ecr.eu-central-1.amazonaws.com/gitlab-paas:latest",
+        "cpu": 0,
+        "memory": 1024,
+        "portMappings": [
+            {
+                "name": "paas-8080-tcp",
+                "containerPort": 8080,
+                "hostPort": 8080,
+                "protocol": "tcp",
+                "appProtocol": "http"
+            }
+        ],
+        "essential": true,
+        "environment": [],
+        "environmentFiles": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        "ulimits": [],
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-create-group": "true",
+                "awslogs-group": "/ecs/",
+                "awslogs-region": "eu-central-1",
+                "awslogs-stream-prefix": "ecs"
+            },
+            "secretOptions": []
+        }
+    }
+]

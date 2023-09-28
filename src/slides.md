@@ -1,16 +1,16 @@
 ---
 marp: true
 theme: gitlab-theme
-title: git & GitLab - Ge CompuNet
+title: GitLab AWS Workshop
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-        DevOpsDays London 2022
+        GitLab Workshop Stockholm, 2024-09-28
     </h1>
-    <h2 style="margin-bottom:1.5em;text-align:right;color:#FF6633">
-        <b>Adaptavist</b>
+    <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
+        <b>AWS</b>
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -52,8 +52,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="white-center"><p>And Software?</p></div>
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-
 <!-- header: "GitLab's Software Factory Approach" -->
 
 ![bg](./../assets/software-factory.svg)
@@ -62,11 +62,26 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - Shift security left: checks at each stage
 - Full visibility from planning to production
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: ""  --> 
+
+![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
+---
+<!-- header: "GitLab's hosting options" -->
+
+- _[SaaS](https://gitlab.com) (provides runners too!)_
+- [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
+- [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header: "" -->
 
 <div class="white-center"><p>What is a PaaS?</p></div>
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "What is a PaaS?" -->
 
@@ -74,6 +89,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 > Platform as a service (...) is a category of cloud computing services that allows customers to provision, instantiate, run, and manage a modular bundle comprising a computing platform and one or more applications, without the complexity of building and maintaining the infrastructure typically associated with developing and launching the application(s), and to allow developers to create, develop, and package such software bundles.
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
@@ -82,6 +98,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 <div class="red-stamp"><p>WRONG!!!</p></div>
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "For today it's ..." -->
 
@@ -94,20 +111,160 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
     </div>
 </div>
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Production PaaS App" -->
 
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: ##URL_PROD## --->
-
 ---
-<!-- header:  "Goal: GitLab developer work flow" -->
+<!-- header:  "Goal: Fix my mistake" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Concept" -->
 
+- This is a demo and not meant for production!
+- It is build to be educational, not show how smart (rather how dumb) I am ;-)
+- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
+- I am aiming for teaching ideas and concepts, not the details. 
+- As a side kick this is just a playground for me to show off cool stuff.
+- No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Concept - Consequences for the demo project" -->
+
+- Keep it as simple as possible (KISS principle).
+- Make it only as secure as needed for a demo.
+- Share it with the public, but BYOI.
+- Uses simple text files with markdown instead of a programming language like rust, go, ... .
+
+<!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
+---
+<!-- header:  "Architecture - AWS" -->
+
+- GitLab SaaS (with runners)
+- AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
+- AWS ECR (Elastic Container Registry)
+- AWS Fargate (Serverless Compute Engine)
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Architecture - Google Cloud" -->
+
+- GitLab SaaS (with runners and GitLab SAST)
+- Google Cloud Build
+- Google Container Registry 
+- Google Cloud Run
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Architecture - GitLab" -->
+
+- GitLab SaaS (with runners)
+- GitLab Pages
+
+Works with a trial license!
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Prerequisits - AWS" -->
+
+- GitLab SaaS (with runners)
+- An AWS EKS cluster (OIDC enabled)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA (including a service account and namespace)
+- GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
+- ECS fargate with two services, load balancers and task definitions 
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "AWS: IRSA" -->
+
+[IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+> Applications in a Pod's containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. ... Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance's role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account. ...
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab's developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab Groups" -->
+
+- Groups
+  - Variables
+  - Runners
+  - Epics
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab Groups and Projects" -->
+
+- Groups
+  - Variables
+  - Runners
+  - Epics
+  - Projects
+    - Variables
+    - Issues
+    - Repository
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab's developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+---
+<!-- header:  "GitLAb Pipeline - Stages and jobs" -->
+
+- prechecks
+  - markdownlint
+- build
+  - create-qr
+  - generate-deck
+  - build-container (tags: aws)
+- test
+  - kics-iac-sast
+- review
+  - review (tags: aws)
+- deploy
+  - deploy-prod
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab's developer work flow" -->
+
+<img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
+
+---
+<!-- header:  "Review PaaS App" -->
+
+![bg 30%](./../assets/url-review.png)
+
+<!-- footer: ##URL_REVIEW## --->
+---
+<!-- header:  "Production PaaS App" -->
+
+![bg 30%](./../assets/url-prod.png) 
+
+<!-- footer: ##URL_PROD## --->
+---
+<!-- header:  "Improvements to consider" -->
+
+- Get IRSA working again ;-) 
+- Alternativly use Fargate with associated IAM roles
+- Add SAST container scanning or ECR Image scanning
+- More granular permissions
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
 
@@ -124,7 +281,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 </div>
 
 <!-- footer: "https://about.gitlab.com/" -->
-
 ---
 <!-- header:  "Useful links?" -->
 
@@ -134,8 +290,6 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
-
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab and Google Cloud AI Partnership](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
@@ -144,8 +298,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
-<!-- footer: "![w:15 h:15](./../assets/gitlab-logo.svg) [These slides as PDF](slides.pdf)" -->
-
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "<b>Updated</b> Production PaaS App" -->
 
