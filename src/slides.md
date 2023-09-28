@@ -66,7 +66,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 - _[SaaS](https://gitlab.com) (provides runners too!)_
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
-- [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by yourself)
+- [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
 ---
 <!-- header: "" -->
@@ -108,7 +108,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 <!-- footer: ##URL_PROD## --->
 ---
-<!-- header:  "Goal: Fix my mistakes" -->
+<!-- header:  "Goal: Fix my mistake" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -125,12 +125,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "Concept - Consequences" -->
+<!-- header:  "Concept - Consequences for the demo project" -->
 
 - Keep it as simple as possible (KISS principle).
 - Make it only as secure as needed for a demo.
 - Share it with the public, but BYOI.
-- Use simple text files with markdown instead of a programming language like rust, go, ... .
+- Uses simple text files with markdown instead of a programming language like rust, go, ... .
 
 ---
 <!-- header:  "Architecture - AWS" -->
@@ -161,9 +161,16 @@ Works with a trial license!
 
 - GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Roles, policies, service accounts and namespaces for EKS cluster to use IRSA (including a service account and namespace)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA (including a service account and namespace)
 - GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
 - ECS fargate with two services, load balancers and task definitions 
+
+---
+<!-- header:  "AWS: IRSA" -->
+
+[IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+> Applications in a Pod's containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. ... Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance's role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.
 
 ---
 <!-- header:  "Goal: GitLab developer work flow" -->
