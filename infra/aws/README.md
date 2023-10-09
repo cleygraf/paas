@@ -17,6 +17,7 @@ Execute:
 See [Creating an IAM OIDC provider for your cluster](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
 
 Run:
+
 - `cluster_name="gitlab-cluster"`
 - `oidc_id="$(aws eks describe-cluster --name $cluster_name --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)"`
 - `echo $oidc_id`
@@ -43,7 +44,7 @@ Execute:
 
 Verify running pod in the namespace _gitlab-ns_:
 `kubectl get pods -n "gitlab-ns"`
- 
+
 ### IRSA 
 
 #### Create an IAM policy
