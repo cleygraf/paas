@@ -90,4 +90,3 @@ Create repository:
 `aws ecr create-repository --repository-name gitlab-repo --image-scanning-configuration scanOnPush=true`
 
 Store the `repositoryUri` value in the GitLab ci/cd variable `AWS_REPO_URI`.
-
