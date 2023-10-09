@@ -81,3 +81,13 @@ If the proper ARN isn't attached (or no ARN at all), restart **each** _gitlab ru
 Verify if new _gitlab-runner_ pods have picked up the IAM role:
     1. `kubectl get pods -n gitlab-ns`
     2. `kubectl describe pod YOUR-NEW-POD-NAME -n gitlab-ns| grep AWS_ROLE_ARN:`
+
+### Create ECR repository
+
+See [Using Amazon ECR with the AWS CLI](Using Amazon ECR with the AWS CLI)
+
+Create repository:
+`aws ecr create-repository --repository-name gitlab-repo --image-scanning-configuration scanOnPush=true`
+
+Store the `repositoryUri` value in the GitLab ci/cd variable `AWS_REPO_URI`.
+
