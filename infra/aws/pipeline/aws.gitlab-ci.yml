@@ -13,6 +13,7 @@ variables:
   AWS_ECS_TASK_DEFINITION_PROD: "paas-prod"
   AWS_ECS_TASK_FAMILY_PROD: "paas-prod"
   AWS_EXECUTION_ROLE_ARN_PROD: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
+  KUBERNETES_SERVICE_ACCOUNT_OVERWRITE: gitlab-sa
 
 build-container:
   stage: build
