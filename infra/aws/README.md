@@ -67,7 +67,7 @@ View the default version of the policy:
 `aws iam get-policy --policy-arn $(aws iam list-attached-role-policies --role-name gitlab-role --query "AttachedPolicies[].PolicyArn" --output text)`
 
 Show details of the service account:
-`kubectl describe serviceaccount gitlab-runner -n gitlab-runner`
+`kubectl describe serviceaccount gitlab-runner -n gitlab-ns`
 
 Check already running _gitlab-runner_ pods:
 `kubectl get pods -n gitlab-ns`
