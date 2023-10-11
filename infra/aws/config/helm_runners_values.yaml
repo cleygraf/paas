@@ -1,6 +1,7 @@
 gitlabUrl: https://gitlab.com/
 rbac:
   create: true
+  serviceAccountName: gitlab-sa
 service:
   enabled: true
 runners:
