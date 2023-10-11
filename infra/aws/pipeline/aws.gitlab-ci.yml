@@ -30,10 +30,10 @@ build-container:
     #- dockerConfig="~/.docker"
     #- mkdir -p "$dockerConfig"
     #- echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
-    - docker build -t "$AWS_REPO_URI/$APP_NAME-$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA" .
+    - docker build -t "$AWS_REPO_URI:CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA" .
     # Uncomment next line for use with IRSA
     - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
-    - docker push "$AWS_REPO_URI/$APP_NAME-$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA"
+    - docker push "$AWS_REPO_URI:CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
   needs:
     - job: generate-deck
     - job: create-qr
