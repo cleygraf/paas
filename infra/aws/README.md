@@ -90,3 +90,20 @@ Create repository:
 `aws ecr create-repository --repository-name gitlab-repo --image-scanning-configuration scanOnPush=true`
 
 Store the `repositoryUri` value in the GitLab ci/cd variable `AWS_REPO_URI`.
+
+### Fargate
+
+#### Task definition
+
+Create a task definition and specify "container port" `8080`  and the repository url with the tag `latest`.
+
+#### ECS Cluster
+
+Create a cluster an keep "Infrastructure" `AWS Fargate (serverless)`.
+
+#### Service
+
+Create a service with these changes to the defaults:
+
+- "Compute options" -> `Launch type`
+- "Load balancer type" -> `Application Load Balancer`
