@@ -35,7 +35,7 @@ build-container:
     # Uncomment next line for use with IRSA
     - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
     - docker push "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
-    #- docker push "$AWS_REPO_URI:latest"
+    - docker push "$AWS_REPO_URI:latest"
   needs:
     - job: generate-deck
     - job: create-qr
