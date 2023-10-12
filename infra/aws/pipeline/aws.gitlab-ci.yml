@@ -27,13 +27,13 @@ build-container:
     - aws
   script:
     # Make docker work with IRSA
-    #- dockerConfig="~/.docker"
-    #- mkdir -p "$dockerConfig"
-    #- echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
+    - dockerConfig="~/.docker"
+    - mkdir -p "$dockerConfig"
+    - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
     - docker build -t "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA" -t "$AWS_REPO_URI:latest" .
     #- docker build -t "$AWS_REPO_URI:latest" .
     # Uncomment next line for use with IRSA
-    - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
+    #- aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
     - docker push "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
     - docker push "$AWS_REPO_URI:latest"
   needs:
