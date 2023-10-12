@@ -31,8 +31,8 @@ build-container:
     - export AWS_SDK_LOAD_CONFIG="true"
     - pwd
     - ls -al
-    - mkdir -p "~/.docker"
-    - echo '{"credsStore":"ecr-login"}' > "~/.docker/config.json"
+    - mkdir -p ~/.docker
+    - echo '{"credsStore":"ecr-login"}' > ~/.docker/config.json
     - ls -al
     - cat ~/.docker/config.json
     - docker-credential-ecr-login -v
