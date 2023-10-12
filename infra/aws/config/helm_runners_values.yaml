@@ -19,6 +19,7 @@ runners:
         ]
       [runners.kubernetes]
         namespace = "gitlab-ns"
+        service_account = "gitlab-runner"
         image = "docker:19.03.12"
         privileged = true
         poll_timeout = 300
