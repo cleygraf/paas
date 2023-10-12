@@ -28,7 +28,7 @@ build-container:
   script:
     # Make docker work with IRSA
     - export AWS_EC2_METADATA_DISABLED="true"
-    - AWS_SDK_LOAD_CONFIG="true"
+    - export AWS_SDK_LOAD_CONFIG="true"
     - dockerConfig="~/.docker"
     - mkdir -p "$dockerConfig"
     - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
