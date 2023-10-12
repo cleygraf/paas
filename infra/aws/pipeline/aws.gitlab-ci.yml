@@ -29,9 +29,8 @@ build-container:
     # Make docker work with IRSA
     - export AWS_EC2_METADATA_DISABLED="true"
     - export AWS_SDK_LOAD_CONFIG="true"
-    - dockerConfig="~/.docker"
-    - mkdir -p "$dockerConfig"
-    - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
+    - mkdir -p "~/.docker"
+    - echo '{"credsStore":"ecr-login"}' > "~/.docker/config.json"
     - cat ~/.docker/config.json
     - docker-credential-ecr-login -v
     - docker build -t "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA" -t "$AWS_REPO_URI:latest" .
