@@ -49,7 +49,10 @@ Verify running pod in the namespace _gitlab-ns_:
 
 #### Create an IAM policy
 
-See [# Configuring a Kubernetes service account to assume an IAM role](https://docs.aws.amazon.com/eks/latest/userguide/associate-service-account-role.html)
+See
+
+- [# Configuring a Kubernetes service account to assume an IAM role](https://docs.aws.amazon.com/eks/latest/userguide/associate-service-account-role.html)
+- [Amazon ECR Docker Credential Helper](https://github.com/awslabs/amazon-ecr-credential-helper)
 
 To create an IAM policy _gitlab-policy_ execute :
 `aws iam create-policy --policy-name gitlab-policy --policy-document file://./infra/aws/config/gitlab_iam_profile.json --description "GitLab ci/cd policy"`

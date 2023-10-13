@@ -7,10 +7,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-        GitLab Workshop Edinburgh, 2023-10-13
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Edinburgh, 2024-10-13
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-        <b>AWS</b>
+      Sheraton Hotel Edinburgh
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -67,6 +67,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <!-- header: ""  --> 
 
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
+---
+<!-- header:  "AI powered - in every stage & for everyone" -->
+
+<img src="./../assets/GitLab AI Workflow.svg" class="center">
 
 ---
 <!-- header: "GitLab's hosting options" -->
@@ -131,7 +136,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 - This is a demo and not meant for production!
 - It is build to be educational, not show how smart (rather how dumb) I am ;-)
-- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
+- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS).
 - I am aiming for teaching ideas and concepts, not the details. 
 - As a side kick this is just a playground for me to show off cool stuff.
 - No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
@@ -150,8 +155,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- header:  "Architecture - AWS" -->
 
 - GitLab SaaS (with runners)
-- AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
-- AWS ECR (Elastic Container Registry)
+- AWS EKS with GitLab runners using IRSA (**I**AM **R**oles for **S**ervice **A**ccounts)
+- AWS ECR (**E**lastic **C**ontainer **R**egistry)
 - AWS Fargate (Serverless Compute Engine)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -178,8 +183,8 @@ Works with a trial license!
 
 - GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA
-- GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use by IRSA
+- GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -192,7 +197,13 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "AWS: Infrastructure Architecture" -->
+
+<img src="./../assets/AWS Infra Architecture.svg"  class="center">
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "GitLab Workflow: Introduction" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -201,31 +212,32 @@ Works with a trial license!
 <!-- header:  "GitLab Groups" -->
 
 - Groups
-  - Variables
-  - Runners
-  - Epics
+  - Variables *
+  - Runners *
+  - Epics *
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
-  - Variables
-  - Runners
-  - Epics
-  - Projects
-    - Variables
-    - Issues
-    - Repository
+  - Variables *
+  - Runners *
+  - Epics *
+  - Projects *
+    - Variables *
+    - Runners *
+    - Issues *
+    - Repository *
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "GitLab Workflow: Issue, MR, Push Code, Pipeline" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 ---
-<!-- header:  "GitLAb Pipeline - Stages and jobs" -->
+<!-- header:  "GitLab Pipeline - Stages and jobs" -->
 
 - prechecks
   - markdownlint
@@ -242,7 +254,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "GitLab Workflow: Preview App" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -261,8 +273,7 @@ Works with a trial license!
 ---
 <!-- header:  "Improvements to consider" -->
 
-- Get IRSA working again ;-) 
-- Alternativly use Fargate with associated IAM roles
+- Alternative: Use Fargate with associated IAM roles instead of EKS
 - Add SAST container scanning or ECR Image scanning
 - More granular permissions
 
