@@ -69,9 +69,9 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
-<!-- header:  "GitLab Workflow: AI powered" -->
+<!-- header:  "GitLab Workflow: AI powered - every stage / everyone" -->
 
-<img src="./../assets/GitLab AI Workflow.svg" style="width:100%; margin-top:0em">
+<img src="./../assets/GitLab AI Workflow.svg" class="center">
 
 ---
 <!-- header: "GitLab's hosting options" -->
@@ -199,7 +199,7 @@ Works with a trial license!
 ---
 <!-- header:  "AWS: Infrastructure Architecture" -->
 
-<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:80%; margin-top:1em">
+<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:80%; ">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -232,7 +232,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab Workflow: Issue, MR, Code " -->
+<!-- header:  "GitLab Workflow: Issue, MR, Push Code, Pipeline" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
