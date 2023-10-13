@@ -201,23 +201,23 @@ Works with a trial license!
 <!-- header:  "GitLab Groups" -->
 
 - Groups
-  - Variables <sup>*</sup>
-  - Runners <sup>*</sup>
-  - Epics <sup>*</sup>
+  - Variables *
+  - Runners *
+  - Epics *
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
-  - Variables <sup>*</sup>
-  - Runners <sup>*</sup>
-  - Epics <sup>*</sup>
-  - Projects <sup>*</sup>
-    - Variables <sup>*</sup>
-    - Runners <sup>*</sup>
-    - Issues <sup>*</sup>
-    - Repository <sup>*</sup>
+  - Variables *
+  - Runners *
+  - Epics *
+  - Projects *
+    - Variables *
+    - Runners *
+    - Issues *
+    - Repository *
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
