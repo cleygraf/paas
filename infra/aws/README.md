@@ -50,6 +50,7 @@ Verify running pod in the namespace _gitlab-ns_:
 #### Create an IAM policy
 
 See
+
 - [# Configuring a Kubernetes service account to assume an IAM role](https://docs.aws.amazon.com/eks/latest/userguide/associate-service-account-role.html)
 - [Amazon ECR Docker Credential Helper](https://github.com/awslabs/amazon-ecr-credential-helper)
 
