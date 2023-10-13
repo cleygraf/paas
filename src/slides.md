@@ -237,7 +237,7 @@ Works with a trial license!
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 ---
-<!-- header:  "GitLAb Pipeline - Stages and jobs" -->
+<!-- header:  "GitLab Pipeline - Stages and jobs" -->
 
 - prechecks
   - markdownlint
