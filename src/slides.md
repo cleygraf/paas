@@ -136,7 +136,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 - This is a demo and not meant for production!
 - It is build to be educational, not show how smart (rather how dumb) I am ;-)
-- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS, Auzure to come).
+- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS).
 - I am aiming for teaching ideas and concepts, not the details. 
 - As a side kick this is just a playground for me to show off cool stuff.
 - No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
@@ -155,8 +155,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- header:  "Architecture - AWS" -->
 
 - GitLab SaaS (with runners)
-- AWS EKS with GitLab runners using IRSA (IAM Roles for Service Accounts)
-- AWS ECR (Elastic Container Registry)
+- AWS EKS with GitLab runners using IRSA (**I**AM **R**oles for **S**ervice **A**ccounts)
+- AWS ECR (**E**lastic **C**ontainer **R**egistry)
 - AWS Fargate (Serverless Compute Engine)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -183,8 +183,8 @@ Works with a trial license!
 
 - GitLab SaaS (with runners)
 - An AWS EKS cluster (OIDC enabled)
-- Roles, policies, service accounts and namespaces for the EKS cluster to use IRSA
-- GitLab runners on EKS (GitLab provided helm chart with a `values.yaml`)
+- Roles, policies, service accounts and namespaces for the EKS cluster to use by IRSA
+- GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
