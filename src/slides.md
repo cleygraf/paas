@@ -192,7 +192,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "One workflow to unite your developers, security, and operations teams" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -221,7 +221,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "One workflow to unite your developers, security, and operations teams" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -243,7 +243,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab's developer work flow" -->
+<!-- header:  "One workflow to unite your developers, security, and operations teams" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
