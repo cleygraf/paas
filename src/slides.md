@@ -199,7 +199,7 @@ Works with a trial license!
 ---
 <!-- header:  "AWS: Infrastructure Architecture" -->
 
-<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:100%; margin-top:1em; margin-top:4em">
+<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:100%; margin-top:1em; margin-bottom:4em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -273,8 +273,7 @@ Works with a trial license!
 ---
 <!-- header:  "Improvements to consider" -->
 
-- Get IRSA working again ;-) 
-- Alternativly use Fargate with associated IAM roles
+- Alternative: Use Fargate with associated IAM roles instead of EKS
 - Add SAST container scanning or ECR Image scanning
 - More granular permissions
 
