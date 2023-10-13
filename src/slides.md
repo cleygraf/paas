@@ -7,10 +7,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-        GitLab Workshop Edinburgh, 2024-10-13
+      GitLab <b style=color:#FF9900">AWS</b> Workshop Edinburgh, 2024-10-13
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-        <b>AWS</b>
+      Sheraton Hotel Edinburgh
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
