@@ -199,7 +199,7 @@ Works with a trial license!
 ---
 <!-- header:  "AWS: Infrastructure Architecture" -->
 
-<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:80%; ">
+<img src="./../assets/AWS Infra Architecture.svg"  class="center">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
