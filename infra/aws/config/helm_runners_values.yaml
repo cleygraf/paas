@@ -1,12 +1,12 @@
 gitlabUrl: https://gitlab.com/
-runnerRegistrationToken: "glrt-hVyn7PXiAsuTos-3bR9q"
 rbac:
   create: true
+  serviceAccountName: gitlab-sa
 service:
   enabled: true
 runners:
   privileged: true
-  serviceAccountName: gitlab-runner
+  serviceAccountName: gitlab-sa
   config: |
     [[runners]]
       environment = [
@@ -18,7 +18,8 @@ runners:
         "AWS_SDK_LOAD_CONFIG=true"
         ]
       [runners.kubernetes]
-        namespace = "gitlab-runner"
+        namespace = "gitlab-ns"
+        service_account = "gitlab-runner"
         image = "docker:19.03.12"
         privileged = true
         poll_timeout = 300

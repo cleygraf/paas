@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateInstanceProfile",
+                "logs:*",
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "autoscaling:*",
+                "iam:AddRoleToInstanceProfile",
+                "iam:ListInstanceProfilesForRole",
+                "iam:PassRole",
+                "iam:DetachRolePolicy",
+                "iam:ListAttachedRolePolicies",
+                "kms:*",
+                "kms:DescribeKey",
+                "iam:ListRolePolicies",
+                "iam:GetRole",
+                "iam:ListRoles",
+                "iam:DeleteRole",
+                "elasticloadbalancing:*",
+                "ecr-public:*",
+                "iam:*",
+                "iam:CreateServiceLinkedRole",
+                "cloudwatch:*",
+                "ecs:*",
+                "ec2:*",
+                "ecr:*",
+                "eks:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

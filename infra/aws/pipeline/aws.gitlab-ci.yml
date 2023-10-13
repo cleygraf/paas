@@ -13,6 +13,7 @@ variables:
   AWS_ECS_TASK_DEFINITION_PROD: "paas-prod"
   AWS_ECS_TASK_FAMILY_PROD: "paas-prod"
   AWS_EXECUTION_ROLE_ARN_PROD: "arn:aws:iam::687015913858:role/ecsTaskExecutionRole"
+  KUBERNETES_SERVICE_ACCOUNT_OVERWRITE: gitlab-sa
 
 build-container:
   stage: build
@@ -26,12 +27,14 @@ build-container:
     - aws
   script:
     # Make docker work with IRSA
-    # - dockerConfig="~/.docker"
-    # - mkdir -p "$dockerConfig"
-    # - echo '{"credsStore":"ecr-login"}' > "$dockerConfig/config.json"
-    - docker build -t "$AWS_REPO_URI:latest" .
-    # Uncomment next line for use with IRSA
-    - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
+    - export AWS_EC2_METADATA_DISABLED="true"
+    - export AWS_SDK_LOAD_CONFIG="true"
+    - mkdir -p ~/.docker
+    - echo '{"credsStore":"ecr-login"}' > ~/.docker/config.json
+    - docker build -t "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA" -t "$AWS_REPO_URI:latest" .
+    # Uncomment next line for use without IRSA
+    #- aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin $AWS_REPO_URI
+    - docker push "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
     - docker push "$AWS_REPO_URI:latest"
   needs:
     - job: generate-deck
