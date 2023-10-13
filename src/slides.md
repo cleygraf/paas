@@ -194,11 +194,11 @@ Works with a trial license!
 ---
 <!-- header:  "AWS: Infrastructure Architecture" -->
 
-<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:100%; margin-top:1em">
+<img src="./../assets/AWS workshops 2023-10-13a.svg" style="width:100%; margin-top:1em; margin-top:4em">
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "One workflow for developers, security, and operations teams" -->
+<!-- header:  "GitLab Workflow: Introduction" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -227,7 +227,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "One workflow for developers, security, and operations teams" -->
+<!-- header:  "GitLab Workflow: Issue, MR, Code " -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
@@ -249,7 +249,7 @@ Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "One workflow for developers, security, and operations teams" -->
+<!-- header:  "GitLab Workflow: Preview App" -->
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
