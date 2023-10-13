@@ -69,6 +69,11 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
+<!-- header:  "GitLab Workflow: AI powered" -->
+
+<img src="./../assets/GitLab AI Workflow.svg" style="width:100%; margin-top:1em">
+
+---
 <!-- header: "GitLab's hosting options" -->
 
 - *[SaaS](https://gitlab.com) (provides runners too!)*
