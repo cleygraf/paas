@@ -71,7 +71,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header:  "GitLab Workflow: AI powered" -->
 
-<img src="./../assets/GitLab AI Workflow.svg" style="width:100%; margin-top:1em">
+<img src="./../assets/GitLab AI Workflow.svg" style="width:100%; margin-top:0em">
 
 ---
 <!-- header: "GitLab's hosting options" -->
