@@ -51,11 +51,11 @@ Verify running pod in the namespace _gitlab-ns_:
 
 See [# Configuring a Kubernetes service account to assume an IAM role](https://docs.aws.amazon.com/eks/latest/userguide/associate-service-account-role.html)
 
-To create an IAM policy _gitlab-policy_ execute:
+To create an IAM policy _gitlab-policy_ execute :
 `aws iam create-policy --policy-name gitlab-policy --policy-document file://./infra/aws/config/gitlab_iam_profile.json --description "GitLab ci/cd policy"`
 
-Create an IAM role and associate it with a Kubernetes service account:
-`eksctl create iamserviceaccount --name gitlab-runner --namespace gitlab-ns --cluster gitlab-cluster --role-name gitlab-role --attach-policy-arn arn:aws:iam::111122223333:policy/gitlab-policy --approve`
+Create an IAM role and associate it with a Kubernetes service account (adjust arn according output of previous command,):
+`eksctl create iamserviceaccount --name gitlab-runner --namespace gitlab-ns --cluster gitlab-cluster --role-name gitlab-role --attach-policy-arn arn:aws:iam::111122223333:policy/gitlab-policy --approve --override-existing-serviceaccounts`
 
 Confirm that the IAM role's trust policy is configured correctly:
 `aws iam get-role --role-name gitlab-role --query Role.AssumeRolePolicyDocument`
