@@ -7,10 +7,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Edinburgh, 2023-10-13
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop London, 2024-10-16
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-      Sheraton Hotel Edinburgh
+      AWS Office London
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -175,6 +175,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - GitLab SaaS (with runners)
 - GitLab Pages
 
+<br />
+
 Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -187,11 +189,18 @@ Works with a trial license!
 - GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
 
+<br />
+<br />
+
+Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.MD`
+
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "AWS: IRSA" -->
 
 [IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+<br />
 
 > Applications in a Pod's containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. ... Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance's role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account. ...
 
