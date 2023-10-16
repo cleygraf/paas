@@ -187,7 +187,8 @@ Works with a trial license!
 - GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
 
-` ` 
+<br />
+<br />
 
 Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.MD`
 
