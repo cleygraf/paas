@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop London, 2023-10-16
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop London, 2024-10-16
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
       AWS Office London
@@ -186,6 +186,8 @@ Works with a trial license!
 - Roles, policies, service accounts and namespaces for the EKS cluster to use by IRSA
 - GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
+
+Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.MD`
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
