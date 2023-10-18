@@ -62,6 +62,7 @@ create-qr:
     entrypoint: ['']
   script:
     - qrencode -s 6 -l H -o "./assets/url-prod.png" "$URL_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-operator-prod.png" "$URL_PROD"
     - qrencode -t ANSI -o "./assets/url-prod.txt" "$URL_PROD"
     - qrencode -s 6 -l H -o "./assets/url-review.png" "$URL_REVIEW"
     - qrencode -t ANSI -o "./assets/url-review.txt" "$URL_REVIEW"
