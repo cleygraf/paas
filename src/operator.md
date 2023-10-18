@@ -32,12 +32,49 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header: "Agenda" -->
 
+- Warmup
 - Introduction to GitLab
 - Why Operators?
 - GitLab Operator
 - GitLab Runner Operator
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Please vote:" -->
+
+## OpenShift vs. other k8s flavors
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Please vote:" -->
+
+## k8s/osp: on-prem vs. cloud/hosted
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Please vote:" -->
+
+## GitLab vs. GitHub vs. nothing 
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Please vote:" -->
+
+## GitLab: self-managed vs. SaaS 
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Please vote:" -->
+
+## GitLab self-managed: OpenShift
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Slides online" -->
+
+![bg 30%](./../assets/url-operator-prod.png)
+
+<!-- footer: ##URL_OPERATOR_PRODW## --->
 ---
 <!-- header: ""  --> 
 
@@ -93,14 +130,50 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header: ""  --> 
+<!-- header: "Why Operators?"  --> 
+
+According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/):
+
+> Operators are software extensions to Kubernetes that make use of **custom resources** to manage applications and their components. Operators follow Kubernetes principles, notably the **control loop**.
+
+<br />
+
+(Highlights by me)
+
+---
+<!-- header: "Why Operators?"  --> 
 
 ![bg 60%](./../assets/k8s-operator.png)
 
+<!-- footer: Image from (CNCF)[https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/]  --->
 ---
-<!-- header:  "Slides online" -->
+<!-- header: "Why Operators?"  --> 
 
-![bg 30%](./../assets/url-review.png)
+- Cloud native way of installing an app into k8s
+- Taking care of the complete app lifecycle
+- Perfect fit for OpenShift: managed through webui or cli
 
-<!-- footer: ##URL_OPERATOR_PRODW## --->
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+## Install GitLab Operator
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+## Install GitLab with the Operator
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "How to install GitLab on k8s"  --> 
+
+- With GitLab's helm chart
+- With the GitLab operator
+  - Sadly: not recommended for production yet (docs)
+  - Expected for selected use cases soon (epic)
+  - Aiming for near zero-downtime upgrade
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
