@@ -96,6 +96,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <!-- header: ""  --> 
 
 ![bg 60%](./../assets/k8s-operator.png)
+
 ---
 <!-- header:  "Slides online" -->
 
