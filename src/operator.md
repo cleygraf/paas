@@ -97,3 +97,9 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ![bg 60%](./../assets/k8s-operator.png)
 ---
+<!-- header:  "Slides online" -->
+
+![bg 30%](./../assets/url-review.png)
+
+<!-- footer: ##URL_OPERATOR_PRODW## --->
+---
