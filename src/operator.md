@@ -60,7 +60,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p><i>k8s/osp: on-prem vs. cloud/hosteds</i></p></div>
+<div class="white-center-medium"><p><i>k8s/osp:</br>on-prem vs. cloud/hosteds</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -78,7 +78,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p><i>GitLab: self-managed vs. SaaS</i></p></div>
+<div class="white-center-medium"><p><i>GitLab:</br>self-managed vs. SaaS</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -264,6 +264,12 @@ According to [GitLab](https://docs.gitlab.com/runner/):
 <!-- header: "Demo time"  --> 
 
 <div class="white-center-small"><p>Create Runner Token Secret</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+<div class="white-center-small"><p>Create Runner with the GitLab Runner Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
