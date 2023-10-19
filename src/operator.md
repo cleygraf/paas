@@ -32,11 +32,17 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header: "Agenda" -->
 
-- Warmup
+- Warm-up
 - Introduction to GitLab
 - Why Operators?
 - GitLab Operator
 - GitLab Runner Operator
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+
+<div class="white-center"><p>Warm-up</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -45,7 +51,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-## OpenShift vs. other k8s flavors
+<h2 class="center"> OpenShift vs. other k8s flavors</h2>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -174,9 +180,25 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 - With GitLab's helm chart
 - With the GitLab operator
-  - Sadly: not recommended for production yet (docs)
-  - Expected for selected use cases soon (epic)
+  - Sadly: not recommended for production yet ([docs](https://docs.gitlab.com/operator/installation.html))
+  - Expected for selected use cases soon ([epic](https://gitlab.com/groups/gitlab-org/-/epics/10968))
   - Aiming for near zero-downtime upgrade
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Prerequisites"  --> 
+
+- cert-manager
+- Ingress
+  - OpenShift routes
+  - NGINX ingress
+  
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Updates"  --> 
+
+- Update the operator ([docs](https://docs.gitlab.com/operator/operator_upgrades.html))
+- Update GitLab ([docs](https://docs.gitlab.com/operator/gitlab_upgrades.html))
+  
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
