@@ -1,11 +1,12 @@
 apiVersion: apps.gitlab.com/v1beta1
 kind: GitLab
 metadata:
-  name: gitlab
+  name: gitlab-brussels
 spec:
   chart:
     # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/0.8.1/CHART_VERSIONS
     #version: "6.11.0" # GitLab 15.11.0
+    #version: "7.2.8" # GitLab v16.2.8
     version: "7.4.1" # GitLab 16.4.1
     values:
       # Disable NGINX Ingress Controller.
