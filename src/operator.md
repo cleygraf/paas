@@ -51,7 +51,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p>OpenShift vs. other k8s flavors</p></div>
+<div class="white-center-medium"><p><i>OpenShift vs. other k8s flavors</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -178,7 +178,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 ---
 <!-- header: "Demo time"  --> 
 
-## Install GitLab Operator
+<div class="white-center-medium"><p>Install GitLab Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -188,7 +188,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header: "How to install GitLab on k8s"  --> 
+<!-- header: "How to install GitLab on k8s?"  --> 
 
 - With GitLab's helm chart
 - With the GitLab operator
