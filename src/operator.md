@@ -237,9 +237,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h1>
-        Thank you!
-    </h1>
+    <h1><b>Thank you!</b></h1>
 </div>
 
 <!-- footer: "https://about.gitlab.com/" -->
