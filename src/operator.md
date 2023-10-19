@@ -245,13 +245,13 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header: "Runner?"  --> 
+<!-- header: "Runners?"  --> 
 
 ![bg 40%](./../assets/runner.png)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header: "Why Operators?"  --> 
+<!-- header: "Runners?"  --> 
 
 According to [GitLab](https://docs.gitlab.com/runner/):
 
