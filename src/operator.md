@@ -86,7 +86,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p><i>OpenShift vs. other k8s flavors</i></p></div>## GitLab self-managed: OpenShift
+<div class="white-center-medium"><p><i>GitLab self-managed: OpenShift</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -179,7 +179,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 ![bg 60%](./../assets/k8s-operator.png)
 
-<!-- footer: Image from <a href="https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/">CNCF</a) --->
+<!-- footer: Image from <a href="https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/">CNCF</a> --->
 ---
 <!-- header: "Why Operators?"  --> 
 
