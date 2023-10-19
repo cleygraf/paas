@@ -74,7 +74,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ![bg 30%](./../assets/url-operator-prod.png)
 
-<!-- footer: ##URL_OPERATOR_PRODW## --->
+<!-- footer: ##URL_OPERATOR_PROD## --->
 ---
 <!-- header: ""  --> 
 
