@@ -51,7 +51,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"> OpenShift vs. other k8s flavors</div>
+<div class="white-center-medium"><p>OpenShift vs. other k8s flavors</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -84,6 +84,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 30%](./../assets/url-operator-prod.png)
 
 <!-- footer: ##URL_OPERATOR_PROD## --->
+---
+<!-- header:  "" -->
+
+<div class="white-center"><p>Introduction to GitLab</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header: ""  --> 
 
@@ -136,6 +142,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
 [Free tier (SaaS) + Premium and Ultimat Editions](src/talk-track.md)
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+
+<div class="white-center"><p>Introduction to GitLab</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -201,4 +213,44 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 - Update GitLab ([docs](https://docs.gitlab.com/operator/gitlab_upgrades.html))
   
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+
+![bg right w:700](./../assets/gitlab-logo-with-name.svg)
+
+<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
+    <h2>
+        Thank you!
+    </h2>
+    <br>
+    <h4>
+        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
+    </h4>
+</div>
+
+<!-- footer: "https://about.gitlab.com/" -->
+---
+<!-- header:  "Useful links?" -->
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab 2023 Global DevSecOps Report Series](https://about.gitlab.com/developer-survey/)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab and Google Cloud AI Partnership](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
+
+![w:20 h:16](./../assets/googlecloud.png) [GitLab Case Study](https://cloud.google.com/customers/gitlab)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "<b>Updated</b> Production PaaS App" -->
+
+![bg 30%](./../assets/url-prod.png)
+
+<!-- footer: Still the same URL: ##URL_PROD## --->
 ---
