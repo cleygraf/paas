@@ -10,7 +10,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
       GitLab Operators
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-      Technical Partner Community Meetup
+      Technical Partner Community Meetup<br />
       Brussels, 2023-10-19
     </h2>
     <div style="display:flex; flex-direction:row;">
