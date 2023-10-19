@@ -153,6 +153,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
+<br />
+
 [Free tier (SaaS) + Premium and Ultimat Editions](src/talk-track.md)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -229,6 +231,39 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 <!-- header:  "" -->
 
 <div class="white-center"><p>GitLab Runner Operator</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Runner?"  --> 
+
+![bg 80%](./../assets/runner.png)
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Why Operators?"  --> 
+
+According to [GitLab](https://docs.gitlab.com/runner/):
+
+> GitLab Runner is an application that works with GitLab CI/CD to run jobs in a pipeline ... If you use GitLab.com, you can run your CI/CD jobs on SaaS runners hosted by GitLab ... Alternatively, you can install GitLab Runner and register your own runners on GitLab.com or on your own instance.
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Prerequisites"  --> 
+
+- GitLab Runner Operator
+- GitLab Runner registration token 
+  
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+<div class="white-center-small"><p>Install the GitLab Runner Operator</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+<div class="white-center-small"><p>Create Runner Token Secret</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
