@@ -111,6 +111,17 @@ blockquote::after {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.white-center-small {
+  top: 30%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
 .content-container {
   display: table;
   position: relative;

@@ -178,13 +178,13 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 ---
 <!-- header: "Demo time"  --> 
 
-<div class="white-center-medium"><p>Install GitLab Operator</p></div>
+<div class="white-center-small"><p>Install the GitLab Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header: "Demo time"  --> 
 
-## Install GitLab with the Operator
+<div class="white-center-small"><p>Install GitLab with the Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
