@@ -5,8 +5,8 @@ metadata:
 spec:
   chart:
     # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/0.8.1/CHART_VERSIONS
-    version: "6.11.0" # GitLab 15.11.0
-    version: "6.11.0" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/0.8.1/CHART_VERSIONS
+    #version: "6.11.0" # GitLab 15.11.0
+    version: "7.4.1" # GitLab 16.4.1
     values:
       # Disable NGINX Ingress Controller.
       nginx-ingress:
@@ -14,7 +14,7 @@ spec:
       global:
         # Configure the domain from the previous step.
         hosts:
-          domain: apps.gitlab-cluster.rcje.p1.openshiftapps.com
+          domain: apps.gitlab-2.bzj3.p1.openshiftapps.com
         ingress:
           # Unset `spec.ingressClassName` on the Ingress objects
           # so the OpenShift Router takes ownership.
