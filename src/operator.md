@@ -57,25 +57,37 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header:  "Please vote:" -->
 
-## k8s/osp: on-prem vs. cloud/hosted
+<br />
+<br />
+
+<div class="white-center-medium"><p><i>k8s/osp: on-prem vs. cloud/hosteds</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Please vote:" -->
 
-## GitLab vs. GitHub vs. nothing 
+<br />
+<br />
+
+<div class="white-center-medium"><p><i>GitLab vs. GitHub vs. nothing</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Please vote:" -->
 
-## GitLab: self-managed vs. SaaS 
+<br />
+<br />
+
+<div class="white-center-medium"><p><i>GitLab: self-managed vs. SaaS</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Please vote:" -->
 
-## GitLab self-managed: OpenShift
+<br />
+<br />
+
+<div class="white-center-medium"><p><i>OpenShift vs. other k8s flavors</i></p></div>## GitLab self-managed: OpenShift
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -202,16 +214,22 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 - cert-manager
 - Ingress
-  - OpenShift routes
-  - NGINX ingress
+  - [OpenShift routes](https://docs.gitlab.com/operator/openshift_ingress.html#openshift-routes)
+  - [NGINX ingress](https://docs.gitlab.com/operator/openshift_ingress.html#nginx-ingress-controller)
   
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header: "Updates"  --> 
 
-- Update the operator ([docs](https://docs.gitlab.com/operator/operator_upgrades.html))
+- Update the GitLab operator ([docs](https://docs.gitlab.com/operator/operator_upgrades.html))
 - Update GitLab ([docs](https://docs.gitlab.com/operator/gitlab_upgrades.html))
   
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+
+<div class="white-center"><p>GitLab Runner Operator</p></div>
+
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
@@ -219,13 +237,9 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
 <div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h2>
+    <h1>
         Thank you!
-    </h2>
-    <br>
-    <h4>
-        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
-    </h4>
+    </h1>
 </div>
 
 <!-- footer: "https://about.gitlab.com/" -->
