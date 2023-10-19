@@ -51,7 +51,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<h2 class="center"> OpenShift vs. other k8s flavors</h2>
+<div class="white-center-medium"> OpenShift vs. other k8s flavors</div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---

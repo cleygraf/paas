@@ -99,6 +99,19 @@ blockquote::after {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.white-center-medium {
+  top: 30%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 .content-container {
   display: table;
   position: relative;
