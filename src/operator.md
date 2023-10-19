@@ -247,7 +247,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 ---
 <!-- header: "Runner?"  --> 
 
-![bg 80%](./../assets/runner.png)
+![bg 40%](./../assets/runner.png)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
