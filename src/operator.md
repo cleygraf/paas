@@ -34,7 +34,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 - Warm-up
 - Introduction to GitLab
-- Why Operators?
 - GitLab Operator
 - GitLab Runner Operator
 
@@ -60,7 +59,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p><i>k8s/osp:</br>on-prem vs. cloud/hosteds</i></p></div>
+<div class="white-center-medium"><p><i>k8s/osp: on-prem vs. cloud/hosteds</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -78,7 +77,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <br />
 <br />
 
-<div class="white-center-medium"><p><i>GitLab:</br>self-managed vs. SaaS</i></p></div>
+<div class="white-center-medium"><p><i>GitLab: self-managed vs. SaaS</i></p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -161,7 +160,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 <!-- header:  "" -->
 
-<div class="white-center"><p>Introduction to GitLab</p></div>
+<div class="white-center"><p>GitLab Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -180,7 +179,7 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 
 ![bg 60%](./../assets/k8s-operator.png)
 
-<!-- footer: Image from (CNCF)[https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/]  --->
+<!-- footer: Image from <a href="https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/">CNCF</a) --->
 ---
 <!-- header: "Why Operators?"  --> 
 
@@ -226,6 +225,18 @@ According to [kubernetes.io](https://kubernetes.io/docs/concepts/extend-kubernet
 - Update the GitLab operator ([docs](https://docs.gitlab.com/operator/operator_upgrades.html))
 - Update GitLab ([docs](https://docs.gitlab.com/operator/gitlab_upgrades.html))
   
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+<div class="white-center-small"><p>Access GitLab</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "Demo time"  --> 
+
+<div class="white-center-small"><p>Upgrade GitLab</p></div>
+
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
