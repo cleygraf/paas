@@ -280,7 +280,7 @@ According to [GitLab](https://docs.gitlab.com/runner/):
 ---
 <!-- header: "Demo time"  --> 
 
-<div class="white-center-small"><p>Create Runner with the GitLab Runner Operator</p></div>
+<div class="white-center-small"><p>Create a runner with the GitLab Runner Operator</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -311,10 +311,4 @@ According to [GitLab](https://docs.gitlab.com/runner/):
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
----
-<!-- header:  "<b>Updated</b> Production PaaS App" -->
-
-![bg 30%](./../assets/url-prod.png)
-
-<!-- footer: Still the same URL: ##URL_PROD## --->
 ---
