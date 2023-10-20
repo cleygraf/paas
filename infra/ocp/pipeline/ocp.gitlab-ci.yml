@@ -1,0 +1,59 @@
+variables:
+  URL_PROD: "http://gitlab-prod-lb-218443987.eu-central-1.elb.amazonaws.com"
+  URL_REVIEW: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
+
+build-container:
+  stage: build
+  image: amazon/aws-cli
+  before_script:
+    - amazon-linux-extras install docker > /dev/null 2>&1
+    - yum -y install amazon-ecr-credential-helper > /dev/null 2>&1
+  services:
+    - docker:dind
+  tags:
+    - ocp
+  script:
+    - docker build -t "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA" -t "$AWS_REPO_URI:latest" .
+    - docker push "$AWS_REPO_URI:$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
+    - docker push "$AWS_REPO_URI:latest"
+  needs:
+    - job: generate-deck
+    - job: create-qr
+
+review:
+  stage: review
+  image: amazon/aws-cli
+  tags:
+    - aws
+  script:
+    - definitions=$(cat ./infra/aws/config/review/task_definition.json)
+    - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_REVIEW" --container-definitions "$definitions" --cpu "256" --memory "1024" --network-mode  "awsvpc" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_REVIEW" 
+    - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_REVIEW" --service "$AWS_ECS_SERVICE_REVIEW"  --task-definition "$AWS_ECS_TASK_DEFINITION_REVIEW"
+    - echo "$URL_REVIEW"
+    - cat ./assets/url-review.txt
+  environment:
+    name: review
+    url: $URL_REVIEW
+  only:
+    - branches
+  except:
+    - master
+
+deploy-prod:
+  stage: deploy
+  image: amazon/aws-cli
+  tags:
+    - aws
+  script:
+    - definitions=$(cat ./infra/aws/config/prod/task_definition.json)
+    - aws ecs register-task-definition  --region "$AWS_DEFAULT_REGION" --family "$AWS_ECS_TASK_FAMILY_PROD" --container-definitions "$definitions" --cpu "256" --memory "1024" --network-mode  "awsvpc" --requires-compatibilities "FARGATE" --execution-role-arn "$AWS_EXECUTION_ROLE_ARN_PROD" 
+    - aws ecs update-service --region "$AWS_DEFAULT_REGION" --cluster "$AWS_ECS_CLUSTER_PROD" --service "$AWS_ECS_SERVICE_PROD"  --task-definition "$AWS_ECS_TASK_DEFINITION_PROD"
+    - echo "$URL_PROD"
+    - cat ./assets/url-prod.txt
+  environment:
+    name: production
+    url: $URL_PROD
+  when: manual
+  needs:
+    - job: generate-deck
+    - job: create-qr
