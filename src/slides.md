@@ -327,3 +327,4 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: Still the same URL: ##URL_PROD## --->
+---
