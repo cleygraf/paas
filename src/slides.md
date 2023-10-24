@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Amsterdam, 2023-10-24
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Amsterdam, 2024-10-24
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
       Amazon Development Center (Netherlands)
@@ -221,23 +221,23 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 <!-- header:  "GitLab Groups" -->
 
 - Groups
-  - Variables *
-  - Runners *
-  - Epics *
+  - Variables
+  - Runners
+  - Epics
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
-  - Variables *
-  - Runners *
-  - Epics *
-  - Projects *
-    - Variables *
-    - Runners *
-    - Issues *
-    - Repository *
+  - Variables
+  - Runners
+  - Epics
+  - Projects
+    - Variables
+    - Runners
+    - Issues
+    - Repository
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -315,8 +315,6 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab and Google Cloud AI Partnership](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
-
-![w:20 h:16](./../assets/googlecloud.png) [GitLab Case Study](https://cloud.google.com/customers/gitlab)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
