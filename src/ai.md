@@ -107,12 +107,21 @@ Sources (as of May 3rd 2023):
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab's AI Vision" -->
+<style scoped>
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+</style>
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
 ![w:20 h:20](./../assets/gitlab-logo.svg) Privacy and transparency first  
 ![w:20 h:20](./../assets/gitlab-logo.svg) Single Application
 
-![bg right:40%](assets/ai/vision.png)
+![bg right:50%](assets/ai/vision.png)
 
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
