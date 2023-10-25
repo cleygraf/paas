@@ -69,7 +69,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
-<!-- header:  "AI powered - in every stage & for everyone" -->
+<!-- header:  "AI powered - in every step & for every user" -->
 
 <img src="./../assets/GitLab AI Workflow.svg" class="center">
 
@@ -153,7 +153,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Uses **simple text files with markdown** instead of a programming language like rust, go, ... .
 
 <!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
---
+---
 <!-- header:  "Demo Project" -->
 
 ![bg 30%](./../assets/project-path.png)
