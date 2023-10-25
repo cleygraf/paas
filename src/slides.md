@@ -138,10 +138,10 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 - This is a demo and **not meant for production**!
 - It is build to be **educational**, not show how smart (rather how dumb) I am ;-)
-- I like to show how easy GitLab interacts with the native tooling of various cloud providers (GitLab alone, Google Cloud, AWS).
+- I like to show **how easy GitLab interacts with the native tooling of various cloud providers** (GitLab alone, Google Cloud, AWS).
 - I am aiming for teaching ideas and **concepts, not the details**. 
 - As a side kick this is just a playground for me to show off cool stuff.
-- No knowledge of GitLab or of a programming language is required. Only basic understanding of software development concepts and cloud technologies is necessary.
+- **No knowledge of GitLab or of a programming language** is required. Only basic understanding of software development concepts and cloud technologies is necessary.
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
