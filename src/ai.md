@@ -73,8 +73,27 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="white-center"><p>Code Suggestions</p></div>
 
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "" -->
+
+<div class="white-center"><p>39%</p></div>
+
 <!--
-39% of time spending working with code / 52 minutesof code time per day
+39% of time spending working with code / 52 minutes of code time per day
+
+Sources (as of May 3rd 2023):
+- https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
+- https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
+-->
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: "" -->
+
+<div class="white-center"><p>52 minutes</p></div>
+
+<!--
+39% of time spending working with code / 52 minutes of code time per day
 
 Sources (as of May 3rd 2023):
 - https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
