@@ -74,6 +74,13 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 <div class="white-center"><p>Code Suggestions</p></div>
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!--
+39% of time spending working with code / 52 minutesof code time per day
+
+Sources (as of May 3rd 2023):
+- https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
+- https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
+-->
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
