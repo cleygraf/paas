@@ -73,6 +73,10 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div class="white-center"><p>Code Suggestions</p></div>
 
+<!--
+Reference:
+- [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages)
+-->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header: "" -->
