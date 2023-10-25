@@ -132,7 +132,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ![bg 30%](./../assets/url-prod.png)
 
-<!-- footer: ##URL_PROD## --->
+<!-- footer: Wi-Fi password: BrokenWires@@2019 --->
 ---
 <!-- header:  "Goal: Fix my mistake" -->
 
