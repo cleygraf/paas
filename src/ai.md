@@ -112,9 +112,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
-
 </style>
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
