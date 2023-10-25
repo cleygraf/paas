@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab Duo & Champagne, 2023-10-30
+      GitLab Duo AI Introduction & Demo, 2023-10-30
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
       Teammeeting DD-West, Hugo-Junkers-Halle, MG,
@@ -75,7 +75,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!--
 Reference:
-- [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages)
+- [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) 
+- For code completion the `code-gecko` code model is required.
 -->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
