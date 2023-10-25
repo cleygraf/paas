@@ -80,6 +80,8 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
+<br />
+
 [Free tier (SaaS) + Premium and Ultimat Editions](src/talk-track.md)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -143,7 +145,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "Concept - Consequences for the demo project" -->
+<!-- header:  "Design decisions" -->
 
 - Keep it as simple as possible (KISS principle).
 - Make it only as secure as needed for a demo.
@@ -216,16 +218,6 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 
 <img src="./../assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
----
-<!-- header:  "GitLab Groups" -->
-
-- Groups
-  - Variables
-  - Runners
-  - Epics
-
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Groups and Projects" -->
 
