@@ -7,7 +7,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Milan, 2023-10-25
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Milan, 2024-10-25
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
       AWS Milan Office
