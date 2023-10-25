@@ -153,6 +153,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - Uses **simple text files with markdown** instead of a programming language like rust, go, ... .
 
 <!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
+--
+<!-- header:  "Demo Project" -->
+
+![bg 30%](./../assets/project-path.png)
+
+<!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
 ---
 <!-- header:  "Architecture - AWS" -->
 
