@@ -69,6 +69,12 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ![bg 60%](./../assets/AI-powered_DevSecOps.png)
 
 ---
+<!-- header: "" -->
+
+<div class="white-center"><p>Code Suggestions</p></div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
 <!-- header:  "AI powered - in every step & for every user" -->
 
 <img src="./../assets/GitLab AI Workflow.svg" class="center">
