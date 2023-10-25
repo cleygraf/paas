@@ -175,6 +175,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - GitLab SaaS (with runners)
 - GitLab Pages
 
+<br />
+
 Works with a trial license!
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -187,11 +189,18 @@ Works with a trial license!
 - GitLab runners on EKS (GitLab provided helm chart with a custom `values.yaml` file in this repository)
 - ECS Fargate with two services, load balancers and task definitions 
 
+<br />
+<br />
+
+Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.MD`
+
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "AWS: IRSA" -->
 
 [IAM roles for service accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+<br />
 
 > Applications in a Pod's containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. ... Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance's role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account. ...
 
@@ -212,23 +221,23 @@ Works with a trial license!
 <!-- header:  "GitLab Groups" -->
 
 - Groups
-  - Variables *
-  - Runners *
-  - Epics *
+  - Variables
+  - Runners
+  - Epics
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
-  - Variables *
-  - Runners *
-  - Epics *
-  - Projects *
-    - Variables *
-    - Runners *
-    - Issues *
-    - Repository *
+  - Variables
+  - Runners
+  - Epics
+  - Projects
+    - Variables
+    - Runners
+    - Issues
+    - Repository
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -307,8 +316,6 @@ Works with a trial license!
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
 
-![w:20 h:16](./../assets/googlecloud.png) [GitLab Case Study](https://cloud.google.com/customers/gitlab)
-
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -318,3 +325,4 @@ Works with a trial license!
 ![bg 30%](./../assets/url-prod.png)
 
 <!-- footer: Still the same URL: ##URL_PROD## --->
+---

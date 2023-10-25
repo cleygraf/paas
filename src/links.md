@@ -45,7 +45,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 - [The DevSecOps Platform](https://about.gitlab.com/)
 - [GitLab developed on top of GitLab](https://gitlab.com/gitlab-org/gitlab)
 - [Why GitLab Ultimate?](https://about.gitlab.com/pricing/ultimate/)
-  [GitOps with GitLab: What you need to know about the Flux CD integration | GitLab](https://about.gitlab.com/blog/2023/02/08/why-did-we-choose-to-integrate-fluxcd-with-gitlab/)
+  [GitOps with GitLab: What you need to know about the Flux CD integration](https://about.gitlab.com/blog/2023/02/08/why-did-we-choose-to-integrate-fluxcd-with-gitlab/)
 
 ---
 
@@ -89,5 +89,5 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 - [GitLab Channel Program Guide](https://about.gitlab.com/handbook/resellers/Channel-Program-Guide/)
 - [GitLab Channel Program Guide - Program Requirements and Benefits](https://about.gitlab.com/handbook/resellers/Channel-Program-Guide/#program-requirements-and-benefits)
-- [GitLab Channel Program Guide - Partner Training, Accreditations, and Enablement | GitLab](https://about.gitlab.com/handbook/resellers/training/)
+- [GitLab Channel Program Guide - Partner Training, Accreditations, and Enablement](https://about.gitlab.com/handbook/resellers/training/)
 - [Building Pipelines GitLab Partner Webinar](https://content.gitlab.com/viewer/63bddf02edadd0b1346a73db)
