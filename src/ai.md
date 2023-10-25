@@ -108,7 +108,7 @@ Sources (as of May 3rd 2023):
 ---
 <!-- header:  "GitLab's AI Vision" -->
 
-![bg right w:700](assets/ai/vision.png)
+![bg right:40%](assets/ai/vision.png)
 
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
