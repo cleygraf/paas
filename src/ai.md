@@ -106,6 +106,11 @@ Sources (as of May 3rd 2023):
 -->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
+<!-- header:  "GitLab's AI Vision" -->
+
+![bg right w:700](./../assets/ai/vision.png)
+
+---
 <!-- header:  "AI powered - in every step & for every user" -->
 
 <img src="./../assets/GitLab AI Workflow.svg" class="center">
