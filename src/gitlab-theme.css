@@ -87,10 +87,16 @@ blockquote::after {
 }
 
 .red-stamp {
+  top: 40%;
+  left: 50%;
   color: rgb(255, 0, 0);
   font-size: 200px;
   font-family: 'monospace';
   font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .white-center {
