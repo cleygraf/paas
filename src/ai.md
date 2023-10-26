@@ -59,7 +59,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 section {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: start;
   text-align: left;
 }
 </style>
