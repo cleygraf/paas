@@ -23,9 +23,9 @@ pages:review:
   artifacts:
     paths:
       - public
-  dependencies:
-    - generate-deck
-    - create-qr
+  needs:
+    - job: generate-deck
+    - job: create-qr
   only:
     - branches
   except:
@@ -56,6 +56,6 @@ pages:
   artifacts:
     paths:
       - public
-  dependencies:
-    - generate-deck
-    - create-qr
+  needs:
+    - job: generate-deck
+    - job: create-qr
