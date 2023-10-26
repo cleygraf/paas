@@ -119,7 +119,7 @@ Sources (as of May 3rd 2023):
 ![w:20 h:20](./../assets/gitlab-logo.svg) Privacy and transparency first  
 ![w:20 h:20](./../assets/gitlab-logo.svg) Single Application
 
-![bg right:50%](assets/ai/vision.png)
+![bg right:50%](./../assets/ai/vision.png)
 
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
