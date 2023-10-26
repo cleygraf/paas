@@ -38,7 +38,8 @@ review:stop:
     - echo "Gone"
   when: manual
   environment:
-    name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
+    name: review-gitlab
+    # name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     action: stop
 
 pages:
@@ -51,7 +52,7 @@ pages:
     - echo "$URL_PROD"
     - cat ./assets/url-prod.txt
   environment:
-    name: production
+    name: production-gitlab
     url: $URL_PROD
   when: manual
   artifacts:
