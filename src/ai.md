@@ -117,7 +117,7 @@ Sources (as of May 3rd 2023):
 <!-- header:  "GitLab's AI Vision" -->
 <style scoped>
 section {
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 </style>
 
@@ -130,7 +130,7 @@ section {
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
-<img src="./../assets/GitLab AI Workflow.svg" class="center">
+![bg ]()./../assets/GitLab AI Workflow.svg)
 
 ---
 <!-- header: "GitLab's hosting options" -->
