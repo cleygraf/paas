@@ -11,11 +11,11 @@ stages:
   - deploy
 
 include:
-  # Always include
+  # Use IaC scan if not local and if $INFRA is not gitlab
   - template: Jobs/SAST-IaC.gitlab-ci.yml
     rules:
-      - if: $GITLAB_CI != 'false'
-  # Conditional includes
+      - if: $GITLAB_CI != 'false' && $INFRA != "gitlab"
+   # Conditional includes
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
     rules:
       - if: $INFRA == "google"
