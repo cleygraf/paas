@@ -146,6 +146,18 @@ section {
 
 <!-- footer: "" -->
 ---
+<!-- header:  "Flow of demo" -->
+
+![bg w:90% vertical](./../assets/gitlab-ai-workflow.png)
+
+<!-- footer: "" -->
+---
+<!-- header:  "Generate issue description" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: 'Fix typo on first slide: replace 2024 with 2023 and use markdown'" -->
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
