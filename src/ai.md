@@ -156,7 +156,25 @@ section {
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: 'Fix typo on first slide: replace 2024 with 2023 and use markdown'" -->
+<!-- footer: "Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description." -->
+---
+<!-- header:  "Code Suggestions" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code." -->
+---
+<!-- header:  "Explain this code" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: View '.gitlab-ci.yml' file and select text" -->
+---
+<!-- header:  "Explain this vulnerability" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'" -->
 ---
 <!-- header:  "" -->
 
