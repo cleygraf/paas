@@ -130,7 +130,7 @@ section {
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
-![bg ]()./../assets/GitLab AI Workflow.svg)
+![bg](./../assets/GitLab AI Workflow.svg)
 
 ---
 <!-- header: "GitLab's hosting options" -->
