@@ -148,7 +148,7 @@ section {
 ---
 <!-- header:  "Flow of demo" -->
 
-![bg w:90% vertical](./../assets/gitlab-ai-workflow.png)
+![bg w:90% vertical](./../assets/gitlab-ai-workflow-to-demo.png)
 
 <!-- footer: "" -->
 ---
@@ -168,27 +168,25 @@ section {
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: View '.gitlab-ci.yml' file and select text" -->
+<!-- footer: "Hint: View '.gitlab-ci.yml' file, select text and click '?'" -->
 ---
 <!-- header:  "Explain this vulnerability" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'" -->
+<!-- footer: "Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'." -->
+---
+<!-- header:  "Summarize MR review" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots." -->
 ---
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
 
-<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h2>
-        Thank you!
-    </h2>
-    <br>
-    <h4>
-        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
-    </h4>
-</div>
+## Thank you!
 
 <!-- footer: "https://about.gitlab.com/" -->
 ---
