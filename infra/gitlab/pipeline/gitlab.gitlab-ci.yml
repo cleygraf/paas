@@ -16,7 +16,7 @@ pages:review:
     - echo "$URL_REVIEW"
     - cat ./assets/url-review.txt
   environment:
-    name: review
+    name: review-gitlab
     # name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
     url: $URL_REVIEW
     # on_stop: review:stop
