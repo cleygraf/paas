@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../assets/GitLabSans.woff2');
+  src: url('assets/GitLabSans.woff2');
 }
 
 :root {
@@ -87,16 +87,14 @@ blockquote::after {
 }
 
 .red-stamp {
-  top: 30%;
-  left: 50%;
   color: rgb(255, 0, 0);
   font-size: 200px;
   font-family: 'monospace';
   font-weight: bold;
-  position: absolute;
-  text-align: center;
-  display: inline-block;
-  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .white-center {
