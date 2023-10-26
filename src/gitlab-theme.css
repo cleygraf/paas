@@ -91,10 +91,6 @@ blockquote::after {
   font-size: 200px;
   font-family: 'monospace';
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
 }
 
 .white-center {
