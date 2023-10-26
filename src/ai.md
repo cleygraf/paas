@@ -168,7 +168,7 @@ section {
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: View '.gitlab-ci.yml' file, select text and click '?'" -->
+<!-- footer: "Hint: View '.gitlab-ci.yml' file, select code and click '?'" -->
 ---
 <!-- header:  "Explain this vulnerability" -->
 
@@ -205,10 +205,3 @@ section {
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
----
-<!-- header:  "<b>Updated</b> Production PaaS App" -->
-
-![bg 30%](./../assets/url-prod.png)
-
-<!-- footer: Still the same URL: ##URL_PROD## --->
----
