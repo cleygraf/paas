@@ -88,7 +88,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <br />
 
-[Free tier (SaaS) + Premium and Ultimat Editions](src/talk-track.md)
+[Free tier (SaaS) + Premium and Ultimate Editions](src/talk-track.md)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
