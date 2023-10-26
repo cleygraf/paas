@@ -130,7 +130,7 @@ section {
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
-![bg w:80%](./../assets/gitlab-ai-workflow.svg)
+![bg fit](./../assets/gitlab-ai-workflow.svg)
 
 <!-- footer: "" -->
 ---
