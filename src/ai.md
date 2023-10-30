@@ -148,7 +148,7 @@ section {
 ---
 <!-- header:  "Live demo - Slides" -->
 
-![bg w:50% vertical](./../assets/url-ai-prod.png)
+![bg w:40% vertical](./../assets/url-ai-prod.png)
 
 <!-- footer: "" -->
 ---
