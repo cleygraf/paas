@@ -222,7 +222,7 @@ section {
 }
 </style>
 
-## AI-assisted workflows to empower **ever user at every step**
+## AI-assisted workflows to empower **every user at every step**
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) Understand Epics and Issues faster
 ![w:20 h:20](./../assets/gitlab-logo.svg) Understand code easier  
