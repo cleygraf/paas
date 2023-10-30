@@ -146,6 +146,12 @@ section {
 
 <!-- footer: "" -->
 ---
+<!-- header:  "Live demo - Slides" -->
+
+![bg w:50% vertical](./../assets/url-ai-prod.png)
+
+<!-- footer: "" -->
+---
 <!-- header:  "Flow of demo" -->
 
 ![bg w:90% vertical](./../assets/gitlab-ai-workflow-to-demo.png)
