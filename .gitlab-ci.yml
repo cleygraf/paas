@@ -2,7 +2,7 @@ image: docker:latest
 
 variables:
   APP_NAME: "paas-demo"
-  URL_PROJ: "https://$CI_PROJECT_PATH"
+  URL_PROJ: "https:///gitlab.com/$CI_PROJECT_PATH"
 
 stages:
   - prechecks
