@@ -249,7 +249,7 @@ section {
 ![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
 ![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right:300](./../assets/ai/gitlab-duo.png)
+![bg right w:35%](./../assets/ai/gitlab-duo.png)
 
 ---
 <!-- header:  "" -->
