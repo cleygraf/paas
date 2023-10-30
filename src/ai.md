@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab AWS Workshop
+title: GitLab Duo AI
 footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 ---
 
@@ -146,11 +146,30 @@ section {
 
 <!-- footer: "" -->
 ---
+<!-- header:  "PaaS" -->
+
+<div class="content-container">
+    <div class="content">
+        <h2><span style="color:#fc6d26;font-size:130%"><b>P</b></span>resentation</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>a</b></span>s</h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>a</b></span></h2>
+        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></span>ervice</h2>
+    </div>
+</div>
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
 <!-- header:  "Live demo - Slides" -->
 
 ![bg w:40% vertical](./../assets/url-ai-prod.png)
 
 <!-- footer: "##URL_AI_PROD##" -->
+---
+<!-- header:  "Live demo - GitLab Project" -->
+
+![bg w:40% vertical](./../assets/url-proj.png)
+
+<!-- footer: "##URL_PROJ##" -->
 ---
 <!-- header:  "Flow of demo" -->
 
@@ -195,12 +214,6 @@ section {
 ## Thank you!
 
 <!-- footer: "https://about.gitlab.com/" -->
----
-<!-- header:  "Live demo - GitLab Project" -->
-
-![bg w:40% vertical](./../assets/url-proj.png)
-
-<!-- footer: "##URL_PROJ##" -->
 ---
 <!-- header:  "Useful links?" -->
 
