@@ -150,7 +150,7 @@ section {
 
 ![bg w:40% vertical](./../assets/url-ai-prod.png)
 
-<!-- footer: "##URL_PROD##" -->
+<!-- footer: "##URL_AI_PROD##" -->
 ---
 <!-- header:  "Flow of demo" -->
 
@@ -195,6 +195,12 @@ section {
 ## Thank you!
 
 <!-- footer: "https://about.gitlab.com/" -->
+---
+<!-- header:  "Live demo - GitLab Project" -->
+
+![bg w:40% vertical](./../assets/url-proj.png)
+
+<!-- footer: "##URL_PROJ##" -->
 ---
 <!-- header:  "Useful links?" -->
 
