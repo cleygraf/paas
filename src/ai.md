@@ -235,7 +235,7 @@ section {
 ---
 <!-- header:  "" -->
 
-![bg right w:70%](./../assets/ai/gitlab-duo.svg)
+![bg right w:70%](./../assets/ai/gitlab-duo.png)
 
 # Thank you!
 
