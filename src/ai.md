@@ -235,9 +235,9 @@ section {
 ---
 <!-- header:  "" -->
 
-![bg right w:700](./../assets/gitlab-logo-with-name.svg)
+![bg right w:70%](./../assets/ai/gitlab-duo.svg)
 
-## Thank you!
+# Thank you!
 
 <!-- footer: "https://about.gitlab.com/" -->
 ---
