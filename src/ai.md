@@ -150,7 +150,7 @@ section {
 
 ![bg w:40% vertical](./../assets/url-ai-prod.png)
 
-<!-- footer: "" -->
+<!-- footer: "##URL_PROD##" -->
 ---
 <!-- header:  "Flow of demo" -->
 
