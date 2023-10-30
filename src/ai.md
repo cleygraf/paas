@@ -207,6 +207,32 @@ section {
 
 <!-- footer: "Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots." -->
 ---
+<!-- header:  "GitLab AI Roadmap:" -->
+
+# ModelOps
+
+![bg right:50%](./../assets/ai/modelops.png)
+
+<!-- footer: "" -->
+---
+<!-- header:  "" -->
+<style scoped>
+section {
+  line-height: 1.5em;
+}
+</style>
+
+## AI-assisted workflows to empower **ever user at every step**
+
+![w:20 h:20](./../assets/gitlab-logo.svg) Understand Epics and Issues faster
+![w:20 h:20](./../assets/gitlab-logo.svg) Understand code easier  
+![w:20 h:20](./../assets/gitlab-logo.svg) Write better code more efficiently
+![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
+![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
+
+![bg right:50%](./../assets/ai/summary.png)
+
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./../assets/gitlab-logo-with-name.svg)
