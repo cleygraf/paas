@@ -211,7 +211,7 @@ section {
 
 # ModelOps
 
-![bg right:70%](./../assets/ai/modelops.png)
+![bg right:50%](./../assets/ai/modelops.png)
 
 <!-- footer: "" -->
 ---
@@ -230,8 +230,7 @@ section {
 ![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
 ![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right w:70%](./../assets/ai/summary.png)
-
+![bg right w:100%](./../assets/ai/summary.png)
 <!-- footer: "" -->
 ---
 <!-- header:  "" -->
@@ -249,7 +248,7 @@ section {
 ![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
 ![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right w:50%](./../assets/ai/gitlab-duo.png)
+![bg right w:100%](./../assets/ai/gitlab-duo.png)
 
 ---
 <!-- header:  "" -->
