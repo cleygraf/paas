@@ -232,10 +232,31 @@ section {
 
 ![bg right:35%](./../assets/ai/summary.png)
 
+![bg right:50%](./../assets/ai/modelops.png)
+
+<!-- footer: "" -->
+---
+<!-- header:  "" -->
+<style scoped>
+section {
+  line-height: 1.5em;
+}
+</style>
+
+## AI-assisted workflows to empower **every user at every step**
+
+![w:20 h:20](./../assets/gitlab-logo.svg) Understand Epics and Issues faster
+![w:20 h:20](./../assets/gitlab-logo.svg) Understand code easier  
+![w:20 h:20](./../assets/gitlab-logo.svg) Write better code more efficiently
+![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
+![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
+
+![bg right:35%](./../assets/ai/gitlab-duo.png)
+
 ---
 <!-- header:  "" -->
 
-![bg right w:70%](./../assets/ai/gitlab-duo.png)
+![bg right w:70%](./../assets/gitlab-logo-with-name.svg)
 
 # Thank you!
 
