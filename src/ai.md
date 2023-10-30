@@ -142,7 +142,7 @@ section {
 ---
 <!-- header:  "DYOC" -->
 
-![bg w:50% vertical](./../assets/champagne.png)
+![bg w:50% vertical](./../assets/champagne.jpg)
 
 <!-- footer: "" -->
 ---
