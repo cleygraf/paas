@@ -232,7 +232,6 @@ section {
 
 ![bg right:35%](./../assets/ai/summary.png)
 
-![bg right:50%](./../assets/ai/modelops.png)
 
 <!-- footer: "" -->
 ---
