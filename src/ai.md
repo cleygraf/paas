@@ -230,7 +230,7 @@ section {
 ![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
 ![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right:50%](./../assets/ai/summary.png)
+![bg right:35%](./../assets/ai/summary.png)
 
 ---
 <!-- header:  "" -->
