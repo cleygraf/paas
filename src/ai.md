@@ -38,7 +38,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!-- header: "Disclaimer"  --> 
 
-![bg left w:20%](./../assets/gitlab-logo-with-name.svg)
+![bg left:20%](./../assets/gitlab-logo-with-name.svg)
 
 This presentation and linked pages contain information related to upcoming products, features, and functionality. 
 
