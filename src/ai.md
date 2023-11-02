@@ -197,25 +197,25 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png) "Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description." -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. -->
 ---
 <!-- header:  "DEV - GitLAb Duo Chat - How to create a  MR" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?'" -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?' -->
 ---
 <!-- header:  "DEV - Code Suggestions" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code." -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code. -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this code" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: View '.gitlab-ci.yml' file, select code and click '?'" -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: View '.gitlab-ci.yml' file, select code and click '?' -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this vulnerability" -->
 
@@ -227,7 +227,7 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots." -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots. -->
 ---
 <!-- header:  "GitLab AI Roadmap:" -->
 
