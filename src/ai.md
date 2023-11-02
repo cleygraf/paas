@@ -191,7 +191,7 @@ References:
 ---
 <!-- header:  "Flow of demo" -->
 
-![bg w:90% vertical](./../assets/gitlab-ai-workflow-to-demo.png)
+![bg w:90% vertical](./../assets/ai/gitlab-ai-workflow-to-demo.png)
 
 <!-- footer: "" -->
 ---
