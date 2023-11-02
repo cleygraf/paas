@@ -221,7 +221,7 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'." -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'. -->
 ---
 <!-- header:  "PM - Summarize MR review" -->
 
