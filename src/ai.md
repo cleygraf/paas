@@ -197,7 +197,7 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: "Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description." -->
+<!-- footer: ![w:36 h:36](./../assets/ai/robot.png) "Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description." -->
 ---
 <!-- header:  "DEV - GitLAb Duo Chat - How to create a  MR" -->
 
