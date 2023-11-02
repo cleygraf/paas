@@ -195,31 +195,37 @@ References:
 
 <!-- footer: "" -->
 ---
-<!-- header:  "Generate issue description" -->
+<!-- header:  "PM - Generate issue description" -->
 
 <div class="white-center"><p>Demo</p></div>
 
 <!-- footer: "Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description." -->
 ---
-<!-- header:  "Code Suggestions" -->
+<!-- header:  "DEV - GitLAb Duo Chat - How to create a  MR" -->
+
+<div class="white-center"><p>Demo</p></div>
+
+<!-- footer: "Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?'" -->
+---
+<!-- header:  "DEV - Code Suggestions" -->
 
 <div class="white-center"><p>Demo</p></div>
 
 <!-- footer: "Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code." -->
 ---
-<!-- header:  "Explain this code" -->
+<!-- header:  "DEV/SEC/PM - Explain this code" -->
 
 <div class="white-center"><p>Demo</p></div>
 
 <!-- footer: "Hint: View '.gitlab-ci.yml' file, select code and click '?'" -->
 ---
-<!-- header:  "Explain this vulnerability" -->
+<!-- header:  "SEC/PM - Explain this vulnerability" -->
 
 <div class="white-center"><p>Demo</p></div>
 
 <!-- footer: "Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'." -->
 ---
-<!-- header:  "Summarize MR review" -->
+<!-- header:  "PM - Summarize MR review" -->
 
 <div class="white-center"><p>Demo</p></div>
 
