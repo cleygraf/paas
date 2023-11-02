@@ -219,7 +219,7 @@ References:
 
 <!-- footer: "Hint: View '.gitlab-ci.yml' file, select code and click '?'" -->
 ---
-<!-- header:  "SEC/PM - Explain this vulnerability" -->
+<!-- header:  "DEV/SEC/PM - Explain this vulnerability" -->
 
 <div class="white-center"><p>Demo</p></div>
 
