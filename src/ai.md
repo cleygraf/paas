@@ -233,10 +233,15 @@ References:
 ---
 <!-- header:  "GitLab AI Roadmap:" -->
 
-# ModelOps
+# **ModelOps**
 
 ![bg right:50%](./../assets/ai/modelops.png)
 
+<!--
+References: 
+- [Product Stage Direction - ModelOps](https://about.gitlab.com/direction/modelops/)
+- [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
+-->
 <!-- footer: "" -->
 ---
 <!-- header:  "" -->
