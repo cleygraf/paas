@@ -38,7 +38,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!-- header: "Disclaimer"  --> 
 
-![bg left:20%](./../assets/gitlab-logo.svg)
 This presentation and linked pages contain information related to upcoming products, features, and functionality. 
 
 It is important to note that the information presented is for informational purposes only. Please do not rely on this information for purchasing or planning purposes. 
@@ -95,6 +94,7 @@ section {
 
 <!--
 Reference:
+- As of Nov 2023 14 coding languages are supported
 - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) 
 - For code completion the `code-gecko` code model is required.
 -->
