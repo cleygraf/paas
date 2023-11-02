@@ -2,6 +2,7 @@ image: docker:latest
 
 variables:
   APP_NAME: "paas-demo"
+  URL_PROJ: "https:///gitlab.com/$CI_PROJECT_PATH"
 
 stages:
   - prechecks
@@ -11,11 +12,11 @@ stages:
   - deploy
 
 include:
-  # Always include
+  # Use IaC scan if not local and if $INFRA is not gitlab
   - template: Jobs/SAST-IaC.gitlab-ci.yml
     rules:
-      - if: $GITLAB_CI != 'false'
-  # Conditional includes
+      - if: $GITLAB_CI != 'false' && $INFRA != "gitlab"
+   # Conditional includes
   - local: "/infra/google/pipeline/google.gitlab-ci.yml"
     rules:
       - if: $INFRA == "google"
@@ -48,8 +49,10 @@ generate-deck:
   #  - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
     - cp ./assets/favicon.ico ./build/
     - sed -i "s,##URL_PROD##,$URL_PROD,g" build/*.html
+    - sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" build/*.html
+    - sed -i "s,##URL_PROJ##,$URL_PROJ,g" build/*.html
+    - sed -i "s,##URL_AI_PROD##,$URL_AI_PROD,g" build/*.html
     - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" build/*.html
-    - sed -i "s,##CI_PROJECT_PATH##,$CI_PROJECT_PATH,g" build/*.html
   artifacts:
     paths:
       - 'build/'
@@ -60,8 +63,11 @@ create-qr:
     name: leplusorg/qrcode
     entrypoint: ['']
   script:
+    - qrencode -s 6 -l H -o "./assets/url-proj.png" "$URL_PROJ"
     - qrencode -s 6 -l H -o "./assets/url-prod.png" "$URL_PROD"
     - qrencode -t ANSI -o "./assets/url-prod.txt" "$URL_PROD"
+    - qrencode -s 6 -l H -o "./assets/url-ai-prod.png" "$URL_AI_PROD"
+    - qrencode -t ANSI -o "./assets/url-ai-prod.txt" "$URL_AI_PROD"
     - qrencode -s 6 -l H -o "./assets/url-review.png" "$URL_REVIEW"
     - qrencode -t ANSI -o "./assets/url-review.txt" "$URL_REVIEW"
     - qrencode -s 6 -l H -o "./assets/project-path.png" "$CI_PROJECT_PATH"
