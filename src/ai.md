@@ -296,7 +296,7 @@ section {
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Global DevSecOps AI Report: Ushering in a new era of software development](https://about.gitlab.com/blog/2023/09/12/gitlab-global-devsecops-ai-report/)
 
-![w:20 h:20][Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+![w:20 h:20](./../assets/gitlab-logo.svg) [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
@@ -313,6 +313,10 @@ section {
 
 - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) - For code completion the `code-gecko` code model is required.
 - [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+  
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "References" -->
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) Dog Fooding:
 
