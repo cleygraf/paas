@@ -139,6 +139,11 @@ section {
 ![bg w:50% vertical](./../assets/dogfood.png)
 
 <!-- footer: "" -->
+<!--
+References: 
+- [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
+- [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
+--!>
 ---
 <!-- header:  "DYOC" -->
 
