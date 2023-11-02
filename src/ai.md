@@ -284,7 +284,7 @@ section {
 
 # Thank you!
 
-<!-- footer: "https://about.gitlab.com/" -->
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) [GitLab](https://about.gitlab.com/) -->
 ---
 <!-- header:  "Useful links" -->
 
