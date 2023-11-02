@@ -36,6 +36,19 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 ---
 
+<!-- header: "Disclaimer"  --> 
+
+![bg left:20%](./../assets/gitlab-logo-with-name.svg)
+
+This presentation and linked pages contain information related to upcoming products, features, and functionality. 
+
+It is important to note that the information presented is for informational purposes only. Please do not rely on this information for purchasing or planning purposes. 
+
+As with all projects, the items mentioned in this presentation and linked pages are subject to change or delay. The development, release, and timing of any products, features, or functionality remain at the sole discretion of GitLab Inc.
+
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+
 <div class="white-center"><p>Cars?</p></div>
 
 ---
