@@ -38,8 +38,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 
 <!-- header: "Disclaimer"  --> 
 
-![bg left:20%](./../assets/gitlab-logo-with-name.svg)
-
+![bg left:20 %w:72 h:72](./../assets/gitlab-logo.svg)
 This presentation and linked pages contain information related to upcoming products, features, and functionality. 
 
 It is important to note that the information presented is for informational purposes only. Please do not rely on this information for purchasing or planning purposes. 
