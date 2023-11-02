@@ -303,18 +303,26 @@ section {
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "References" -->
+
 ![w:20 h:20](./../assets/gitlab-logo.svg) Studies on time developers spent with code related work:
-  - [The 2019 Tidelift managed open source survey results](https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform)
-  - [DEVELOPERS CODE LESS THAN ONE HOUR PER DAY](https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-)
+
+- [The 2019 Tidelift managed open source survey results](https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform)
+- [DEVELOPERS CODE LESS THAN ONE HOUR PER DAY](https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-)
   
 ![w:20 h:20](./../assets/gitlab-logo.svg) Code Suggestions:
-  - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) - For code completion the `code-gecko` code model is required.
-  - [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+
+- [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) - For code completion the `code-gecko` code model is required.
+- [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) Dog Fooding:
-  - [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
-  - [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
+
+- [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
+- [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) ModelOps:
-  - [Product Stage Direction - ModelOps](https://about.gitlab.com/direction/modelops/)
-  - [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
+
+- [Product Stage Direction - ModelOps](https://about.gitlab.com/direction/modelops/)
+- [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
+  
+<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
