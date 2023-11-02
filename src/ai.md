@@ -30,11 +30,6 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
 </div>
 
 ---
-<!-- header: ""  --> 
-
-![bg 60%](./../assets/AI-powered_DevSecOps.png)
-
----
 
 <!-- header: "Disclaimer"  --> 
 
@@ -45,6 +40,11 @@ It is important to note that the information presented is for informational purp
 As with all projects, the items mentioned in this presentation and linked pages are subject to change or delay. The development, release, and timing of any products, features, or functionality remain at the sole discretion of GitLab Inc.
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header: ""  --> 
+
+![bg 60%](./../assets/AI-powered_DevSecOps.png)
+
 ---
 
 <div class="white-center"><p>Cars?</p></div>
@@ -97,6 +97,7 @@ Reference:
 - As of Nov 2023 14 coding languages are supported
 - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) 
 - For code completion the `code-gecko` code model is required.
+- [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
 -->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
