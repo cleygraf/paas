@@ -279,15 +279,14 @@ section {
 ---
 <!-- header:  "Useful links?" -->
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab 2023 Global DevSecOps Report Series](https://about.gitlab.com/developer-survey/)
-
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo Documentation](https://docs.gitlab.com/ee/user/gitlab_duo_chat.html)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab and Google Cloud AI Partnership](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
+![w:20 h:20](./../assets/gitlab-logo.svg) [The state of AI in software development](https://about.gitlab.com/developer-survey/#ai)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
+![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Global DevSecOps AI Report: Ushering in a new era of software development](https://about.gitlab.com/blog/2023/09/12/gitlab-global-devsecops-ai-report/)
+
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
