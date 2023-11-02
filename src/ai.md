@@ -109,7 +109,6 @@ Reference:
 39% of time spending working with code / 52 minutes of code time per day
 
 Sources (as of May 3rd 2023):
-- https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
 - https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
 -->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
@@ -123,7 +122,6 @@ Sources (as of May 3rd 2023):
 
 Sources (as of May 3rd 2023):
 - https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
-- https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
 -->
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
 ---
@@ -288,7 +286,7 @@ section {
 
 <!-- footer: "https://about.gitlab.com/" -->
 ---
-<!-- header:  "Useful links?" -->
+<!-- header:  "Useful links" -->
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
 
@@ -298,6 +296,25 @@ section {
 
 ![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Global DevSecOps AI Report: Ushering in a new era of software development](https://about.gitlab.com/blog/2023/09/12/gitlab-global-devsecops-ai-report/)
 
+![w:20 h:20][Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+
 ![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
 <!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+---
+<!-- header:  "References" -->
+![w:20 h:20](./../assets/gitlab-logo.svg) Studies on time developers spent with code related work:
+  - [The 2019 Tidelift managed open source survey results](https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform)
+  - [DEVELOPERS CODE LESS THAN ONE HOUR PER DAY](https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-)
+  
+![w:20 h:20](./../assets/gitlab-logo.svg) Code Suggestions:
+  - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) - For code completion the `code-gecko` code model is required.
+  - [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) Dog Fooding:
+  - [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
+  - [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
+
+![w:20 h:20](./../assets/gitlab-logo.svg) ModelOps:
+  - [Product Stage Direction - ModelOps](https://about.gitlab.com/direction/modelops/)
+  - [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
