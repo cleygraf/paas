@@ -62,6 +62,7 @@ section {
   justify-content: start;
   text-align: left;
 }
+</style>
 
 ![bg](./assets/software-factory.svg)
 
