@@ -1,5 +1,6 @@
 .vscode/launch.json
 build
+public
 .DS_Store
 node_modules
 trust-policy.json

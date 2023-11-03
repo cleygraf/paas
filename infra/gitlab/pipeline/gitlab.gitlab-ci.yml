@@ -11,9 +11,9 @@ pages:review:
     # Create an folder for this commit and copy over content
     - mkdir -p "public/build"
     - cp -vr "build" "public/"
-    - cp -vr "assets" "public/"
+    # - cp -vr "assets" "public/"
     - echo "$URL_REVIEW"
-    - cat ./assets/url-review.txt
+    - cat ./build/assets/url-review.txt
   environment:
     name: review-gitlab
     # name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
@@ -49,7 +49,7 @@ pages:
     - cp -vr "build" "public/"
     - cp -vr "assets" "public/"
     - echo "$URL_PROD"
-    - cat ./assets/url-prod.txt
+    - cat ./build/assets/url-prod.txt
   environment:
     name: production-gitlab
     url: $URL_PROD
