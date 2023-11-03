@@ -2,7 +2,7 @@
 marp: true
 theme: gitlab-theme
 title: GitLab Duo AI
-footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
+footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
@@ -15,7 +15,7 @@ footer: ![w:36 h:36](./../assets/gitlab-logo.svg)
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
             <div>
-                <img class="avatar" src="./../assets/avatar-chris.jpeg">
+                <img class="avatar" src="./assets/avatar-chris.jpeg">
             </div>
             <div style="display:flex; flex-direction:column; justify-content:center; margin-left:1em">
                 <h2>
@@ -39,11 +39,11 @@ It is important to note that the information presented is for informational purp
 
 As with all projects, the items mentioned in this presentation and linked pages are subject to change or delay. The development, release, and timing of any products, features, or functionality remain at the sole discretion of GitLab Inc.
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: ""  --> 
 
-![bg 60%](./../assets/AI-powered_DevSecOps.png)
+![bg 60%](./assets/AI-powered_DevSecOps.png)
 
 ---
 
@@ -51,19 +51,19 @@ As with all projects, the items mentioned in this presentation and linked pages 
 
 ---
 
-![bg 90%](./../assets/motorwagen_1886.jpg)
-![bg 90%](./../assets/c-class.jpg)
+![bg 90%](./assets/motorwagen_1886.jpg)
+![bg 90%](./assets/c-class.jpg)
 
 ---
 
-![bg 60%](./../assets/mb_manufactoring_line.jpg)
+![bg 60%](./assets/mb_manufactoring_line.jpg)
 
 ---
 <!-- header: "" -->
 
 <div class="white-center"><p>And Software?</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: "GitLab's Software Factory Approach" -->
 <style scoped>
@@ -75,17 +75,17 @@ section {
 }
 </style>
 
-![bg](./../assets/software-factory.svg)
+![bg](./assets/software-factory.svg)
 
 - Ideas go in, applications come out
 - Shift security left: checks at each stage
 - Full visibility from planning to production
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: ""  --> 
 
-![bg 60%](./../assets/AI-powered_DevSecOps.png)
+![bg 60%](./assets/AI-powered_DevSecOps.png)
 
 ---
 <!-- header: "" -->
@@ -99,7 +99,7 @@ Reference:
 - For code completion the `code-gecko` code model is required.
 - [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
 -->
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: "" -->
 
@@ -111,7 +111,7 @@ Reference:
 Sources (as of May 3rd 2023):
 - https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
 -->
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: "" -->
 
@@ -123,7 +123,7 @@ Sources (as of May 3rd 2023):
 Sources (as of May 3rd 2023):
 - https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
 -->
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab's AI Vision" -->
 <style scoped>
@@ -132,22 +132,22 @@ section {
 }
 </style>
 
-![w:20 h:20](./../assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
-![w:20 h:20](./../assets/gitlab-logo.svg) Privacy and transparency first  
-![w:20 h:20](./../assets/gitlab-logo.svg) Single Application
+![w:20 h:20](./assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
+![w:20 h:20](./assets/gitlab-logo.svg) Privacy and transparency first  
+![w:20 h:20](./assets/gitlab-logo.svg) Single Application
 
-![bg right:50%](./../assets/ai/vision.png)
+![bg right:50%](./assets/ai/vision.png)
 
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
-![bg w:90% vertical](./../assets/gitlab-ai-workflow.png)
+![bg w:90% vertical](./assets/gitlab-ai-workflow.png)
 
 <!-- footer: "" -->
 ---
 <!-- header:  "Dogfooding" -->
 
-![bg w:50% vertical](./../assets/dogfood.png)
+![bg w:50% vertical](./assets/dogfood.png)
 
 <!--
 References: 
@@ -158,7 +158,7 @@ References:
 ---
 <!-- header:  "DYOC" -->
 
-![bg w:60% vertical](./../assets/champagne.jpg)
+![bg w:60% vertical](./assets/champagne.jpg)
 
 <!-- footer: "" -->
 ---
@@ -173,23 +173,23 @@ References:
     </div>
 </div>
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Live demo - Slides" -->
 
-![bg w:40% vertical](./../assets/url-ai-prod.png)
+![bg w:40% vertical](./assets/url-ai-prod.png)
 
 <!-- footer: "##URL_AI_PROD##" -->
 ---
 <!-- header:  "Live demo - GitLab Project" -->
 
-![bg w:40% vertical](./../assets/url-proj.png)
+![bg w:40% vertical](./assets/url-proj.png)
 
 <!-- footer: "##URL_PROJ##" -->
 ---
 <!-- header:  "Flow of demo" -->
 
-![bg w:90% vertical](./../assets/ai/gitlab-ai-workflow-to-demo.png)
+![bg w:90% vertical](./assets/ai/gitlab-ai-workflow-to-demo.png)
 
 <!-- footer: "" -->
 ---
@@ -197,43 +197,43 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. -->
 ---
 <!-- header:  "DEV - GitLAb Duo Chat - How to create a  MR" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?' -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?' -->
 ---
 <!-- header:  "DEV - Code Suggestions" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code. -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code. -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this code" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: View '.gitlab-ci.yml' file, select code and click '?' -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: View '.gitlab-ci.yml' file, select code and click '?' -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this vulnerability" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'. -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'. -->
 ---
 <!-- header:  "PM - Summarize MR review" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./../assets/ai/robot.png)  Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots. -->
+<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots. -->
 ---
 <!-- header:  "GitLab AI Roadmap:" -->
 
 # **ModelOps**
 
-![bg right:50%](./../assets/ai/modelops.png)
+![bg right:50%](./assets/ai/modelops.png)
 
 <!--
 References: 
@@ -251,13 +251,13 @@ section {
 
 ## AI-assisted workflows to empower **every user at every step**
 
-![w:20 h:20](./../assets/gitlab-logo.svg) Understand Epics and Issues faster
-![w:20 h:20](./../assets/gitlab-logo.svg) Understand code easier  
-![w:20 h:20](./../assets/gitlab-logo.svg) Write better code more efficiently
-![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
-![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
+![w:20 h:20](./assets/gitlab-logo.svg) Understand Epics and Issues faster
+![w:20 h:20](./assets/gitlab-logo.svg) Understand code easier  
+![w:20 h:20](./assets/gitlab-logo.svg) Write better code more efficiently
+![w:20 h:20](./assets/gitlab-logo.svg) Have better code reviews
+![w:20 h:20](./assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right w:100%](./../assets/ai/summary.png)
+![bg right w:100%](./assets/ai/summary.png)
 <!-- footer: "" -->
 ---
 <!-- header:  "" -->
@@ -269,64 +269,64 @@ section {
 
 ## AI-assisted workflows to empower **every user at every step**
 
-![w:20 h:20](./../assets/gitlab-logo.svg) Understand Epics and Issues faster
-![w:20 h:20](./../assets/gitlab-logo.svg) Understand code easier  
-![w:20 h:20](./../assets/gitlab-logo.svg) Write better code more efficiently
-![w:20 h:20](./../assets/gitlab-logo.svg) Have better code reviews
-![w:20 h:20](./../assets/gitlab-logo.svg) Automate those repetitive tasks 
+![w:20 h:20](./assets/gitlab-logo.svg) Understand Epics and Issues faster
+![w:20 h:20](./assets/gitlab-logo.svg) Understand code easier  
+![w:20 h:20](./assets/gitlab-logo.svg) Write better code more efficiently
+![w:20 h:20](./assets/gitlab-logo.svg) Have better code reviews
+![w:20 h:20](./assets/gitlab-logo.svg) Automate those repetitive tasks 
 
-![bg right w:100%](./../assets/ai/gitlab-duo.png)
+![bg right w:100%](./assets/ai/gitlab-duo.png)
 
 ---
 <!-- header:  "" -->
 
-![bg right w:70%](./../assets/gitlab-logo-with-name.svg)
+![bg right w:70%](./assets/gitlab-logo-with-name.svg)
 
 # Thank you!
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) [GitLab](https://about.gitlab.com/) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) [GitLab](https://about.gitlab.com/) -->
 ---
 <!-- header:  "Useful links" -->
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
+![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Duo - Documentation](https://docs.gitlab.com/ee/user/gitlab_duo_chat.html)
+![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo - Documentation](https://docs.gitlab.com/ee/user/gitlab_duo_chat.html)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [The state of AI in software development](https://about.gitlab.com/developer-survey/#ai)
+![w:20 h:20](./assets/gitlab-logo.svg) [The state of AI in software development](https://about.gitlab.com/developer-survey/#ai)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [GitLab Global DevSecOps AI Report: Ushering in a new era of software development](https://about.gitlab.com/blog/2023/09/12/gitlab-global-devsecops-ai-report/)
+![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Global DevSecOps AI Report: Ushering in a new era of software development](https://about.gitlab.com/blog/2023/09/12/gitlab-global-devsecops-ai-report/)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+![w:20 h:20](./assets/gitlab-logo.svg) [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
+![w:20 h:20](./assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
 
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "References" -->
 
-![w:20 h:20](./../assets/gitlab-logo.svg) Studies on time developers spent with code related work:
+![w:20 h:20](./assets/gitlab-logo.svg) Studies on time developers spent with code related work:
 
 - [The 2019 Tidelift managed open source survey results](https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform)
 - [DEVELOPERS CODE LESS THAN ONE HOUR PER DAY](https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-)
   
-![w:20 h:20](./../assets/gitlab-logo.svg) Code Suggestions:
+![w:20 h:20](./assets/gitlab-logo.svg) Code Suggestions:
 
 - [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) - For code completion the `code-gecko` code model is required.
 - [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
   
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "References" -->
 
-![w:20 h:20](./../assets/gitlab-logo.svg) Dog Fooding:
+![w:20 h:20](./assets/gitlab-logo.svg) Dog Fooding:
 
 - [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
 - [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
 
-![w:20 h:20](./../assets/gitlab-logo.svg) ModelOps:
+![w:20 h:20](./assets/gitlab-logo.svg) ModelOps:
 
 - [Product Stage Direction - ModelOps](https://about.gitlab.com/direction/modelops/)
 - [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
   
-<!-- footer: ![w:36 h:36](./../assets/gitlab-logo.svg) -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
