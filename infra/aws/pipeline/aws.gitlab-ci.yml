@@ -1,7 +1,9 @@
 variables:
   URL_PROD: "http://gitlab-prod-lb-218443987.eu-central-1.elb.amazonaws.com"
   URL_REVIEW: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
-  # Review environment
+  URL_AI_PROD: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/ai.html"
+  URL_PAAS_PROD: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/paas.html"
+# Review environment
   AWS_ECS_CLUSTER_REVIEW: "gitlab-review"
   AWS_ECS_SERVICE_REVIEW: "gitlab-review-svc"
   AWS_ECS_TASK_DEFINITION_REVIEW: "paas-review"
