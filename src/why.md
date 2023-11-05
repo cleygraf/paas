@@ -180,6 +180,12 @@ section {
 
 <!-- footer: 2023 Forrester Wave™ for Integrated Software Delivery Platforms -->
 ---
+<!-- header: ""  --> 
+
+![bg 100%](./assets/why/obstacles.png)
+
+<!-- footer: "" -->
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./assets/gitlab-logo-with-name.svg)
