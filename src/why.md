@@ -170,9 +170,15 @@ section {
 ---
 <!-- header: "GitLab Recognized as a Leader"  --> 
 
-![bg 90%](./assets/why/forrester.png)
+![bg 40%](./assets/why/gartner.png)
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) 2023 Forrester Wave™ for Integrated Software Delivery Platforms -->
+<!-- footer: 2023 Gartner® Magic Quadrant™ for DevOps Platforms  -->
+---
+<!-- header: "GitLab Recognized as a Leader"  --> 
+
+![bg 40%](./assets/why/forrester.png)
+
+<!-- footer: 2023 Forrester Wave™ for Integrated Software Delivery Platforms -->
 ---
 <!-- header:  "" -->
 
