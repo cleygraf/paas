@@ -31,16 +31,6 @@ pages:review:
   except:
     - master
 
-review:stop:
-  stage: review
-  script:
-    - echo "Gone"
-  when: manual
-  environment:
-    name: review-gitlab
-    # name: review/$CI_COMMIT_REF_NAME--$CI_COMMIT_SHORT_SHA
-    action: stop
-
 pages:
   stage: deploy
   script:
