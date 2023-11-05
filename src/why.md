@@ -162,6 +162,12 @@ section {
 
 <!-- footer: "" -->
 ---
+<!-- header: "Significant ROI and short payback period"  --> 
+
+![bg 90%](./assets/why/roi.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./assets/gitlab-logo-with-name.svg)
