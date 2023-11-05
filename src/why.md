@@ -182,8 +182,22 @@ section {
 ---
 <!-- header: ""  --> 
 
-![bg 100%](./assets/why/obstacles.png)
+![bg 90%](./assets/why/obstacles.png)
 
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+<style scoped>
+section {
+  line-height: 1.5em;
+}
+</style>
+
+## Software.
+## Faster.
+
+
+![bg right w:100%](./assets/why/faster.png)
 <!-- footer: "" -->
 ---
 <!-- header:  "" -->
