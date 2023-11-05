@@ -168,6 +168,12 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header: "GitLab Recognized as a Leader"  --> 
+
+![bg 90%](./assets/why/forrester.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) 2023 Forrester Wave™ for Integrated Software Delivery Platforms -->
+---
 <!-- header:  "" -->
 
 ![bg right w:700](./assets/gitlab-logo-with-name.svg)
