@@ -93,9 +93,25 @@ section {
 ---
 <!-- header: "GitLab: A single AI-powered application"  --> 
 
-![bg 90%](./assets/why/ai-powered-platform.png)
+![bg 100%](./assets/why/ai-powered-platform.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  ![h:50](./assets/ai/gitlab-duo.png) -->
+<style scoped>
+section {
+  line-height: 1.5em;
+}
+</style>
+
+## AI-assisted workflows for everyone in the software development lifecycle
+
+![w:20 h:20](./assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
+![w:20 h:20](./assets/gitlab-logo.svg) Privacy and transparency first  
+![w:20 h:20](./assets/gitlab-logo.svg) Best in class models
+
+![bg right:50%](./assets/ai/vision.png)
+
 ---
 <!-- header:  "" -->
 
