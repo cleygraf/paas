@@ -193,11 +193,23 @@ section {
 }
 </style>
 
-## Software.
-## Faster.
+# Software.
 
+# Faster.
 
-![bg right w:100%](./assets/why/faster.png)
+![bg right w:110%](./assets/why/faster.png)
+<!-- footer: "" -->
+---
+<!-- header:  "" -->
+<style scoped>
+section {
+  line-height: 1.5em;
+}
+</style>
+
+# Thank you
+
+![bg right w:110%](./assets/thankyou.png)
 <!-- footer: "" -->
 ---
 <!-- header:  "" -->
