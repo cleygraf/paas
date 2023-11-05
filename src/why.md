@@ -229,8 +229,14 @@ References:
 -->
 <!-- footer: "" -->
 ---
-<!-- header:  "<b>Updated</b> Production PaaS App" -->
+<!-- header:  "This slides" -->
 
 ![bg 30%](./assets/url-why-prod.png)
 
 <!-- footer: ##URL_WHY_PROD## --->
+---
+<!-- header:  "GitLab Project" -->
+
+![bg w:40% vertical](./assets/url-proj.png)
+
+<!-- footer: "##URL_PROJ##" -->
