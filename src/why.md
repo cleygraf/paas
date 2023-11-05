@@ -1,16 +1,16 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab AWS Workshop
-footer: ![w:36 h:36](./assets/gitlab-logo.svg)
+title: Why GitLab?
+footer: 
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Milan, 2024-10-25
+      <span style="color:#e2432a "><b>Why <img style="width:50px;height:50px;" src="./assets/gitlab-logo.svg"> GitLab?</b></span>
     </h1>
-    <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-      AWS Milan Office
+    <h2 style="margin-bottom:1.5em;text-align:right;">
+      2023-11-06
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -21,7 +21,7 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
                 <h2>
                     Christoph Leygraf
                 </h2>
-                <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
+                <a href= "mailto:cleygraf@gitlab.com">christoph@leygraf.de</a>
             </div>
         </div>
         <div style="display:flex; flex-direction:row; margin-left:2em">
@@ -29,6 +29,7 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
     </div>
 </div>
 
+<!-- footer: "" -->
 ---
 <!-- header: ""  --> 
 
@@ -52,7 +53,7 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 
 <div class="white-center"><p>And Software?</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header: "GitLab's Software Factory Approach" -->
 <style scoped>
@@ -72,16 +73,17 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header: ""  --> 
+<!-- header: "Growing complexity in DevSecOps"  --> 
 
-![bg 60%](./assets/AI-powered_DevSecOps.png)
+![bg 60%](./assets/why/complexity.png)
 
+<!-- footer: "" -->
 ---
 <!-- header: "" -->
 
 <div class="white-center"><p>Code Suggestions</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
