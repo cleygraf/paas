@@ -97,6 +97,49 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header: "" -->
+
+<div class="white-center"><p>Code Suggestions</p></div>
+
+<!--
+Reference:
+- As of Nov 2023 14 coding languages are supported
+- [Supported coding languages](https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-models-overview#supported_coding_languages) 
+- For code completion the `code-gecko` code model is required.
+- [Code Suggestions on self-managed GitLab](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/self_managed.html)
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: "" -->
+
+<div class="white-center"><p>39%</p></div>
+
+<!--
+39% of time spending working with code / 52 minutes of code time per day
+
+Sources (as of May 3rd 2023):
+- https://www.software.com/reports/code-time-report#developers-code-less-than-one-hour-per-day-
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: "" -->
+
+<div class="white-center"><p>52 minutes</p></div>
+
+<!--
+39% of time spending working with code / 52 minutes of code time per day
+
+Sources (as of May 3rd 2023):
+- https://tidelift.com/subscription/managed-open-source-survey?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: "AI powered - in every step & for every user"  --> 
+
+![bg 90%](./assets/why/ai-gitlab-workflow.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header:  ![h:60](./assets/ai/gitlab-duo.png) -->
 <style scoped>
 section {
@@ -113,11 +156,11 @@ section {
 ![bg right:50%](./assets/why/ai-powered.png)
 
 ---
-<!-- header: "AI powered - in every step & for every user"  --> 
+<!-- header: ""  --> 
 
-![bg 90%](./assets/why/ai-gitlab-workflow.png)
+![bg 100%](./assets/why/customers.png)
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header:  "" -->
 
