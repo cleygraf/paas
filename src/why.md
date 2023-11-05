@@ -87,7 +87,13 @@ section {
 ---
 <!-- header: "The Solution"  --> 
 
-![bg 40%](./assets/why/platform.png)
+![bg 90%](./assets/why/platform.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: "GitLab: A single AI-powered application"  --> 
+
+![bg 90%](./assets/why/ai-powered-platform.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
