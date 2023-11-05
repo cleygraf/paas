@@ -54,7 +54,7 @@ review:
     - echo "$URL_REVIEW"
     - cat ./build/assets/url-review.txt
   environment:
-    name: review
+    name: review-aws
     url: $URL_REVIEW
   only:
     - branches
@@ -73,7 +73,7 @@ deploy-prod:
     - echo "$URL_PROD"
     - cat ./build/assets/url-prod.txt
   environment:
-    name: production
+    name: production-aws
     url: $URL_PROD
   when: manual
   needs:
