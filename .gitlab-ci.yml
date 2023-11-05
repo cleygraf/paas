@@ -60,6 +60,7 @@ generate-deck:
     - sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" build/*.html
     - sed -i "s,##URL_PROJ##,$URL_PROJ,g" build/*.html
     - sed -i "s,##URL_AI_PROD##,$URL_AI_PROD,g" build/*.html
+    - sed -i "s,##URL_WHY_PROD##,$URL_WHY_PROD,g" build/*.html
     - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" build/*.html
   artifacts:
     paths:
@@ -76,6 +77,7 @@ create-qr:
     - qrencode -s 6 -l H -o "./build/assets/url-prod.png" "$URL_PROD"
     - qrencode -t ANSI -o "./build/assets/url-prod.txt" "$URL_PROD"
     - qrencode -s 6 -l H -o "./build/assets/url-ai-prod.png" "$URL_AI_PROD"
+    - qrencode -s 6 -l H -o "./build/assets/url-why-prod.png" "$URL_WHY_PROD"
     - qrencode -t ANSI -o "./build/assets/url-ai-prod.txt" "$URL_AI_PROD"
     - qrencode -s 6 -l H -o "./build/assets/url-review.png" "$URL_REVIEW"
     - qrencode -t ANSI -o "./build/assets/url-review.txt" "$URL_REVIEW"

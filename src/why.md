@@ -209,44 +209,28 @@ section {
 
 # Thank you
 
-![bg right w:110%](./assets/thankyou.png)
+![bg right w:100%](./assets/thankyou.png)
 <!-- footer: "" -->
 ---
-<!-- header:  "" -->
+<!-- header: "" -->
 
-![bg right w:700](./assets/gitlab-logo-with-name.svg)
-
-<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h2>
-        Thank you!
-    </h2>
-    <br>
-    <h4>
-        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
-    </h4>
-</div>
-
-<!-- footer: "https://about.gitlab.com/" -->
----
-<!-- header:  "Useful links?" -->
-
-![w:20 h:20](./assets/gitlab-logo.svg) [GitLab 2023 Global DevSecOps Report Series](https://about.gitlab.com/developer-survey/)
-
-![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
-
-![w:20 h:20](./assets/gitlab-logo.svg) [AI/ML in DevSecOps Series](https://about.gitlab.com/blog/2023/04/24/ai-ml-in-devsecops-series/)
-
-![w:20 h:20](./assets/gitlab-logo.svg) [GitLab and Google Cloud AI Partnership](https://about.gitlab.com/press/releases/2023-05-02-gitLab-and-google-cloud-partner-to-expand-ai-assisted-capabilities.html)
-
-![w:20 h:20](./assets/gitlab-logo.svg) [GitLab on Google Cloud](https://about.gitlab.com/partners/technology-partners/google-cloud-platform/)
-
-![w:20 h:20](./assets/gitlab-logo.svg) [... even more GitLab related links](./links.html)
+<div class="white-center"><p>One more thing ...</p></div>
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header:  "Dogfooding" -->
+
+![bg w:50% vertical](./assets/dogfood.png)
+
+<!--
+References: 
+- [Dogfooding for Product Managers](https://about.gitlab.com/handbook/product/product-processes/dogfooding-for-product-mgt/)
+- [Engineering Principles - Dogfooding](https://about.gitlab.com/handbook/engineering/development/principles/#dogfooding)
+-->
+<!-- footer: "" -->
+---
 <!-- header:  "<b>Updated</b> Production PaaS App" -->
 
-![bg 30%](./assets/url-prod.png)
+![bg 30%](./assets/url-why-prod.png)
 
-<!-- footer: Still the same URL: ##URL_PROD## --->
----
+<!-- footer: ##URL_WHY_PROD## --->
