@@ -97,20 +97,20 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header:  ![h:50](./assets/ai/gitlab-duo.png) -->
+<!-- header:  ![h:60](./assets/ai/gitlab-duo.png) -->
 <style scoped>
 section {
   line-height: 1.5em;
 }
 </style>
 
-## AI-assisted workflows for everyone in the software development lifecycle
+**AI-assisted workflows for everyone in the software development lifecycle**
 
 ![w:20 h:20](./assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
 ![w:20 h:20](./assets/gitlab-logo.svg) Privacy and transparency first  
 ![w:20 h:20](./assets/gitlab-logo.svg) Best in class models
 
-![bg right:50%](./assets/ai/vision.png)
+![bg right:50%](./assets/why/ai-powered.png)
 
 ---
 <!-- header:  "" -->
