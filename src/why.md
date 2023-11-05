@@ -237,6 +237,6 @@ References:
 ---
 <!-- header:  "GitLab Project" -->
 
-![bg w:40% vertical](./assets/url-proj.png)
+![bg 30%](./assets/url-proj.png)
 
 <!-- footer: "##URL_PROJ##" -->
