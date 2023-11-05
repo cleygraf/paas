@@ -104,7 +104,7 @@ section {
 }
 </style>
 
-**AI-assisted workflows for everyone in the software development lifecycle**
+### AI-assisted workflows for everyone in the software development lifecycle
 
 ![w:20 h:20](./assets/gitlab-logo.svg) Throughout the Software Delivery Lifecycle
 ![w:20 h:20](./assets/gitlab-logo.svg) Privacy and transparency first  
@@ -112,6 +112,12 @@ section {
 
 ![bg right:50%](./assets/why/ai-powered.png)
 
+---
+<!-- header: "AI powered - in every step & for every user"  --> 
+
+![bg 90%](./assets/why/ai-gitlab-workflow.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
 
