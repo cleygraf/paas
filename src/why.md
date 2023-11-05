@@ -77,13 +77,19 @@ section {
 
 ![bg 80%](./assets/why/complexity.png)
 
-<!-- footer: "" -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: "The Problem"  --> 
 
-![bg 80%](./assets/why/toolsprawl.png)
+![bg 40%](./assets/why/toolsprawl.png)
 
-<!-- footer: "" -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: "The Solution"  --> 
+
+![bg 40%](./assets/why/platform.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
 
