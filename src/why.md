@@ -21,7 +21,7 @@ footer:
                 <h2>
                     Christoph Leygraf
                 </h2>
-                <a href= "mailto:cleygraf@gitlab.com">christoph@leygraf.de</a>
+                <a href= "mailto:cleygraf@gitlab.com">cleygraf@gitlab.com</a>
             </div>
         </div>
         <div style="display:flex; flex-direction:row; margin-left:2em">
