@@ -85,19 +85,19 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header: ""  --> 
+
+![bg 80%](./assets/why/ppt.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header: "The Solution"  --> 
 
 ![bg 90%](./assets/why/platform.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header: ""  --> 
-
-![bg 90%](./assets/why/ppt.png)
-
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
----
-<!-- header: "GitLab: A single AI-powered application"  --> 
+<!-- header: "The Result"  --> 
 
 ![bg 100%](./assets/why/ai-powered-platform.png)
 
