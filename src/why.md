@@ -91,6 +91,12 @@ section {
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header: ""  --> 
+
+![bg 90%](./assets/why/ppt.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header: "GitLab: A single AI-powered application"  --> 
 
 ![bg 100%](./assets/why/ai-powered-platform.png)
