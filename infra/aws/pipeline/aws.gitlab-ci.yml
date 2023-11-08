@@ -3,6 +3,8 @@ variables:
   URL_REVIEW: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com"  
   URL_AI_PROD: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/ai.html"
   URL_PAAS_PROD: "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/paas.html"
+  URL_WHY_PROD:  "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/why.html"
+  URL_OPERATOR_PROD:  "http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/operator.html"
 # Review environment
   AWS_ECS_CLUSTER_REVIEW: "gitlab-review"
   AWS_ECS_SERVICE_REVIEW: "gitlab-review-svc"
