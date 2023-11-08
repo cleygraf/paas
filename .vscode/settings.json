@@ -2,5 +2,9 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "markdown.marp.themes": ["./src/gitlab-theme.css"],
-  "markdown.marp.enableHtml": true
+  "markdown.marp.enableHtml": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
 }
