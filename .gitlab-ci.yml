@@ -58,6 +58,8 @@ generate-deck:
   artifacts:
     paths:
       - 'build/'
+  needs:
+    - job: create-qr
 
 create-qr:
   stage: build
