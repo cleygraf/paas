@@ -265,7 +265,6 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 
 <img src="./assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
-
 <!-- footer: Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "GitLab Pipeline - Stages and jobs" -->
