@@ -2,15 +2,15 @@
 marp: true
 theme: gitlab-theme
 title: GitLab AWS Workshop
-footer: ![w:36 h:36](./assets/gitlab-logo.svg)
+footer: 
 ---
 
 <div style="display:flex; flex-direction:column;">
     <h1 style="margin-top:1em;text-align:right">
-      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Milan, 2024-10-25
+      GitLab <span style="color:#FF9900"><b>AWS</b></span> Workshop Paris, 2024-11-08
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-      AWS Milan Office
+      AWS Paris Office
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
@@ -52,7 +52,7 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 
 <div class="white-center"><p>And Software?</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header: "GitLab's Software Factory Approach" -->
 <style scoped>
@@ -76,12 +76,13 @@ section {
 
 ![bg 60%](./assets/AI-powered_DevSecOps.png)
 
+<!-- footer: "" -->
 ---
 <!-- header: "" -->
 
 <div class="white-center"><p>Code Suggestions</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
@@ -90,7 +91,7 @@ section {
 ---
 <!-- header: "GitLab's hosting options" -->
 
-- *[SaaS](https://gitlab.com) (provides runners too!)*
+- _[SaaS](https://gitlab.com) (provides runners too!)_
 - [GitLab Dedicated](https://about.gitlab.com/dedicated/) (in AWS region of choice)
 - [Self-managed](https://about.gitlab.com/install/) (on-prem or any cloud, runners need to be provided by you)
 
@@ -104,7 +105,7 @@ section {
 
 <div class="white-center"><p>What is a PaaS?</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+<!-- footer: "" -->
 ---
 <!-- header:  "What is a PaaS?" -->
 
@@ -124,15 +125,22 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "For today it's ..." -->
-
-<div class="content-container">
-    <div class="content">
-        <h2><span style="color:#fc6d26;font-size:130%"><b>P</b></span>resentation</h2>
-        <h2><span style="color:#fc6d26;font-size:130%"><b>a</b></span>s</h2>
-        <h2><span style="color:#fc6d26;font-size:130%"><b>a</b></span></h2>
-        <h2><span style="color:#fc6d26;font-size:130%"><b>S</b></span>ervice</h2>
-    </div>
-</div>
+<style scoped>
+ul{
+  list-style-type: none;
+  margin-left: 20px;
+  line-height: 2em;
+}
+li {
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: bold;
+}
+</style>
+- **P**resentation
+- **a**s
+- **a**
+- **S**ervice
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
@@ -140,7 +148,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 
 ![bg 30%](./assets/url-prod.png)
 
-<!-- footer: Wi-Fi password: BrokenWires@@2019 --->
+<!-- footer: ##URL_PROD## ![w:36 h:36](./assets/gitlab-logo.svg) --->
 ---
 <!-- header:  "Goal: Fix my mistake" -->
 
@@ -166,13 +174,13 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service):
 - **Share it with the public**, but BYOI.
 - Uses **simple text files with markdown** instead of a programming language like rust, go, ... .
 
-<!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) --->
 ---
 <!-- header:  "Demo Project" -->
 
-![bg 30%](./assets/project-path.png)
+![bg 30%](./assets/url-proj.png)
 
-<!-- footer: https://gitlab.com/gitlab-partner-demos/paas/paas --->
+<!-- footer: ##URL_PROJ## ![w:36 h:36](./assets/gitlab-logo.svg) --->
 ---
 <!-- header:  "Architecture - AWS" -->
 
@@ -284,13 +292,13 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 
 ![bg 30%](./assets/url-review.png)
 
-<!-- footer: ##URL_REVIEW## --->
+<!-- footer: ##URL_REVIEW## ![w:36 h:36](./assets/gitlab-logo.svg) --->
 ---
 <!-- header:  "Production PaaS App" -->
 
 ![bg 30%](./assets/url-prod.png) 
 
-<!-- footer: ##URL_PROD## --->
+<!-- footer: ##URL_PROD## ![w:36 h:36](./assets/gitlab-logo.svg) --->
 ---
 <!-- header:  "Improvements to consider" -->
 
@@ -302,19 +310,12 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 ---
 <!-- header:  "" -->
 
-![bg right w:700](./assets/gitlab-logo-with-name.svg)
+# Thank you
 
-<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h2>
-        Thank you!
-    </h2>
-    <br>
-    <h4>
-        Friendly reminder: from now on, <span style="color:#fc6d26;font-size:100%"><b>PaaS</b></span> is <i><span style="color:#fc6d26;font-size:100%"><b>P</b></span>resentation <span style="color:#fc6d26;font-size:100%"><b>a</b></span>s <span style="color:#fc6d26;font-size:100%"><b>a</b></span> <span style="color:#fc6d26;font-size:100%"><b>S</b></span>ervice.</i>
-    </h4>
-</div>
+Friendly reminder: From now on, **PaaS** is **P**resentation **a**s **a** **S**ervice.
 
-<!-- footer: "https://about.gitlab.com/" -->
+![bg right w:100%](./assets/thankyou.png)
+<!-- footer: "" -->
 ---
 <!-- header:  "Useful links?" -->
 
@@ -336,5 +337,4 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 
 ![bg 30%](./assets/url-prod.png)
 
-<!-- footer: Still the same URL: ##URL_PROD## --->
----
+<!-- footer: Still the same URL: ##URL_PROD## ![w:36 h:36](./assets/gitlab-logo.svg) --->

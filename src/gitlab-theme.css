@@ -26,6 +26,16 @@ section {
 }
 
 footer {
+  grid-area: footer;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+footer img {
+  margin-left: 10px;
 }
 
 header {
@@ -45,11 +55,16 @@ a {
 }
 
 strong {
-  color: #e2432a;
+  color: #fc6d27;
 }
 
 ul {
   line-height: 1.3em;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
 }
 
 h1,
