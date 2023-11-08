@@ -30,13 +30,6 @@ include:
     rules:
       - if: $INFRA == null
 
-# Jobs
-preparation:
-  stage: .pre
-  script:
-    - if [ -d ./build ]; then rm -fr ./build; fi
-    - if [ -d ./public ]; then rm -fr ./public; fi
-
 markdownlint:
   stage: prechecks
   image: registry.gitlab.com/pipeline-components/markdownlint:latest
@@ -65,6 +58,8 @@ generate-deck:
   artifacts:
     paths:
       - 'build/'
+  needs:
+    - job: create-qr
 
 create-qr:
   stage: build
