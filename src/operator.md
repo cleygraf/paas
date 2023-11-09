@@ -128,6 +128,14 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: "GitLab's Software Factory Approach" -->
+<style scoped>
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+}
+</style>
 
 ![bg](./assets/software-factory.svg)
 
@@ -139,12 +147,12 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 ---
 <!-- header: ""  --> 
 
-![bg 60%](./assets/AI-powered_DevSecOps.png)
+![bg 60%](./assets/gitlab-ai-workflow.png)
 
 ---
 <!-- header:  "AI powered - in every stage & for everyone" -->
 
-<img src="./assets/GitLab AI Workflow.svg" class="center">
+<img src="./assets/gitlab-ai-workflow.png" class="center">
 
 ---
 <!-- header: "GitLab's hosting options" -->
