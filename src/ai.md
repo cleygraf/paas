@@ -197,37 +197,37 @@ References:
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. -->
+<!-- footer: Hint: Use 'Fix typo on first slide: replace 2024 with 2023 and use markdown' to generate description. ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "DEV - GitLAb Duo Chat - How to create a  MR" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?' -->
+<!-- footer: Hint: Goto 'Help' -> 'GitLab Duo Chat' and ask 'How to create a MR?' ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "DEV - Code Suggestions" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code. -->
+<!-- footer: Hint: Use '# Iterate over the directory ./src and print filenames in another file' to generate code. ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this code" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: View '.gitlab-ci.yml' file, select code and click '?' -->
+<!-- footer: Hint: View '.gitlab-ci.yml' file, select code and click '?' ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "DEV/SEC/PM - Explain this vulnerability" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'. -->
+<!-- footer: Hint: Go to 'Secure' -> 'Vulnerability report', select a vulnerability and click 'Explain vulnerability'. ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "PM - Summarize MR review" -->
 
 <div class="white-center"><p>Demo</p></div>
 
-<!-- footer: ![w:36 h:36](./assets/ai/robot.png)  Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots. -->
+<!-- footer: Hint: Open a MR, go to 'Commits' and select 'View summary notes' form three dots. ![w:36 h:36](./assets/ai/robot.png) -->
 ---
 <!-- header:  "GitLab AI Roadmap:" -->
 
@@ -284,7 +284,7 @@ section {
 
 # Thank you!
 
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) [GitLab](https://about.gitlab.com/) -->
+<!-- footer: [GitLab](https://about.gitlab.com/) ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "Useful links" -->
 
