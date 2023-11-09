@@ -62,6 +62,8 @@ review:
     - branches
   except:
     - master
+  needs:
+    - job: build-container
 
 deploy-prod:
   stage: deploy
@@ -79,5 +81,4 @@ deploy-prod:
     url: $URL_PROD
   when: manual
   needs:
-    - job: generate-deck
-    - job: create-qr
+    - job: build-container
