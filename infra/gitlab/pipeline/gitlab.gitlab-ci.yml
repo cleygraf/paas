@@ -5,7 +5,9 @@ variables:
   URL_WHY_PROD: "$CI_PAGES_URL/build/why.html"
   URL_OPERATOR_PROD:  "$CI_PAGES_URL/build/operator.html"
   URL_REVIEW: "https://${CI_PROJECT_ROOT_NAMESPACE}.gitlab.io/-/${CI_PROJECT_NAME}/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/index.html"
-
+  # Use the review url below, if you are outside the original demo-paas-project (e. g. if you have forked the project).
+  # You may have to further adjust if you are using GitLab self-managed.
+  # URL_REVIEW: "https://${CI_PROJECT_ROOT_NAMESPACE}.gitlab.io/-/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/public/build/index.html"
 
 pages:review:
   stage: review
