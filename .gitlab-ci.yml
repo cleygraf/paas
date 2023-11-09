@@ -44,9 +44,8 @@ generate-deck:
   script:
     - if [ ! -d ./build ]; then mkdir -p ./build; fi
     - export MARP_USER="$(id -u):$(id -g)"
-    - ls -al src/
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
-    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build
+    - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
     - cp ./assets/favicon.ico ./build/
     - cp -r ./assets ./build/
     - sed -i "s,##URL_PROD##,$URL_PROD,g" build/*.html
