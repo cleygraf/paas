@@ -138,6 +138,7 @@ section {
 
 ![bg right:50%](./assets/ai/vision.png)
 
+<!-- footer: "" -->
 ---
 <!-- header:  "AI powered - in every step & for every user" -->
 
