@@ -287,13 +287,10 @@ According to [GitLab](https://docs.gitlab.com/runner/):
 ---
 <!-- header:  "" -->
 
-![bg right w:700](./assets/gitlab-logo-with-name.svg)
+# Thank you
 
-<div style="height:100%; display:flex; flex-direction:column; justify-content:center;">
-    <h1><b>Thank you!</b></h1>
-</div>
-
-<!-- footer: "https://about.gitlab.com/" -->
+![bg right w:100%](./assets/thankyou.png)
+<!-- footer: "" -->
 ---
 <!-- header:  "Useful links?" -->
 

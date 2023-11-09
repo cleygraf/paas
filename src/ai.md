@@ -281,11 +281,10 @@ section {
 ---
 <!-- header:  "" -->
 
-![bg right w:70%](./assets/gitlab-logo-with-name.svg)
+# Thank you
 
-# Thank you!
-
-<!-- footer: [GitLab](https://about.gitlab.com/) ![w:36 h:36](./assets/gitlab-logo.svg) -->
+![bg right w:100%](./assets/thankyou.png)
+<!-- footer: "" -->
 ---
 <!-- header:  "Useful links" -->
 
