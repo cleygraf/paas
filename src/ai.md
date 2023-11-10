@@ -6,11 +6,11 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 ---
 
 <div style="display:flex; flex-direction:column;">
-    <h1 style="margin-top:1em;text-align:right">
-      GitLab Duo AI Introduction & Demo, 2024-11-02
+    <h1 style="margin-top:1em;text-align:right;color:#fc6d27">
+      ##AI_TITLE##
     </h1>
-    <h2 style="margin-bottom:1.5em;text-align:right;color:#FF9900">
-      Sue B.V. - Geldermalsen
+    <h2 style="margin-bottom:1.5em;text-align:right">
+      ##SUBTITLE##
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">

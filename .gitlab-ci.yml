@@ -3,6 +3,11 @@ image: docker:latest
 variables:
   APP_NAME: "paas-demo"
   URL_PROJ: "https:///gitlab.com/$CI_PROJECT_PATH"
+  PAAS_TITLE: "GitLab PaaS Demo"
+  WHY_TITLE: "Why GitLab?"
+  AI_TITLE: "GitLab Duo AI Introduction and Demo"
+  OPERATORS_TITLE: "GitLab k8s Operators"
+  SUBTITLE: "Blue Reply, 2023-11-08"
 
 stages:
   - prechecks
@@ -43,18 +48,23 @@ generate-deck:
     entrypoint: ['']
   script:
     - if [ ! -d ./build ]; then mkdir -p ./build; fi
+    - sed -i "s|##PAAS_TITLE##|${PAAS_TITLE}|g" src/*.md
+    - sed -i "s|##WHY_TITLE##|${WHY_TITLE}|g" src/*.md
+    - sed -i "s|##AI_TITLE##|${AI_TITLE}|g" src/*.md
+    - sed -i "s|##OPERATORS_TITLE##|${OPERATORS_TITLE}|g" src/*.md
+    - sed -i "s|##SUBTITLE##|${SUBTITLE}|g" src/*.md
+    - sed -i "s,##URL_PROD##,$URL_PROD,g" src/*.md
+    - sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" src/*.md
+    - sed -i "s,##URL_PROJ##,$URL_PROJ,g" src/*.md
+    - sed -i "s,##URL_AI_PROD##,$URL_AI_PROD,g" src/*.md
+    - sed -i "s,##URL_WHY_PROD##,$URL_WHY_PROD,g" src/*.md
+    - sed -i "s,##URL_OPERATOR_PROD##,$URL_OPERATOR_PROD,g" src/*.md
+    - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" src/*.md
     - export MARP_USER="$(id -u):$(id -g)"
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
     - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
     - cp ./assets/favicon.ico ./build/
     - cp -r ./assets ./build/
-    - sed -i "s,##URL_PROD##,$URL_PROD,g" build/*.html
-    - sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" build/*.html
-    - sed -i "s,##URL_PROJ##,$URL_PROJ,g" build/*.html
-    - sed -i "s,##URL_AI_PROD##,$URL_AI_PROD,g" build/*.html
-    - sed -i "s,##URL_WHY_PROD##,$URL_WHY_PROD,g" build/*.html
-    - sed -i "s,##URL_OPERATOR_PROD##,$URL_OPERATOR_PROD,g" build/*.html
-    - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" build/*.html
   artifacts:
     paths:
       - 'build/'

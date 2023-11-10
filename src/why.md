@@ -6,11 +6,11 @@ footer:
 ---
 
 <div style="display:flex; flex-direction:column;">
-    <h1 style="margin-top:1em;text-align:right">
-      <span style="color:#fc6d27 "><b>Why <img style="width:50px;height:50px;" src="./assets/gitlab-logo.svg"> GitLab?</b></span>
+    <h1 style="margin-top:1em;text-align:right;color:#fc6d27">
+      ##WHY_TITLE##
     </h1>
     <h2 style="margin-bottom:1.5em;text-align:right;">
-      2023-11-06
+      ##SUBTITLE##
     </h2>
     <div style="display:flex; flex-direction:row;">
         <div style="display:flex; flex-direction:row">
