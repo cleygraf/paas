@@ -41,7 +41,6 @@ pages:
     # Create an folder for this commit and copy over content
     - mkdir -p "public/build"
     - cp -vr "build" "public/"
-    - cp -vr "assets" "public/"
     - echo "$URL_PROD"
     - cat ./build/assets/url-prod.txt
   environment:
