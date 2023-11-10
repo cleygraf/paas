@@ -55,6 +55,12 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header:  "Really?" -->
+
+![bg w:80% vertical](./assets/compliance/microsoft.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header:  "Why is compliance so hard to achieve" -->
 
 ![bg w:80% vertical](./assets/compliance/challenges.png)
