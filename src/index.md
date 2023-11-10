@@ -12,5 +12,6 @@ footer: ![w:36 h:36](./assets/gitlab-logo.svg)
 ![w:20 h:20](./assets/gitlab-logo.svg) [##PAAS_TITLE##](./paas.html)  [PDF](./paas.pdf)
 ![w:20 h:20](./assets/gitlab-logo.svg) [##OPERATORS_TITLE##](./operator.html) [PDF](./operator.pdf)
 ![w:20 h:20](./assets/gitlab-logo.svg) [##AI_TITLE##](./ai.html) [PDF](./ai.pdf)
+![w:20 h:20](./assets/gitlab-logo.svg) [##COMPLIANCE_TITLE##](./compliance.html) [PDF](./compliance.pdf)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->

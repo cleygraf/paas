@@ -7,6 +7,7 @@ variables:
   WHY_TITLE: "Why GitLab?"
   AI_TITLE: "GitLab Duo AI Introduction and Demo"
   OPERATORS_TITLE: "GitLab k8s Operators"
+  COMPLIANCE_TITLE: "Achieving Continuous Compliance with GitLab"
   SUBTITLE: "Blue Reply, 2023-11-08"
 
 stages:
@@ -52,6 +53,7 @@ generate-deck:
     - sed -i "s|##WHY_TITLE##|${WHY_TITLE}|g" src/*.md
     - sed -i "s|##AI_TITLE##|${AI_TITLE}|g" src/*.md
     - sed -i "s|##OPERATORS_TITLE##|${OPERATORS_TITLE}|g" src/*.md
+    - sed -i "s|##COMPLIANCE_TITLE##|${COMPLIANCE_TITLE}|g" src/*.md
     - sed -i "s|##SUBTITLE##|${SUBTITLE}|g" src/*.md
     - sed -i "s,##URL_PROD##,$URL_PROD,g" src/*.md
     - sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" src/*.md
