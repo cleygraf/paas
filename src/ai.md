@@ -39,6 +39,11 @@ It is important to note that the information presented is for informational purp
 
 As with all projects, the items mentioned in this presentation and linked pages are subject to change or delay. The development, release, and timing of any products, features, or functionality remain at the sole discretion of GitLab Inc.
 
+<br />
+<br />
+
+[GitLab Duo - AI Features Chart](https://docs.gitlab.com/ee/user/ai_features.html)
+
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header: ""  --> 
@@ -82,6 +87,22 @@ section {
 - Full visibility from planning to production
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header: ""  --> 
+
+![bg 60%](./assets/AI-powered_DevSecOps.png)
+
+<!-- footer: "" -->
+---
+<!-- header: "One Platform Benefits"  --> 
+
+- One UI to use
+- One Data Store for everything
+- One tool to maintain and operate
+- Transparency across the complete 
+- Security Guiderails built-in
+
+<!-- footer: "" -->
 ---
 <!-- header: ""  --> 
 
@@ -289,6 +310,8 @@ section {
 <!-- header:  "Useful links" -->
 
 ![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
+
+![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo - AI Features Chart](https://docs.gitlab.com/ee/user/ai_features.html)
 
 ![w:20 h:20](./assets/gitlab-logo.svg) [Say hello to GitLab Duo Chat: A new level of AI-assisted productivity](https://about.gitlab.com/blog/2023/11/09/gitlab-duo-chat-beta/)
 
