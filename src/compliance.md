@@ -43,6 +43,12 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header:  "Really?" -->
+
+![bg w:80% vertical](./assets/compliance/hacks.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header: "Really?" -->
 
 <div class="white-center"><p>In 2023?</p></div>
@@ -51,13 +57,7 @@ footer:
 ---
 <!-- header:  "Really?" -->
 
-![bg w:80% vertical](./assets/compliance/hacks.png)
-
-<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
----
-<!-- header:  "Really?" -->
-
-![bg w:80% vertical](./assets/compliance/microsoft.png)
+![bg w:60% vertical](./assets/compliance/microsoft.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
