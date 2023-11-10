@@ -290,6 +290,8 @@ section {
 
 ![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo](https://about.gitlab.com/gitlab-duo/)
 
+![w:20 h:20](./assets/gitlab-logo.svg) [Say hello to GitLab Duo Chat: A new level of AI-assisted productivity](https://about.gitlab.com/blog/2023/11/09/gitlab-duo-chat-beta/)
+
 ![w:20 h:20](./assets/gitlab-logo.svg) [GitLab Duo - Documentation](https://docs.gitlab.com/ee/user/gitlab_duo_chat.html)
 
 ![w:20 h:20](./assets/gitlab-logo.svg) [The state of AI in software development](https://about.gitlab.com/developer-survey/#ai)
