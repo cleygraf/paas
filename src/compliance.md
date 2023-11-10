@@ -68,6 +68,12 @@ footer:
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
 <!-- header:  "" -->
+
+![bg w:80% vertical](./assets/compliance/fiveareas.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
 <style scoped>
 section {
   line-height: 1.5em;
