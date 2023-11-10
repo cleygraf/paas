@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab AWS Workshop
+title: ##PAAS_TITLE## - ##SUBTITLE##
 footer: 
 ---
 

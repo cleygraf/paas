@@ -1,8 +1,9 @@
 ---
 marp: true
 theme: gitlab-theme
-title: GitLab Duo AI
-footer: ![w:36 h:36](./assets/gitlab-logo.svg)
+title: theme: gitlab-theme
+title: ##AI_TITLE## - ##SUBTITLE##
+footer: 
 ---
 
 <div style="display:flex; flex-direction:column;">
