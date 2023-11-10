@@ -78,6 +78,22 @@ section {
 
 <!-- footer: "" -->
 ---
+<!-- header: "One Platform Benefits"  --> 
+
+- One UI to use
+- One Data Store for everything
+- One tool to maintain and operate
+- Transparency across the complete 
+- Security Guiderails built-in
+
+<!-- footer: "" -->
+---
+<!-- header: ""  --> 
+
+![bg 60%](./assets/AI-powered_DevSecOps.png)
+
+<!-- footer: "" -->
+---
 <!-- header: "" -->
 
 <div class="white-center"><p>Code Suggestions</p></div>

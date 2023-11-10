@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: gitlab-theme
-title: theme: gitlab-theme
 title: ##AI_TITLE## - ##SUBTITLE##
 footer: 
 ---
@@ -181,13 +180,13 @@ References:
 
 ![bg w:40% vertical](./assets/url-ai-prod.png)
 
-<!-- footer: "##URL_AI_PROD##" -->
+<!-- footer: "##URL_AI_PROD## ![w:36 h:36](./assets/gitlab-logo.svg)" -->
 ---
 <!-- header:  "Live demo - GitLab Project" -->
 
 ![bg w:40% vertical](./assets/url-proj.png)
 
-<!-- footer: "##URL_PROJ##" -->
+<!-- footer: "##URL_PROJ## ![w:36 h:36](./assets/gitlab-logo.svg)" -->
 ---
 <!-- header:  "Flow of demo" -->
 
