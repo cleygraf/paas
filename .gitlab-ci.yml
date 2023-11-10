@@ -8,7 +8,7 @@ variables:
   AI_TITLE: "GitLab Duo AI Introduction and Demo"
   OPERATORS_TITLE: "GitLab k8s Operators"
   COMPLIANCE_TITLE: "Achieving Continuous Compliance with GitLab"
-  SUBTITLE: "Blue Reply, 2023-11-08"
+  SUBTITLE: "Blue Reply, 2023-11-10"
 
 stages:
   - prechecks

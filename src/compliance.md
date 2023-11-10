@@ -73,11 +73,41 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "GitLab Comliance: Security Scanning" -->
+<!-- header:  "Security Scanning" -->
 
 ![bg w:80% vertical](./assets/compliance/securityscan.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Policy Management" -->
+
+![bg w:80% vertical](./assets/compliance/policymgmt.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Workflow Automation" -->
+
+![bg w:80% vertical](./assets/compliance/automation.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Audit Management" -->
+
+![bg w:80% vertical](./assets/compliance/auditmgmt.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Vulnerability and Dependency Management" -->
+
+![bg w:80% vertical](./assets/compliance/vulnerabilitymgmt.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "" -->
+
+![bg w:80% vertical](./assets/compliance/singleplatform.png)
+
+<!-- footer: "" -->
 ---
 <!-- header:  "" -->
 <style scoped>
