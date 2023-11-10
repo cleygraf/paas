@@ -252,3 +252,13 @@ References:
 ![bg 30%](./assets/url-proj.png)
 
 <!-- footer: "##URL_PROJ##" -->
+---
+<!-- header:  "GitLab Flow" -->
+
+![bg w:50% vertical](./assets/why/gitlabflow.png.png)
+
+<!--
+References: 
+- [Combine GitLab Flow and GitLab Duo for a workflow powerhouse](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
