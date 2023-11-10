@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: gitlab-theme
-theme: gitlab-theme
 title: ##WHY_TITLE## - ##SUBTITLE##
 footer: 
 ---

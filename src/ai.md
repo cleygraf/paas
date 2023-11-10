@@ -192,7 +192,7 @@ References:
 
 ![bg w:90% vertical](./assets/ai/gitlab-ai-workflow-to-demo.png)
 
-<!-- footer: "" -->
+<!-- footer: "![w:36 h:36](./assets/gitlab-logo.svg)" -->
 ---
 <!-- header:  "PM - Generate issue description" -->
 
@@ -331,4 +331,3 @@ section {
 - [Track ML model experiments with new GitLab MLFlow integration](https://about.gitlab.com/blog/2023/05/11/track-machine-learning-model-experiments/)
   
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
----
