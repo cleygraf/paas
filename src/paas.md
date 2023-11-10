@@ -247,6 +247,26 @@ Explanations on how to set up the AWS infrastructure are in `./infra/aws/README.
 <img src="./assets/gitlab-workflow.png" style="width:100%; margin-top:1em">
 
 ---
+<!-- header:  "GitLab CI/CD" -->
+
+CI/CD is a continuous method of software development, where you _continuously build, test, deploy, and monitor iterative code changes_.
+
+- Runners, Executors
+- Pipelines 
+  - Stages
+  - Jobs
+  - '.gitlab-ci.yml'
+  - Variables
+
+[Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+
+<!--
+References: 
+- [GitLab Runner](https://docs.gitlab.com/runner/)
+- [Executors](https://docs.gitlab.com/runner/executors/)
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header:  "GitLab Groups and Projects" -->
 
 - Groups
