@@ -49,9 +49,15 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "Dogfooding" -->
+<!-- header:  "Really" -->
 
-![bg w:50% vertical](./assets/compliance/hacks.png)
+![bg w:80% vertical](./assets/compliance/hacks.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Why is compliance so hard to achieve" -->
+
+![bg w:50% vertical](./assets/compliance/challenges.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
