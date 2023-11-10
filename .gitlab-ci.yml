@@ -61,10 +61,11 @@ generate-deck:
     - sed -i "s,##URL_OPERATOR_PROD##,$URL_OPERATOR_PROD,g" src/*.md
     - sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" src/*.md
     - export MARP_USER="$(id -u):$(id -g)"
+    - cp -r ./build/assets/* ./src/assets/
     - /home/marp/.cli/docker-entrypoint -I src --html -o build
     - /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
-    - cp ./assets/favicon.ico ./build/
-    - cp -r ./assets ./build/
+    - cp ./src/assets/favicon.ico ./build/
+    - cp -r ./src/assets ./build/
   artifacts:
     paths:
       - 'build/'
@@ -91,7 +92,7 @@ create-qr:
     - qrencode -t ANSI -o "./build/assets/project-path.txt" "$CI_PROJECT_PATH"
   artifacts:
     paths:
-      - "build/"
+      - 'build/'
 
 
 
