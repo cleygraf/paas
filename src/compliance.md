@@ -49,7 +49,7 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
-<!-- header:  "Really" -->
+<!-- header:  "Really?" -->
 
 ![bg w:80% vertical](./assets/compliance/hacks.png)
 
@@ -57,7 +57,13 @@ footer:
 ---
 <!-- header:  "Why is compliance so hard to achieve" -->
 
-![bg w:50% vertical](./assets/compliance/challenges.png)
+![bg w:80% vertical](./assets/compliance/challenges.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "A platform approach can cut through the complexity" -->
+
+![bg w:80% vertical](./assets/compliance/platform.png)
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
