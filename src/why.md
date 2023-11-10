@@ -253,12 +253,54 @@ References:
 
 <!-- footer: "##URL_PROJ##" -->
 ---
+<!-- header:  "" -->
+<style scoped>
+section {
+  line-height: 2.5em;
+}
+h1 {
+  color:#e24329;
+}
+</style>
+
+## Extra Slides:
+
+# Why not Ultimate?
+
+![bg right w:100%](./assets/thankyou.png)
+<!-- footer: "" -->
+---
 <!-- header:  "GitLab Flow" -->
 
-![bg w:50% vertical](./assets/why/gitlabflow.png.png)
+![bg w:80% vertical](./assets/why/gitlabflow.png)
 
 <!--
 References: 
 - [Combine GitLab Flow and GitLab Duo for a workflow powerhouse](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
 -->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Why not Ultimate?" -->
+
+![bg w:80% vertical](./assets/why/whynotultimate.png)
+
+<!--
+References: 
+- [Why Ultimate?](https://about.gitlab.com/pricing/ultimate/)
+- [Compare features](https://about.gitlab.com/pricing/feature-comparison/)
+-->
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
+<!-- header:  "Why not Ultimate?" -->
+
+Without Ultimate you are at on lot of _critical features_, especially as a _larger enterprise_:
+
+- _Planning:_ Multi-level epics, OKRs
+- _Security:_ Dependency scanning, DAST, API Sec., Security Approvals, related Dashboards, Audit & Compliance reports, License approvals & compliance dashboard, Policy Management
+- _DORA4 metrics_
+
+**References:** 
+![w:20 h:20](./assets/gitlab-logo.svg)  [Why Ultimate?](https://about.gitlab.com/pricing/ultimate/)
+![w:20 h:20](./assets/gitlab-logo.svg)  [Compare features](https://about.gitlab.com/pricing/feature-comparison/)
+
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
