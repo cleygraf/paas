@@ -73,6 +73,12 @@ footer:
 
 <!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
 ---
+<!-- header:  "GitLab Comliance: Security Scanning" -->
+
+![bg w:80% vertical](./assets/compliance/securityscan.png)
+
+<!-- footer: ![w:36 h:36](./assets/gitlab-logo.svg) -->
+---
 <!-- header:  "" -->
 <style scoped>
 section {
