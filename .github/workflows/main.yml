@@ -42,8 +42,8 @@ jobs:
       - run: qrencode -t ANSI -o "./build/assets/url-ai-prod.txt" "$URL_AI_PROD"
       - run: qrencode -s 6 -l H -o "./build/assets/url-review.png" "$URL_REVIEW"
       - run: qrencode -t ANSI -o "./build/assets/url-review.txt" "$URL_REVIEW"
-      - run: qrencode -s 6 -l H -o "./build/assets/project-path.png" "$CI_PROJECT_PATH"
-      - run: qrencode -t ANSI -o "./build/assets/project-path.txt" "$CI_PROJECT_PATH"
+      - run: qrencode -s 6 -l H -o "./build/assets/project-path.png" "$URL_PROJ"
+      - run: qrencode -t ANSI -o "./build/assets/project-path.txt" "$URL_PROJ"
 
       - name: Upload qrcodes
         uses: actions/upload-artifact@v3
