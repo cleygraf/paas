@@ -3,14 +3,6 @@ name: Mein erster Workflow
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
-
   markdownlint:
     runs-on: ubuntu-latest
     container: registry.gitlab.com/pipeline-components/markdownlint:latest
@@ -18,3 +10,26 @@ jobs:
     steps:
       - name: Run markdownlint
         run: mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024,~MD034,~MD007,~MD031,~MD029,~MD036 --warnings .
+
+  create-qr:
+    runs-on: ubuntu-latest
+    container: leplusorg/qrcode
+    steps:
+      - run: if [ ! -d ./build/assets ]; then mkdir -p ./build/assets; fi
+      - run: qrencode -s 6 -l H -o "./build/assets/url-proj.png" "$URL_PROJ"
+      - run: qrencode -s 6 -l H -o "./build/assets/url-prod.png" "$URL_PROD"
+      - run: qrencode -t ANSI -o "./build/assets/url-prod.txt" "$URL_PROD"
+      - run: qrencode -s 6 -l H -o "./build/assets/url-ai-prod.png" "$URL_AI_PROD"
+      - run: qrencode -s 6 -l H -o "./build/assets/url-why-prod.png" "$URL_WHY_PROD"
+      - run: qrencode -s 6 -l H -o "./build/assets/url-operator-prod.png" "$URL_OPERATOR_PROD"
+      - run: qrencode -t ANSI -o "./build/assets/url-ai-prod.txt" "$URL_AI_PROD"
+      - run: qrencode -s 6 -l H -o "./build/assets/url-review.png" "$URL_REVIEW"
+      - run: qrencode -t ANSI -o "./build/assets/url-review.txt" "$URL_REVIEW"
+      - run: qrencode -s 6 -l H -o "./build/assets/project-path.png" "$CI_PROJECT_PATH"
+      - run: qrencode -t ANSI -o "./build/assets/project-path.txt" "$CI_PROJECT_PATH"
+
+      - name: Upload qrcodes
+        uses: actions/upload-artifact@v3
+        with:
+          name: qrcodes
+          path: ./build
