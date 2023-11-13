@@ -2,6 +2,23 @@ name: Mein erster Workflow
 
 on: [push]
 
+env:
+  APP_NAME: 'paas-demo'
+  PAAS_TITLE: 'GitLab PaaS Demo'
+  WHY_TITLE: 'Why GitLab?'
+  AI_TITLE: 'GitLab Duo AI Introduction and Demo'
+  OPERATORS_TITLE: 'GitLab k8s Operators'
+  COMPLIANCE_TITLE: 'Achieving Continuous Compliance with GitLab'
+  SUBTITLE: 'Blue Reply, 2023-11-10'
+  # URLs
+  URL_PROJ: 'https://github.com/cleygraf/paas'
+  URL_PROD: 'http://gitlab-prod-lb-218443987.eu-central-1.elb.amazonaws.com'
+  URL_REVIEW: 'http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com'
+  URL_AI_PROD: 'http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/ai.html'
+  URL_PAAS_PROD: 'http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/paas.html'
+  URL_WHY_PROD: 'http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/why.html'
+  URL_OPERATOR_PROD: 'http://gitlab-review-lb-1662808248.eu-central-1.elb.amazonaws.com/operator.html'
+
 jobs:
   markdownlint:
     runs-on: ubuntu-latest
