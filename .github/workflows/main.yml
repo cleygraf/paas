@@ -7,7 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
 
-    - name: Run a one-line script
-      run: echo Hello, world!
+  markdownlint:
+    container: registry.gitlab.com/pipeline-components/markdownlint:latest
+
+    steps:
+      - run: mdl --style all -i -r ~MD004,~MD009,~MD013,~MD025,~MD032,~MD041,~MD033,~MD002,~MD026,~MD035,~MD024,~MD034,~MD007,~MD031,~MD029,~MD036 --warnings .
