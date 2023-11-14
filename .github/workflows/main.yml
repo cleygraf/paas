@@ -55,6 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: marpteam/marp-cli
+      options: --user root
     needs: create-qr
 
     steps:
