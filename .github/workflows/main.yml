@@ -53,7 +53,12 @@ jobs:
 
   generate-deck:
     runs-on: ubuntu-latest
-    container: marpteam/marp-clie
+    container:
+      image: marpteam/marp-clie
+      credentials:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
     steps:
       - name: Download qrcodes
         uses: actions/download-artifact@v3
