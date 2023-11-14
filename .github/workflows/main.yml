@@ -55,6 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: marpteam/marp-cli
+    needs: create-qr
 
     steps:
       - name: Check out repository code
