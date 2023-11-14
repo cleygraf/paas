@@ -54,7 +54,7 @@ jobs:
   generate-deck:
     runs-on: ubuntu-latest
     container:
-      image: marpteam/marp-clie
+      image: marpteam/marp-cli
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
