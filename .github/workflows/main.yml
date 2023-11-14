@@ -85,6 +85,8 @@ jobs:
       - run: cp -r ./build/assets/* ./src/assets/
       - run: ls -al ./
       - run: ls -al ./build
+      - run: ls -al ./build/assets
+      - run: id
       - run: /home/marp/.cli/docker-entrypoint -I src --html -o build
       - run: /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
       - run: cp ./src/assets/favicon.ico ./build/
