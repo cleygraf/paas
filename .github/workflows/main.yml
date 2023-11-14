@@ -65,8 +65,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: qrcodes
-          path: ./build
+          path: ./artifacts/build
 
+      - run: cp -vr ./artifacts/build ./
       - run: sed -i "s|##PAAS_TITLE##|${PAAS_TITLE}|g" src/*.md
       - run: sed -i "s|##WHY_TITLE##|${WHY_TITLE}|g" src/*.md
       - run: sed -i "s|##AI_TITLE##|${AI_TITLE}|g" src/*.md
