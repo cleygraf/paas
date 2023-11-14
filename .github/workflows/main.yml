@@ -50,3 +50,38 @@ jobs:
         with:
           name: qrcodes
           path: ./build
+
+  generate-deck:
+    runs-on: ubuntu-latest
+    container: marpteam/marp-clie
+    steps:
+      - name: Download qrcodes
+        uses: actions/download-artifact@v3
+        with:
+          name: qrcodes
+
+      - run: sed -i "s|##PAAS_TITLE##|${PAAS_TITLE}|g" src/*.md
+      - run: sed -i "s|##WHY_TITLE##|${WHY_TITLE}|g" src/*.md
+      - run: sed -i "s|##AI_TITLE##|${AI_TITLE}|g" src/*.md
+      - run: sed -i "s|##OPERATORS_TITLE##|${OPERATORS_TITLE}|g" src/*.md
+      - run: sed -i "s|##COMPLIANCE_TITLE##|${COMPLIANCE_TITLE}|g" src/*.md
+      - run: sed -i "s|##SUBTITLE##|${SUBTITLE}|g" src/*.md
+      - run: sed -i "s,##URL_PROD##,$URL_PROD,g" src/*.md
+      - run: sed -i "s,##CI_PROJECT_PATH##,$URL_PROJ,g" src/*.md
+      - run: sed -i "s,##URL_PROJ##,$URL_PROJ,g" src/*.md
+      - run: sed -i "s,##URL_AI_PROD##,$URL_AI_PROD,g" src/*.md
+      - run: sed -i "s,##URL_WHY_PROD##,$URL_WHY_PROD,g" src/*.md
+      - run: sed -i "s,##URL_OPERATOR_PROD##,$URL_OPERATOR_PROD,g" src/*.md
+      - run: sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" src/*.md
+      - run: export MARP_USER="$(id -u):$(id -g)"
+      - run: cp -r ./build/assets/* ./src/assets/
+      - run: /home/marp/.cli/docker-entrypoint -I src --html -o build
+      - run: /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
+      - run: cp ./src/assets/favicon.ico ./build/
+      - run: cp -r ./src/assets ./build/
+
+      - name: Upload slides
+        uses: actions/upload-artifact@v3
+        with:
+          name: slides
+          path: ./build
