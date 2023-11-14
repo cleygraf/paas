@@ -83,6 +83,8 @@ jobs:
       - run: sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" src/*.md
       - run: export MARP_USER="$(id -u):$(id -g)"
       - run: cp -r ./build/assets/* ./src/assets/
+      - run: ls -al ./
+      - run: ls -al -/build
       - run: /home/marp/.cli/docker-entrypoint -I src --html -o build
       - run: /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
       - run: cp ./src/assets/favicon.ico ./build/
