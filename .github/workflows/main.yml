@@ -55,11 +55,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: marpteam/marp-cli
-      credentials:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
       - name: Download qrcodes
         uses: actions/download-artifact@v3
         with:
