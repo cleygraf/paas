@@ -1,4 +1,4 @@
-name: Mein erster Workflow
+name: PaaS CI/CD
 
 on: [push]
 
