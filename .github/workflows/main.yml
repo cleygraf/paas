@@ -1,6 +1,8 @@
 name: PaaS CI/CD
 
 on: [push]
+permissions:
+  contents: write
 
 env:
   APP_NAME: 'paas-demo'
