@@ -59,10 +59,10 @@ jobs:
     needs: create-qr
 
     steps:
-      - name: Check out repository code
+      - name: Check out repository code 🛎️
         uses: actions/checkout@v4
 
-      - name: Download qrcodes
+      - name: Download qrcodes 🛎️
         uses: actions/download-artifact@v3
         with:
           name: qrcodes
@@ -88,20 +88,23 @@ jobs:
       - run: ls -al ./build
       - run: ls -al ./build/assets
 
-      - name: Marp build html files
+      - name: Marp build html files 🔧
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
           args: -I src -o build
         env:
           MARP_USER: root:root
 
-      - run: /home/marp/.cli/docker-entrypoint -e MARP_USER="$(id -u):$(id -g)" -I src --html -o build
-      - run: /home/marp/.cli/docker-entrypoint -I src --html --pdf --allow-local-files -o build || echo "PDF creation failed!"
       - run: cp ./src/assets/favicon.ico ./build/
       - run: cp -r ./src/assets ./build/
 
-      - name: Upload slides
+      - name: Upload slides ✈️
         uses: actions/upload-artifact@v3
         with:
           name: slides
           path: ./build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
