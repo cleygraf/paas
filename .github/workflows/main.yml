@@ -81,6 +81,8 @@ jobs:
           path: ./artifacts/build
 
       - run: cp -vr ./artifacts/build ./
+      - run: cp -r ./build/assets/* ./src/assets/
+
       - run: sed -i "s|##PAAS_TITLE##|${PAAS_TITLE}|g" src/*.md
       - run: sed -i "s|##WHY_TITLE##|${WHY_TITLE}|g" src/*.md
       - run: sed -i "s|##AI_TITLE##|${AI_TITLE}|g" src/*.md
@@ -94,11 +96,6 @@ jobs:
       - run: sed -i "s,##URL_WHY_PROD##,$URL_WHY_PROD,g" src/*.md
       - run: sed -i "s,##URL_OPERATOR_PROD##,$URL_OPERATOR_PROD,g" src/*.md
       - run: sed -i "s,##URL_REVIEW##,$URL_REVIEW,g" src/*.md
-      - run: export MARP_USER="$(id -u):$(id -g)"
-      - run: cp -r ./build/assets/* ./src/assets/
-      - run: ls -al ./
-      - run: ls -al ./build
-      - run: ls -al ./build/assets
 
       - name: Marp build html files 🔧
         uses: docker://marpteam/marp-cli:v3.0.2
@@ -109,6 +106,10 @@ jobs:
 
       - run: cp ./src/assets/favicon.ico ./build/
       - run: cp -r ./src/assets ./build/
+
+      - run: ls -al ./
+      - run: ls -al ./build
+      - run: ls -al ./build/assets
 
       - name: Upload slides ✈️
         uses: actions/upload-artifact@v3
