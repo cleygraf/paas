@@ -1,0 +1,194 @@
+/* @theme gitlab-theme */
+
+@import 'gaia';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/GitLabSans.woff2');
+}
+
+:root {
+  --gitlab-purple: #a989f5;
+  --gitlab-dark: #171321;
+}
+
+section {
+  background: var(--gitlab-dark);
+  font-family: 'Inter';
+  color: white;
+  font-size: 28px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+footer {
+  grid-area: footer;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+footer img {
+  margin-left: 10px;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  height: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+a {
+  color: var(--gitlab-purple);
+}
+
+strong {
+  color: #fc6d27;
+}
+
+ul {
+  line-height: 1.3em;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+blockquote::before,
+blockquote::after {
+  color: var(--gitlab-purple);
+}
+
+/* Remove underline from class names in code blocks: */
+.hljs-title.class_ {
+  text-decoration: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 4px solid var(--gitlab-purple);
+  height: 150px;
+}
+
+.red-stamp {
+  top: 40%;
+  left: 50%;
+  color: rgb(255, 0, 0);
+  font-size: 200px;
+  font-family: 'monospace';
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.white-center {
+  top: 40%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.white-center-medium {
+  top: 30%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.white-center-small {
+  top: 30%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+.content-container {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  padding-left: 10%;
+}
+
+.content {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.ai 
+{
+  font-family: 'monospace',Consolas,"courier new";
+  font-size: 1.0em;
+  background-color: rgb(111, 110, 110);
+  color: rgb(233, 233, 233);
+  padding: 10px;
+  margin-top: 8.4px;
+}
+
+.ai p 
+{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.ai p:last-child {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
