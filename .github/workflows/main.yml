@@ -111,3 +111,21 @@ jobs:
         with:
           name: slides
           path: ./build
+
+  deploy-preview:
+    runs-on: ubuntu-20.04
+    needs: generate-deck
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Download slides ✈️
+        uses: actions/download-artifact@v3
+        with:
+          name: slides
+          path: ./build
+
+      - name: Deploy preview ⚖️
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build
