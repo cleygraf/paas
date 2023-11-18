@@ -21,7 +21,7 @@ env:
   AI_TITLE: 'GitLab Duo AI Introduction and Demo'
   OPERATORS_TITLE: 'GitLab k8s Operators'
   COMPLIANCE_TITLE: 'Achieving Continuous Compliance with GitLab'
-  SUBTITLE: 'Blue Reply, 2023-11-10'
+  SUBTITLE: 'LEYUX, 2023-11-11'
   # URLs
   URL_PROJ: 'https://github.com/cleygraf/paas'
   URL_PROD: 'http://gitlab-prod-lb-218443987.eu-central-1.elb.amazonaws.com'
