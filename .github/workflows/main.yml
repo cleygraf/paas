@@ -118,6 +118,23 @@ jobs:
           name: slides
           path: ./build
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    needs: generate-deck
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Download slides ✈️
+        uses: actions/download-artifact@v3
+        with:
+          name: slides
+          path: ./build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
