@@ -105,6 +105,7 @@ jobs:
           MARP_USER: root:root
 
       - run: cp ./src/assets/favicon.ico ./build/
+      - run: cp ./src/gitlab-theme.css ./build/
       - run: cp -r ./src/assets ./build/
 
       - run: ls -al ./
