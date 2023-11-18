@@ -100,7 +100,7 @@ jobs:
       - name: Marp build html files 🔧
         uses: docker://marpteam/marp-cli:latest
         with:
-          args: -I src -o build
+          args: -I src --html -o build
         env:
           MARP_USER: root:root
 
