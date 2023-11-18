@@ -123,3 +123,16 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
+
+      - name: Setup Pages 🔧
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact ✈️
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: './build'
+
+      - name: Deploy to GitHub Pages  🚀
+        id: deployment
+        uses: actions/deploy-pages@v2
