@@ -41,7 +41,9 @@ jobs:
 
   create-qr:
     runs-on: ubuntu-latest
-    container: leplusorg/qrcode
+    container:
+      image: leplusorg/qrcode
+      options: --user root
     steps:
       - run: if [ ! -d ./build/assets ]; then mkdir -p ./build/assets; fi
       - run: qrencode -s 6 -l H -o "./build/assets/url-proj.png" "$URL_PROJ"
