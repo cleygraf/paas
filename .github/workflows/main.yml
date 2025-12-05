@@ -57,7 +57,7 @@ jobs:
       - run: qrencode -t ANSI -o "./build/assets/project-path.txt" "$URL_PROJ"
 
       - name: Upload qrcodes
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: qrcodes
           path: ./build
@@ -74,7 +74,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download qrcodes 🛎️
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: qrcodes
           path: ./artifacts/build
@@ -112,7 +112,7 @@ jobs:
       - run: ls -al ./build/assets
 
       - name: Upload slides ✈️
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: slides
           path: ./build
@@ -125,7 +125,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download slides ✈️
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: slides
           path: ./build
