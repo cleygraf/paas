@@ -120,7 +120,7 @@ jobs:
           path: ./build
 
   deploy-preview:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     needs: generate-deck
     steps:
       - name: Checkout 🛎️
